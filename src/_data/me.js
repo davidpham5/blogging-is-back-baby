@@ -1,5 +1,5 @@
 let data = {
-	name: "Aram Zucker-Scharff",
+	name: "David Pham",
 	aboutMePage: "https://davidpham5.github.io/davidpham5/",
 	rels: [
 		{ href: "https://davidpham5.glitch.me/", title: "Link in Glitch" },

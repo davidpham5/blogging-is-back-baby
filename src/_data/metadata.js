@@ -4,11 +4,11 @@ module.exports = {
 		url: process.env.REPOSITORY_URL,
 	},
 	title: "Aram ZS | Digital Garden",
-	description: "Microblog and feed from Aram Zucker-Scharff.",
+	description: "Microblog and feed from David Pham.",
 	url: "https://davidchicopham.com",
 	feedUrl: "https://davidchicopham.com/writing/feed.xml",
 	author: {
-		name: "Aram Zucker-Scharff",
+		name: "David Pham",
 		email: "davidpham5@hacktext.com",
 	},
 };

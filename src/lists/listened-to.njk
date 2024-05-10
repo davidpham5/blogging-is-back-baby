@@ -1,4 +1,4 @@
----
+{# ---
 title: Listened To
 titlePrefix: List
 folder: lists
@@ -346,7 +346,7 @@ subTitle: What I have been listening to recently
 				    <a href="{{ item.data.isBasedOn or item.url }}" title="My notes on {{ item.data.title }}">{{ item.data.title }}</a>
 			    </li>
         {%- endfor -%}
-        </ul>        
+        </ul>
     </section>
 
     <hr/>
@@ -354,4 +354,4 @@ subTitle: What I have been listening to recently
     <section>
         <p><small>Music here comes from another site of mine <a href="https://songobsessed.com/" title="Visit Song Obsessed">the Song Obsessed music library and player</a>.</small></p>
     </section>
-{% endblock %}
+{% endblock %} #}

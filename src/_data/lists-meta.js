@@ -16,7 +16,7 @@ module.exports = {
 	"list/code": {
 		title: "Coding and Software Development",
 		description: "Useful resources, references, and cool ideas around writing code.",
-	},  
+	},
 
 	"list/webring": {
 		title: "Webrings",
@@ -58,7 +58,7 @@ module.exports = {
 		title: "Forums & Communities",
 		description: "List of Forums, communities and online hubs",
 	},
-  
+
   'list/search-engines': {
     title: 'Search Engines',
     description: 'List of off-brand search engines of varying degrees of usefulness.'
@@ -84,17 +84,17 @@ module.exports = {
 		title: "Film",
 		description: "Movies I've watched recently",
     //layout: "layouts/media-post.njk",
-	}, 
-  "list/music": {
-		title: "Music",
-		description: "Music I've really enjoyed recently",
-    //layout: "layouts/media-post.njk",
-	}, 
+	},
+  // "list/music": {
+	// 	title: "Music",
+	// 	description: "Music I've really enjoyed recently",
+  //   //layout: "layouts/media-post.njk",
+	// },
   "list/design": {
 		title: "Design",
 		description: "Interesting designs I like and want to reference.",
     //layout: "layouts/media-post.njk",
-	}, 
+	},
 
 	// Continuous Writing Projects
 

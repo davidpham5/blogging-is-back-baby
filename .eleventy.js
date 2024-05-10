@@ -95,14 +95,6 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
 
-	eleventyConfig.addPlugin(
-		require("@photogabble/eleventy-plugin-blogtimes"),
-		{
-			generateHTML: (outputUrl, options) =>
-				`<img alt="Blogtimes histogram" width="${options.width}" height="${options.height}" src="${outputUrl}" style="min-width: auto;" />`,
-			lastXDays: 180,
-		}
-	);
 
 	const numberFormat = new Intl.NumberFormat("en-GB");
 
