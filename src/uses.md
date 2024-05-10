@@ -20,7 +20,7 @@ A somewhat complete list of tools, applications, hardware and services that I us
 * Analogue Pocket
 * Gameboy Advance Modded with IPS screen, new shell, and new buttons
 * Kobo Clara Color
-* ~~Custom built desktop~~
+* Custom built desktop
   * **Processor** Ryzen 5 5600x
   * **Memory**: 32GB DDR4
   * **Storage**: 2TB NVMe SSD, 5 SSD
