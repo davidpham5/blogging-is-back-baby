@@ -1,7 +1,7 @@
 {
-  "name": "aramzs-xyz",
+  "name": "blogging is back, baby",
   "version": "2.0.0",
-  "description": "Source code for aramzs.xyz",
+  "description": "Source code for davidchicopham.com",
   "main": "index.js",
   "scripts": {
     "serve:dev": "rm -rf _site && cross-env ELEVENTY_ENV=development DEBUG=Eleventy* npx eleventy --serve | tee ./buildlog.txt",
@@ -28,7 +28,7 @@
     "Blog",
     "11ty"
   ],
-  "author": "Aram Zucker-Scharff and Simon Dann",
+  "author": "David Pham",
   "license": "CC BY-NC-SA 4.0",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
