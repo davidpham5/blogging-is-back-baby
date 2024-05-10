@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 title: "/uses"
 titlePrefix: "Me"
-subTitle: "Last updated Mar 18th, 2024."
+subTitle: "Last updated May 10th, 2024."
 folder: about
 ---
 
@@ -10,49 +10,55 @@ A somewhat complete list of tools, applications, hardware and services that I us
 
 ## Hardware
 
-* Apple 16" 2019 MacBook Pro
-  * **Processor**: Intel Core i7 @ 2.6 GHz
-  * **Memory**: 32GB 2667MHz DDR4
-* Galaxy S10+
-* ~~Custom built desktop~~ (no longer in use)
+* Apple 14" 2023 MacBook Pro M2 Pro
+  * **Processor**: M2 Pro
+  * **Memory**: 32GB Unified Memory
+* iPhone 15 pro+
+* iPad Air
+* Steam Deck
+* Nintendo Switch
+* Analogue Pocket
+* Gameboy Advance Modded with IPS screen, new shell, and new buttons
+* Kobo Clara Color
+* Custom built desktop
+  * **Processor** Ryzen 5 5600x
+  * **Memory**: 32GB DDR4
+  * **Storage**: 2TB NVMe SSD, 5 SSD
+  * **GPU**: Nvidia 3070
+
 
 ## Software
 
-* Arc/Chrome/Firefox/Safari/Orion
+* Arc/Chrome/Firefox/Safari
 * Obsidian.md
 * VSCode
 
 ### Windows Specific
 
-* None until I rebuild my desktop
+* Window 11
+* Destiny 2 est 2014
 
 ### OSX Specific
 
-* Insomnia
-* Docker[^1]
 * Homebrew
 * OhMyZSH
 
 ## Languages
 
 * JavaScript
-* PHP[^4]
-* Node (TypeScript)
-* Rust
-* Python (occasionally)
+* Node
+* Python (inspiring to learn, lol)
 
 ## Stacks
 
 For personal projects and self-hosting I use:
 
-* BlueHost
-* Dreamhost
+* Digital Oceant
 * GitHub Pages
 * Netlify
 
 For work, and sometimes play, in addition to the above (excluding the hosting providers) I use:
 * AWS
-  * SQS
   * API Gateway
   * Lambda
   * S3
