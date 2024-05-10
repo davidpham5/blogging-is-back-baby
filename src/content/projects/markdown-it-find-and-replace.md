@@ -11,4 +11,4 @@ tags: [SSG, Eleventy, Markdown]
 status: wip
 ---
 
-You can read the retro on this project at my [devblog](https://fightwithtools.dev/posts/projects/devblog/retro-markdown-it/). 
+You can read the retro on this project at my [devblog](https://fightwithtools.dev/posts/projects/devblog/retro-markdown-it/).

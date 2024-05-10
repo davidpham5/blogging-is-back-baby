@@ -7,13 +7,13 @@
 
     <!-- Feeds -->
     <link rel="alternate" href="{{ metadata.feedUrl }}" type="application/atom+xml" title="Aram Zucker-Scharff's Digital Garden">
-    
+
     <!-- Identity Verification -->
 	{%- for rel in me.rels -%}
 		    <link rel="me" href="{{rel.href}}" title="{{rel.title}}"/>
  	{% endfor %}
       <!-- Webmentions -->
-    <link rel="webmention" href="https://webmention.io/aramzs.xyz/webmention" />
+    <link rel="webmention" href="https://webmention.io/davidchicopham.com/webmention" />
     <!-- SEO -->
     <title>{{ title or metadata.title | safe }}</title>
     <meta name="description" content="{{ description or metadata.description }}"/>
@@ -39,8 +39,8 @@
     <meta name="twitter:card" content="summary"/>
     {% endif %}
 
-    <meta name="twitter:site" content="@Chronotope"/>
-    <meta name="twitter:creator" content="@Chronotope"/>
+    <meta name="twitter:site" content="@davidpham5"/>
+    <meta name="twitter:creator" content="@davidpham5"/>
     <meta name="twitter:title" content="{{ title or metadata.title | safe }}"/>
 
     {% if ogtype === 'article' %}
@@ -79,7 +79,7 @@
     <link rel="preload" href="/fonts/iosevka-etoile-bolditalic.subset.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/iosevka-etoile-italic.subset.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/styles/main.css"/>
-    <script data-domain="aramzs.xyz" src="https://plausible.io/js/plausible.js"></script>
+    <script data-domain="davidchicopham.com" src="https://plausible.io/js/plausible.js"></script>
     {% block stylesheet %}{% endblock %}
     <script src="/main.js"></script>
 </head>
@@ -138,10 +138,10 @@
 
             <dl>
                 <dd><a href="/elsewhere" title="Other places on the internet you can find me">Elsewhere</a></dd>
-				<dd><a href="https://aramzs.glitch.me/">Glitch in Bio</a></dd>
-                <dd><a href="https://github.com/AramZS">GitHub</a></dd>
-                <dd><a href="https://indieweb.social/@Chronotope">Mastodon</a></dd>
-				<dd><a href="https://twitter.com/Chronotope">Twitter</a></dd>
+				<dd><a href="https://davidpham5.glitch.me/">Glitch in Bio</a></dd>
+                <dd><a href="https://github.com/davidpham5">GitHub</a></dd>
+                <dd><a href="https://indieweb.social/@davidpham5">Mastodon</a></dd>
+				<dd><a href="https://twitter.com/davidpham5">Twitter</a></dd>
             </dl>
         </div>
     </nav>
@@ -178,7 +178,7 @@
             <dd><a href="/resources/mirrored/" title="Saved code or console commands that I would like to remember/reuse">Code Snippets</a></dd>
             <dd><a href="/resources/quotes/" title="Referenced Quotes">Quotes</a></dd>
             <!-- <dd><a href="/resources/books/" title="All books I have read, or intend to read">Books</a></dd> -->
-            
+
         </dl>
 
         <dl>
@@ -208,9 +208,9 @@
 
     <nav class="breakout">
         <p>
-            CC {{ build.timestamp | dateToFormat('yyyy') }} Aram Zucker-Scharff. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Licensed CC BY-NC 4.0">CC BY-NC-SA 4.0</a>. | <a href="https://github.com/AramZS/aramzs.xyz">src</a> | <a href="/legal/privacy">cookies &amp; privacy</a>.<br/>
+            CC {{ build.timestamp | dateToFormat('yyyy') }} Aram Zucker-Scharff. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Licensed CC BY-NC 4.0">CC BY-NC-SA 4.0</a>. | <a href="https://github.com/davidpham5/davidchicopham.com">src</a> | <a href="/legal/privacy">cookies &amp; privacy</a>.<br/>
             <small>
-                Any and all opinions listed here are my own and not representative of my employers; future, past and present.<br/> 
+                Any and all opinions listed here are my own and not representative of my employers; future, past and present.<br/>
                 Site Design and Code Shared Alike from <a href="https://photogabble.co.uk/colophon/" target="_blank">Simon Dann</a>. <br />
 
                 This product uses the TMDb API but is not endorsed or certified by <a href="https://www.themoviedb.org/" target="_blank">TMDb</a>. <img class="tmdb-logo" src="/img/tmdb-short.svg" />

@@ -45,7 +45,7 @@ module.exports = function (eleventyConfig) {
 	//
 	// Install Plugins
 	//
-  // This plugin isn't doing anything. 
+  // This plugin isn't doing anything.
   eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(require("@rknightuk/eleventy-plugin-post-graph"), {
 		boxColor: "var(--background-muted)",
@@ -167,7 +167,7 @@ module.exports = function (eleventyConfig) {
 /*
   eleventyConfig.addCollection('cleantags', async function(collectionApi) {
     let starter = collectionApi.getAll();
-    let starterTags = new Set(); 
+    let starterTags = new Set();
     starter.forEach(item => {
       if (item.data.tags && item.data.tags.length > 0){
         starterTags.add(...item.data.tags)
@@ -178,7 +178,7 @@ module.exports = function (eleventyConfig) {
 
     let alphabeticalArray = Array.from(starterTags).sort();
     let cleanCollections = {};
-    alphabeticalArray.forEach(tag => { 
+    alphabeticalArray.forEach(tag => {
       //eleventyConfig.addCollection(tag.toLowerCase(), (collectionApi) => {
         let results = starter.filter((item) => {
           if (item.data.tags && item.data.tags.length > 0){
@@ -187,7 +187,7 @@ module.exports = function (eleventyConfig) {
           } else {
             return false;
           }
-        
+
         })
         cleanCollections[tag.toLowerCase()] = {
           slug: tag.toLowerCase(),
@@ -215,9 +215,9 @@ module.exports = function (eleventyConfig) {
 	// Webmanifest stuff
 
   /**
-   * removing this from active build process for now 
+   * removing this from active build process for now
    * as canvas and sharp have some sort of weird error.
-   * 
+   *
 	var sharp = require("sharp");
 	var promiseSet = [];
 	[
@@ -248,7 +248,7 @@ module.exports = function (eleventyConfig) {
 	});
  */
 
-  // Dev Time Build Ignores 
+  // Dev Time Build Ignores
   if (process.env.IS_LOCAL === "true"){
     eleventyConfig.ignores.add("src/content/amplify/2023**");
     eleventyConfig.ignores.add("src/content/amplify/2024-01**");

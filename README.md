@@ -1,6 +1,6 @@
 # David Chico Pham Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/214d6bc5-dcf0-4416-b04b-9f7c3d791386/deploy-status)](https://app.netlify.com/sites/aramzsxyz/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/214d6bc5-dcf0-4416-b04b-9f7c3d791386/deploy-status)](https://app.netlify.com/sites/davidpham5/deploys)
 
 ## About this repository
 
@@ -9,6 +9,8 @@ This repository contains the source code for [davidchicopham.com](davidchicopham
 ## Prerequisites
 
 - Node.js v18.20.2
+- brew
+ - `brew install pixman`
 
 ## Getting Started
 You will need to install the required packages using `npm install`. There are three commands for building:

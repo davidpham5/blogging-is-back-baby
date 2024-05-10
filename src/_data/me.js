@@ -1,19 +1,18 @@
 let data = {
 	name: "Aram Zucker-Scharff",
-	aboutMePage: "https://aramzs.github.io/aramzs/",
+	aboutMePage: "https://davidpham5.github.io/davidpham5/",
 	rels: [
-		{ href: "https://aramzs.glitch.me/", title: "Link in Glitch" },
+		{ href: "https://davidpham5.glitch.me/", title: "Link in Glitch" },
 		{
-			href: "https://indieweb.social/@Chronotope",
-			title: "Mastodon: IndieWeb",
+			href: "https://mastodon.cloud/@davidpham5",
+			title: "Mastodon",
 		},
-		{ href: "https://cohost.org/Chronotope", title: "Cohost" },
-		{ href: "https://github.com/aramzs", title: "GitHub" },
-		{ href: "https://twitter.com/chronotope", title: "Twitter" },
-		{ href: "https://keybase.io/aramzs", title: "Keybase" },
-    { href: "https://bsky.app/profile/chronotope.aramzs.xyz", title: "BlueSky" },
+		{ href: "https://github.com/davidpham5", title: "GitHub" },
+		{ href: "https://twitter.com/davidpham5", title: "Twitter" },
+		{ href: "https://keybase.io/davidpham5", title: "Keybase" },
+    { href: "https://bsky.app/profile/davidpham5.davidchicopham.com", title: "BlueSky" },
 	],
-	twitter: "@chronotope",
+	twitter: "@davidpham5",
 };
 
 data.avatar = `/img/twitter-avy.jpg`;

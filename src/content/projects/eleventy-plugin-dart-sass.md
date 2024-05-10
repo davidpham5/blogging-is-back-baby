@@ -11,6 +11,6 @@ tags: ["Front-end", Eleventy, SASS]
 status: wip
 ---
 
-You can read the retro on this project at my [devblog](https://fightwithtools.dev/posts/projects/devblog/retro-getting-back-to-sass/). 
+You can read the retro on this project at my [devblog](https://fightwithtools.dev/posts/projects/devblog/retro-getting-back-to-sass/).
 
-This is working right now, but needs to be updated in order to be up to the latest Sass model. 
+This is working right now, but needs to be updated in order to be up to the latest Sass model.

@@ -6,21 +6,15 @@ titlePrefix: "Me"
 
 I can be found in the following online communities:
 
-* <a href="https://indieweb.social/@Chronotope">Mastodon (indieweb.social)</a>,
-* <a href="https://github.com/AramZS">GitHub</a>,
-* <a href="https://twitter.com/Chronotope">Twitter</a>,
-* <a href="https://keybase.io/aramzs">Keybase</a>
-* [BlueSky](https://bsky.app/profile/chronotope.aramzs.xyz)
+* <a href="https://mastodon.social/@davidpham5">Mastodon (indieweb.social)</a>,
+* <a href="https://github.com/davidpham5">GitHub</a>,
+* <a href="https://twitter.com/davidpham5">Twitter</a>,
+* <a href="https://keybase.io/davidpham5">Keybase</a>
+* [BlueSky](https://bsky.app/profile/davidpham5.davidchicopham.com)
 
 I have accounts on the following platforms, but I <em>infrequently</em> visit them:
 
-* <a href="https://gravatar.com/aramzs">Gravatar</a>,
+* <a href="https://gravatar.com/davidpham5">Gravatar</a>,
 * <a href="https://www.youtube.com/channel/UChwoOWioC8_UeUFRJptBYrw">YouTube</a>,
-* [Spotify](https://open.spotify.com/user/aramzs),
-* [Cohost](https://cohost.org/Chronotope),
-* [Post News](https://post.news/chronotope),
-* [Dev.to](https://dev.to/aramzs),
-* Facebook,
-* [LinkedIn](https://bit.ly/aramzs),
-* [LastFM](https://www.last.fm/user/Shade0),
-* [Reddit](https://www.reddit.com/user/AramZS/).
+* [Spotify](https://open.spotify.com/user/davidpham5),
+* [LinkedIn](https://bit.ly/davidmpham),
