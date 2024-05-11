@@ -3,6 +3,6 @@ module.exports = {
 	timestamp: new Date(),
 	bookwyrm: {
 		username: "davidpham5",
-		instance: "bookwyrm.social",
+		instance: "bookwyrm.tilde.zone",
 	},
 };
