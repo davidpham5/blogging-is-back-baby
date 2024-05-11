@@ -1,8 +1,13 @@
 {% extends "layouts/page.njk" %}
 
 {% set titlePrefix = 'Index' %}
-{% set title = 'tinkers' %}
-{% set tinkers = collections.contentTypes | findBySlug('tinker') | values('items') %}
+{% set title = 'Tinkering' %}
+{% set tinkers = collections.contentTypes | findBySlug('tinker') %}
+{% if tinkers %}
+    {% set tinkers = tinkers.values('items') %}
+{% else %}
+    {% set tinkers = [] %}
+{% endif %}
 
 {% block pageContent %}
     <section>
@@ -27,7 +32,7 @@
     {% endif %}
 
     <section>
-        <h2>Tinkering</h2>
+        <h2>Currently</h2>
         <ul>
             {% for tinker in tinkers | whereKeyEquals('featured', false) | whereKeyEquals('status', 'tinkering') %}
                 <li><a href="{{ tinker.url }}" title="Read {{ tinker.data.title }}">{{ tinker.data.title }}</a> <small>{{ tinker.data.language }}</small></li>
