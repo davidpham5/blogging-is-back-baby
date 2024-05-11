@@ -105,3 +105,17 @@ html.theme-blue,
     --foreground-muted: #bdc5ad;
     --accent: #fbbc55;
 }
+
+html.theme-ftl,
+.theme-picker li.theme-ftl {
+    --background: #01021EFF;
+    --background-muted: #00305b;
+    --foreground: #fbf8be;
+    --foreground-muted: #bdc5ad;
+    --accent: #0f89a7;
+    --jumbo-nav-background-color: #832e1c;
+    --jumbo-nav-text-color: white;
+    --jumbo-nav-accent-color: #eaf0e5;
+    --jumbo-nav-anchor-color: #e4ecdf;
+    --jumbo-nav-anchor-hover-color: #ff353f;
+}

@@ -1,0 +1,46 @@
+{% extends "layouts/page.njk" %}
+
+{% set titlePrefix = 'Index' %}
+{% set title = 'tinkers' %}
+{% set tinkers = collections.contentTypes | findBySlug('tinker') | values('items') %}
+
+{% block pageContent %}
+    <section>
+        <h2>Featured</h2>
+        <ul>
+            {% for tinker in tinkers | whereKeyEquals('featured', true) %}
+                <li><a href="{{ tinker.url }}" title="Read {{ tinker.data.title }}">{{ tinker.data.title }}</a> <small>{{ tinker.data.language }}</small></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    {% set wiptinkers = tinkers | whereKeyEquals('featured', false) | whereKeyEquals('status', 'wip') %}
+    {% if wiptinkers.length > 0 %}
+    <section>
+        <h2>Work In Progress / Help appreciated</h2>
+        <ul>
+            {% for tinker in wiptinkers %}
+                <li><a href="{{ tinker.url }}" title="Read {{ tinker.data.title }}">{{ tinker.data.title }}</a> <small>{{ tinker.data.language }}</small></li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    <section>
+        <h2>Tinkering</h2>
+        <ul>
+            {% for tinker in tinkers | whereKeyEquals('featured', false) | whereKeyEquals('status', 'tinkering') %}
+                <li><a href="{{ tinker.url }}" title="Read {{ tinker.data.title }}">{{ tinker.data.title }}</a> <small>{{ tinker.data.language }}</small></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h2>Abandoned / Shelved</h2>
+        <ul>
+            {% for tinker in tinkers | whereKeyEquals('featured', false) | whereKeyEquals('status', 'abandoned') %}
+                <li><a href="{{ tinker.url }}" title="Read {{ tinker.data.title }}">{{ tinker.data.title }}</a> <small>{{ tinker.data.language }}</small></li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

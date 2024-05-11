@@ -5,7 +5,7 @@ description: Markdown It Find and Replace Plugin
 subTitle: A useful utility for markdown-it
 git: https://github.com/AramZS/markdown-it-find-and-replace
 npm: https://www.npmjs.com/package/markdown-it-find-and-replace
-featured: true
+featured: false
 language: Node
 tags: [SSG, Eleventy, Markdown]
 status: wip

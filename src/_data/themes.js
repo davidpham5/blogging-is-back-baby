@@ -27,12 +27,16 @@ module.exports = [
 		id: "summer",
 		title: "Summer",
 	},
-	{
-		id: "blue",
-		title: "Blue",
-	},
+	// {
+	// 	id: "blue",
+	// 	title: "Blue",
+	// },
 	{
 		id: "neon",
 		title: "Neon",
 	},
+  {
+    id: "ftl",
+    title: "Faster Than Light"
+  }
 ];

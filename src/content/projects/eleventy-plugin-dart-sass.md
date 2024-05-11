@@ -5,7 +5,7 @@ description: Getting Sass working with Eleventy
 subTitle: SASS for 11ty
 git: https://github.com/AramZS/eleventy-plugin-dart-sass
 npm: https://www.npmjs.com/package/eleventy-plugin-dart-sass
-featured: true
+featured: false
 language: Node
 tags: ["Front-end", Eleventy, SASS]
 status: wip

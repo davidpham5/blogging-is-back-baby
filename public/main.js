@@ -37,7 +37,7 @@ function setTheme(themeName) {
 
 // Set theme before page renders
 (function () {
-	setTheme(localStorage.getItem("theme") || "neon");
+	setTheme(localStorage.getItem("theme") || "dark");
 })();
 
 // When document ready add event listeners
