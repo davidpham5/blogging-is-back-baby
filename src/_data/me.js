@@ -10,7 +10,7 @@ let data = {
 		{ href: "https://github.com/davidpham5", title: "GitHub" },
 		{ href: "https://twitter.com/davidpham5", title: "Twitter" },
 		{ href: "https://keybase.io/davidpham5", title: "Keybase" },
-    { href: "https://bsky.app/profile/davidpham5.davidchicopham.com", title: "BlueSky" },
+    { href: "https://bsky.app/profile/davidpham5.social", title: "BlueSky" },
 	],
 	twitter: "@davidpham5",
 };
