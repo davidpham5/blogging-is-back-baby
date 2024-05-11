@@ -66,10 +66,12 @@ module.exports = function (eleventyConfig) {
 		require("@photogabble/eleventy-plugin-font-subsetting"),
 		{
 			srcFiles: [
-				`./public/fonts/iosevka-etoile-regular.woff2`,
-				`./public/fonts/iosevka-etoile-italic.woff2`,
-				`./public/fonts/iosevka-etoile-bold.woff2`,
-				`./public/fonts/iosevka-etoile-bolditalic.woff2`,
+				`./public/fonts/FiraCode-Regular.woff2`,
+				`./public/fonts/FiraCode-Bold.woff2`,
+        `./public/fonts/FiraCode-SemiBold.woff2`,
+        `./public/fonts/FiraCode-Light.woff2`,
+				`.public/fonts/FiraCode-Medium.woff2`,
+        `./public/fonts/FiraCode-VF.woff2`
 			],
 			dist: "./src/fonts",
 			enabled: process.env.ELEVENTY_ENV !== "production",
