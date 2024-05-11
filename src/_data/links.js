@@ -1,21 +1,21 @@
 module.exports = [
     {
-        title: 'Faster Than Light',
-        href: 'https://dpham5.com/',
+        title: 'Aramzs.xyz',
+        href: 'https://aramzs.xyz/',
         tags: ['Blogging', 'Tech'],
         reason: null,
     },
     {
-        title: 'IndieShuffle',
-        href: 'https://www.indieshuffle.com/',
-        tags: ['Music'],
+        title: 'Kottke.org',
+        href: 'https://www.kottke.org/',
+        tags: ['Curator, Blogging'],
         reason: null,
     },
     {
-        title: "Unwinnable",
-        href: 'https://unwinnable.com/',
-        tags: ['Gaming'],
-        reason: 'Wonderful essays',
+        title: "Platformer",
+        href: 'https://www.platformer.news/',
+        tags: ['News', 'Tech'],
+        reason: 'Wonderful reporting and analysis on the tech industry.',
     },
 
 ];
