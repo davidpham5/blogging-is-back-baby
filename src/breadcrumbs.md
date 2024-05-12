@@ -26,7 +26,6 @@ Below is a non-exhaustive list of all the breadcrumb hierarchy that I have stuff
 ~/writing/types/thoughts
 ~/writing/types/noteworthy
 ~/writing/types/essays
-~/writing/types/posts
 ~/writing/types/tutorials
 ~/writing/types/projects
 ~/resources/mirrored

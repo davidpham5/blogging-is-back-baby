@@ -1,7 +1,15 @@
 ---
 title: The Insidious Nature of a AGI in Her
-date: 2022-10-01
+date: 2024-03-26
 author: David Pham
+draft: false
+tags:
+  - post
+  - AI
+  - AGI
+  - Her (Film)
+  - Capitalism
+# tags are necessary to run `npm run serve:dev`
 ---
 
 In the movie Her, Joaquin Phoenix’s character falls in love with an u, you’re mad at them, their past grievances, your own shit too: Samantha understands. This AGI is optimized for the lonely heart. Just let the AGI have all your data. Let it make decisions for you (ah so helpful!). Let it in to your sexual life (that kink is what I am into too!). Let it in to all corners of your work (finally got that book written!).

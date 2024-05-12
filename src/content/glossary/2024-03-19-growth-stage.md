@@ -1,6 +1,6 @@
 ---
 title: Growth Stage
-draft: false
+draft: true
 cover_image: /img/test.png
 issueUri: https://github.com/photogabble/website/issues/208
 growthStage: evergreen
