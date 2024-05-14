@@ -9,7 +9,7 @@ const fetchUrl = async (url, timeout = 8000) => {
 	const id = setTimeout(() => controller.abort(), timeout);
 	try {
 		console.warn(
-			chalk.blue("[@photogabble/bookwyrm]"),
+			chalk.blue("[@davidpham5/bookwyrm]"),
 			chalk.green("[OK]"),
 			`Fetching: ${url}`
 		);
@@ -18,7 +18,7 @@ const fetchUrl = async (url, timeout = 8000) => {
 		return response;
 	} catch (e) {
 		console.warn(
-			chalk.blue("[@photogabble/bookwyrm]"),
+			chalk.blue("[@davidpham5/bookwyrm]"),
 			chalk.yellow("WARNING"),
 			"Upstream has gone away, unable to fetch bookwyrm outbox before timeout"
 		);
@@ -30,7 +30,7 @@ const fetchUrl = async (url, timeout = 8000) => {
 module.exports = async function () {
 	if (hasTimedOut) {
 		console.log(
-			chalk.blue("[@photogabble/bookwyrm]"),
+			chalk.blue("[@davidpham5/bookwyrm]"),
 			chalk.yellow("WARNING"),
 			"Not re-fetching upstream feed. Restart process to try again"
 		);
@@ -42,13 +42,13 @@ module.exports = async function () {
 
 	if (cache.has("books")) {
 		console.log(
-			chalk.blue("[@photogabble/bookwyrm]"),
+			chalk.blue("[@davidpham5/bookwyrm]"),
 			`Found Cached bookwyrm feed for [${username}]…`
 		);
 		return cache.get("books");
 	} else {
 		console.log(
-			chalk.blue("[@photogabble/bookwyrm]"),
+			chalk.blue("[@davidpham5/bookwyrm]"),
 			`Fetching bookwyrm feed for [${username}]...`
 		);
 	}
@@ -62,7 +62,7 @@ module.exports = async function () {
 
 		while (nextPage) {
 			console.log(
-				chalk.blue("[@photogabble/bookwyrm]"),
+				chalk.blue("[@davidpham5/bookwyrm]"),
 				`Fetching bookwyrm shelf [${shelf}/${nextPage}]`
 			);
 			let url = `https://${buildData.bookwyrm.instance}/user/${username}/shelf/${shelf}.json?page=${nextPage}`;
@@ -71,7 +71,7 @@ module.exports = async function () {
 			for (const item of data.orderedItems) {
 				if (!item.openlibraryKey) {
 					console.warn(
-						chalk.blue("[@photogabble/bookwyrm]"),
+						chalk.blue("[@davidpham5/bookwyrm]"),
 						chalk.yellow("WARNING"),
 						`Book ${item.title} <${item.id}> has no open library key set, skipping.`
 					);
