@@ -3,7 +3,7 @@ title: "Branching off from Aram and PhotoGabble"
 tags: [Blogging]
 growthStage: seedling
 ---
-I really liked my friend, and colleague, Aram Zucker-Shraff was doing with his site, [aramzs.xyz](https://aramzs.xyz/). I wanted to do something like it for a long while, but I didn't want to build from the ground up. I've forked it, and been working on the site. I'm adding some of my own features and types for the type of writing and content I want to create.
+I really liked my friend, and colleague, Aram Zucker-Shraff was doing with his site, [aramzs.xyz](https://aramzs.xyz/). I wanted to do something like it for a long while, but every time I sat down to build the darn thing, it was just too much -- also kids, work, and making bread took a lot my time. So I've forked it, shamelessly. A little of bit of me feels like I'm stealing. However, I remind myself that the main means of learning starts with copying those who you admire. So fuck it.
 
 Original post by Aram:
 > This post marks the point at which I'm branching off from the great work done over at [PhotoGabble](https://photogabble.co.uk/). I've been working on the site for a bit and adding some of my own features and types for the type of writing and content I want to create.

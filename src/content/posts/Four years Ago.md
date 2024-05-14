@@ -2,7 +2,7 @@
 title: Four years ago
 date: 2024-03-14
 author: David Pham
-draft: true
+draft: false
 growthStage: evergreen
 tags:
   - post
