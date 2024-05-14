@@ -13,30 +13,33 @@ A somewhat complete list of tools, applications, hardware and services that I us
 * Apple 14" 2023 MacBook Pro M2 Pro
   * **Processor**: M2 Pro
   * **Memory**: 32GB Unified Memory
-* iPhone 15 pro+
-* iPad Air
-* Steam Deck
-* Nintendo Switch
-* Analogue Pocket
-* Gameboy Advance Modded with IPS screen, new shell, and new buttons
+* iPhone 15 pro
+* iPod 5th Gen, 128GB modded with new battery and flash storage
+* iPad Air with Magic Keyboard
 * Kobo Clara Color
 * Custom built desktop
   * **Processor** Ryzen 5 5600x
   * **Memory**: 32GB DDR4
-  * **Storage**: 2TB NVMe SSD, 5 SSD
+  * **Storage**: 2 1TB NVMe SSDs, 5 1TB SSDs
   * **GPU**: Nvidia 3070
-
 
 ## Software
 
-* Arc/Chrome/Firefox/Safari
-* Obsidian.md
+* Arc
+* Obsidian
 * VSCode
+* iTerm2
+* Overcast
+* Spotify
 
 ### Windows Specific
 
 * Window 11
 * Destiny 2 est 2014
+* Steam
+* MakeMKV
+* Handbrake
+* Plex
 
 ### OSX Specific
 
@@ -53,14 +56,14 @@ A somewhat complete list of tools, applications, hardware and services that I us
 
 For personal projects and self-hosting I use:
 
-* Digital Oceant
+* Digital Ocean
 * GitHub Pages
 * Netlify
 
-For work, and sometimes play, in addition to the above (excluding the hosting providers) I use:
-* AWS
-  * API Gateway
-  * Lambda
-  * S3
+## Gaming
+* Steam Deck
+* Nintendo Switch
+* Analogue Pocket
+* Gameboy Advance Modded with IPS screen, new shell, and new buttons
 
 
