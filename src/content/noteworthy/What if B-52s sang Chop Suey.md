@@ -4,7 +4,6 @@ date: 2024-05-13
 author: David Pham
 draft: false
 tags:
-  - post
   - B-52s
   - B-69s
   - Chop Suey
