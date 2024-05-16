@@ -37,7 +37,7 @@ function setTheme(themeName) {
 
 // Set theme before page renders
 (function () {
-	setTheme(localStorage.getItem("theme") || "dark");
+	setTheme(localStorage.getItem("theme") || "ftl");
 })();
 
 // When document ready add event listeners

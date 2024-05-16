@@ -8,6 +8,7 @@ module.exports = {
 	url: "https://davidchicopham.com",
 	feedUrl: "https://davidchicopham.com/writing/feed.xml",
 	author: {
-		name: "David Pham"
+		name: "David Pham",
+    shortname: "dpham5"
 	},
 };
