@@ -66,12 +66,11 @@ module.exports = function (eleventyConfig) {
 		require("@photogabble/eleventy-plugin-font-subsetting"),
 		{
 			srcFiles: [
-				`./public/fonts/FiraCode-Regular.woff2`,
-				`./public/fonts/FiraCode-Bold.woff2`,
-        `./public/fonts/FiraCode-SemiBold.woff2`,
-        `./public/fonts/FiraCode-Light.woff2`,
-				`.public/fonts/FiraCode-Medium.woff2`,
-        `./public/fonts/FiraCode-VF.woff2`
+				`./public/fonts/caneladeck-bold-webfont.woff2`,
+				`./public/fonts/caneladeck-bolditalic-webfont.woff2`,
+        `./public/fonts/caneladeck-thin-webfont.woff2`,
+        `./public/fonts/caneladeck-regularitalic-webfont.woff2`,
+        `./public/fonts/caneladeck-regular-trial-webfont.woff2`,
 			],
 			dist: "./src/fonts",
 			enabled: process.env.ELEVENTY_ENV !== "production",

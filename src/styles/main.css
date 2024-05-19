@@ -21,22 +21,22 @@
 @import "components/_stats.css";
 
 * {
-    box-sizing: border-box;
+      box-sizing: border-box;
 }
 
-.container {
-    max-width: 1440px;
-    width: 75%;
-    margin-left: 12.5%;
+.container   {
+    max-width: 1440  px;
+    width:   75%;
+    margin-left:   12.5%;
     margin-right: 12.5%;
-}
+  }
 
 body {
-    font-family: "Fira-Code", monospace;
+    font-family: "canela_deck_regular", "Helvetica", serif;
     background-color: var(--background);
     color: var(--foreground);
-
-    font-size: 1rem;
+    font-weight: 800;
+    font-size: 1.2rem;
     line-height: 1.54;
     letter-spacing: -0.02em;
     text-rendering: optimizeLegibility;
@@ -49,7 +49,17 @@ body {
     flex-direction: column;
     transition: background-color 300ms, color 200ms;
 }
+strong {
+  font-family: 'canela_deck_trialbold', sans-serif;
+}
 
+em, i {
+  font-family: 'canela_deck_trialbold_italic', sans-serif;
+}
+
+.thin {
+  font-family: 'canela_deck_trialthin', sans-serif;
+}
 details summary {
     cursor: pointer;
 }
@@ -117,9 +127,9 @@ a[href]:not(:where(
   /* exclude relative but not double slash only links */
   [href^="/"]:not([href^="//"]),
   /* domains to exclude */
-  [href*="//photogabble.co.uk"],
+  [href*="//davidchicopham.com"],
   /* subdomains to exclude */
-  [href*="//www.photogabble.co.uk"]
+  [href*="//www.davidchicopham.com"]
 )):not(.no-ext):after {
     content: "↗️";
     margin-left: 0.25rem;

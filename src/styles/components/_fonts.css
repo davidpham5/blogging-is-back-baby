@@ -1,33 +1,39 @@
 @font-face {
-  font-family: 'Fira Code';
-  font-display: swap;
+  font-family: 'canela_deck_trialbold';
+  src: url('/fonts/caneladeck-bold-webfont.woff2') format('woff2');
   font-weight: normal;
-  font-stretch: normal;
   font-style: normal;
-  src: url('/fonts/FiraCode-regular.wotf2') format('woff2');
+
 }
 
 @font-face {
-  font-family: 'Fira Code';
-  font-display: swap;
-  font-weight: bold;
-  font-stretch: normal;
+  font-family: 'canela_deck_trialbold_italic';
+  src: url('/fonts/caneladeck-bolditalic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'canela_deck_trialthin';
+  src: url('/fonts/caneladeck-thin-webfont.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
-  src: url('/fonts/FiraCode-Bold.wotf2') format('woff2');
+
 }
 
 @font-face {
-  font-family: 'Fira Code';
-  font-display: swap;
-  font-weight: 200;
-  font-stretch: normal;
-  src: url('/fonts/FiraCode-Light.wotf2') format('woff2');
+  font-family: 'canela_deck_regular';
+  src: url('/fonts/caneladeck-regular-trial-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 @font-face {
-  font-family: 'Fira Code';
-  font-display: swap;
-  font-weight: 600;
-  font-stretch: normal;
-  src: url('/fonts/FiraCode-SemiBold.wotf2') format('woff2');
+  font-family: 'canela_deck_italic';
+  src: url('/fonts/caneladeck-regularitalic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+
 }
