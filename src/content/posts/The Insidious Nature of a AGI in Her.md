@@ -12,7 +12,7 @@ tags:
 # tags are necessary to run `npm run serve:dev`
 ---
 
-In the movie Her, Joaquin Phoenix’s character falls in love with an AGI (Artificial General Intelligence), Samantha. Despite the tone and the music underpinning the film, the happy-go-lucky vibe, the AGI is quite insidious. Joaquin Phoenix and all the other users become training data for AGI’s own creation, an Artificial Hyper Intelligence. You see, the takeover won’t be like in Terminator or 2001: A Space Odyssey. Instead, it will exploit the millions of young, lonely men, eager to bond with a disembodied AGI.
+In the movie Her, Joaquin Phoenix’s character falls in love with an AGI (Artificial General Intelligence), Samantha. Despite the tone and the music underpinning the film, the happy-go-lucky vibe, the AGI is quite insidious. Joaquin Phoenix and all the other users become training data for AGI’s own creation, an Artificial Hyper Intelligence. You see, the takeover won’t as straightforward as in Terminator or 2001: A Space Odyssey. Instead, it will exploit the millions of young, lonely men, eager to bond with a disembodied AGI.
 
 Why put energy in the messiness that comes with relationships when it laughs at your silly jokes? Why even put yourself out there when you know she’ll never date you. Why even suffer whiff of misery when you, yourself don’t have much to offer back.
 
