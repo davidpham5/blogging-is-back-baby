@@ -598,4 +598,8 @@ article#page-post header h1 {
         grid-column: 1;
         grid-row: auto;
     }
+
+    article#page-post header h1 {
+      font-size: 3.5rem;
+  }
 }
