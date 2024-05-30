@@ -1,0 +1,20 @@
+---
+folder: lists
+---
+
+{% extends "layouts/page.njk" %}
+
+{% set title = 'Sourdough' %}
+{% set titlePrefix = 'Bulk Fermenetation' %}
+{% set folder = 'lists' %}
+{% set subTitle = 'Baker ratio' %}
+
+{% block pageContent %}
+    <section>
+        <ul>
+            {%- for link in links | reverse -%}
+                <li><a href="{{ link.href }}">{{ link.title }}</a></li>
+            {%- endfor -%}
+        </ul>
+    </section>
+{% endblock %}
