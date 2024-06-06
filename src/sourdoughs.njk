@@ -14,7 +14,7 @@ permalink: sourdoughs/
   <section>
     <ul>
       {%- for link in collections.sourdoughs -%}
-        <li><a href="{{ link.url }}" title="Read {{ link.title }}">{{ link.title }}</a></li>
+        <li><a href="{{ link.url }}" title="Read {{ link.data.title }}">{{  link.data.title  }}</a></li>
       {%- endfor -%}
     </ul>
   </section>
