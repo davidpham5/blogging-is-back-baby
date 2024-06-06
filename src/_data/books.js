@@ -86,6 +86,7 @@ module.exports = async function () {
 			})
 			.then((items) =>
 				items.map(async (item) => {
+          console.log({item});
 					const book = await fetch(item.inReplyToBook + ".json")
 						.then((res) => res.json())
 						.then((edition) => {
