@@ -67,7 +67,7 @@ module.exports = async function () {
 			);
 			let url = `https://${buildData.bookwyrm.instance}/user/${username}/shelf/${shelf}.json?page=${nextPage}`;
 			const data = await fetchUrl(url).then((res) => res.json());
-
+      console.log({data});
 			for (const item of data.orderedItems) {
 				if (!item.openlibraryKey) {
 					console.warn(

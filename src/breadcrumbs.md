@@ -28,6 +28,7 @@ Below is a non-exhaustive list of all the breadcrumb hierarchy that I have stuff
 ~/writing/types/essays
 ~/writing/types/tutorials
 ~/writing/types/projects
+~/sourdoughs -> ~/collections/sourdoughs
 ~/resources/mirrored
 ~/writing/types/colophon
 ~/collections

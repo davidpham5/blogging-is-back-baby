@@ -6,7 +6,7 @@ const buildData = require("./build");
 // I don't think this one actually does anything.
 
 const username = buildData.bookwyrm.username;
-console.log({username});
+// console.log({username});
 let hasTimedOut = false;
 const fetchUrl = async (url, timeout = 8000) => {
 	const controller = new AbortController();
@@ -76,7 +76,7 @@ module.exports = async function () {
 			.then((json) => {
 				if (
 					json.type === "OrderedCollectionPage" &&
-					json.orderedItems.length > 0
+					json.orderedItems.length >= 1
 				) {
 					return json.orderedItems.filter(
 						(item) => item.type === "Article"
@@ -86,7 +86,7 @@ module.exports = async function () {
 			})
 			.then((items) =>
 				items.map(async (item) => {
-          console.log({item});
+          // console.log({item});
 					const book = await fetch(item.inReplyToBook + ".json")
 						.then((res) => res.json())
 						.then((edition) => {
