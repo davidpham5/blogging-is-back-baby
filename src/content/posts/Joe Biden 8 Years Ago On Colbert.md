@@ -1,4 +1,3 @@
-
 ---
 title: Vice President Biden 8 Years Ago On Colbert
 date: 2024-07-07
