@@ -20,7 +20,7 @@ Aram Zucker-Scharff wrote a [great piece](https://www.schizochronotopia.com/p/a-
 John Gruber of Daring Fireball presents a thought experiment on the role Chrome if it were to be spun off:
 >I mean, let’s say Google was forced to spin Chrome off. How would Chrome Inc. make money? Clearly, they’d make money through TAC fee payments from Google search. Also, if they split off Chrome they’d almost have to split off Android. If Google is disallowed from making its own web browser how in the world can they make an OS?
 
-I personally wouldn't mind if it dead. Chrome in respects to privacy is [messy](https://www.techradar.com/computing/browsers/is-google-chrome-violating-your-privacy-scary-new-notification-spooks-users-heres-what-you-can-do) at best and a nightmare at worst. It has a bunch of defaults in preferences/settings that like Facebook/Instagram, are designed to be confusing to the user. In my view, its another example of the ravenous nature of an information thief.
+I personally wouldn't mind if it died. Chrome in respects to privacy is [messy](https://www.techradar.com/computing/browsers/is-google-chrome-violating-your-privacy-scary-new-notification-spooks-users-heres-what-you-can-do) at best and a nightmare at worst. It has a bunch of defaults in preferences/settings that like Facebook/Instagram, are designed to be confusing to the user. In my view, its another example of the ravenous nature of an information thief.
 
 ## Eric Schmidt Says the Quiet Part Out Loud
 
