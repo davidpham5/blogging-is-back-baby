@@ -14,7 +14,10 @@ draft: false
 
 Ever since reading [The Chaos Machine](https://bookshop.org/a/9695/9780316703321) by Max Fisher, I've been convinced Google is, to borrow Kara Swisher's own description, a "ravenous information thief." The Department of Justice won its antitrust case against Google. The verdict says Google is an illegal monopoly. The case started under Trump's DOJ and, as of August 15, 2024, the case is pending prescription of remedies.
 
-Aram Zucker-Scharff wrote a [great piece](https://www.schizochronotopia.com/p/a-brief-list-of-business-units-google) on what breaking up Google could look like. He writes, "Chrome isn’t a business and AMP is somewhat community run right now. These aren’t really profitable components" Gruber of Daring Fireball presents a thought experiment:
+Aram Zucker-Scharff wrote a [great piece](https://www.schizochronotopia.com/p/a-brief-list-of-business-units-google) on what breaking up Google could look like. He writes:
+>"Chrome isn’t a business and AMP is somewhat community run right now. These aren’t really profitable components."
+
+John Gruber of Daring Fireball presents a thought experiment on the role Chrome if it were to be spun off:
 >I mean, let’s say Google was forced to spin Chrome off. How would Chrome Inc. make money? Clearly, they’d make money through TAC fee payments from Google search. Also, if they split off Chrome they’d almost have to split off Android. If Google is disallowed from making its own web browser how in the world can they make an OS?
 
 I personally wouldn't mind if it dead. Chrome in respects to privacy is [messy](https://www.techradar.com/computing/browsers/is-google-chrome-violating-your-privacy-scary-new-notification-spooks-users-heres-what-you-can-do) at best and a nightmare at worst. It has a bunch of defaults in preferences/settings that like Facebook/Instagram, are designed to be confusing to the user. In my view, its another example of the ravenous nature of an information thief.
