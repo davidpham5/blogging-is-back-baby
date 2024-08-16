@@ -23,4 +23,6 @@ Eric Schmidt, the former CEO of Google, in a [recent talk](https://www.theverge.
 >
 > And do not quote me.
 
-This fucking guy. A version of the innovator's dilemma, monopolies, especially the illegal kinds, are lazy and undisciplined in responding to their users' experience. With no real competition, Google got real unfocused. Until OpenAI showed up, it went into panic mode and piled on some AI dust on top of their shitty search. They blame "working from home" for their stagnation. A breakup of the whole company may at least produce the possibility of real innovations, competition, and not a shitty search.
+This fucking guy. A version of the innovator's dilemma, monopolies, especially the illegal kinds, are lazy and undisciplined in responding to their users' experience. With no real competition, Google got real unfocused. Until OpenAI showed up, it went into panic mode and piled on some AI dust on top of their shitty search. They blame "working from home" for their stagnation.
+
+[The US is considering breaking up the whole company](https://www.nytimes.com/2024/08/13/technology/google-monopoly-antitrust-justice-department.html). Maybe at least we can get a better search out of it.
