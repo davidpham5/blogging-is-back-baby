@@ -14,7 +14,7 @@ draft: false
 
 Ever since reading [The Chaos Machine](https://bookshop.org/a/9695/9780316703321) by Max Fisher, I've been convinced Google is, to borrow Kara Swisher's own description, a "ravenous information thief." The Department of Justice won its antitrust case against Google. The verdict says Google is an illegal monopoly. The case started under Trump's DOJ and, as of August 15, 2024, the case is pending prescription of remedies.
 
-Aram Zucker-Scharff wrote a [great piece](https://www.schizochronotopia.com/p/a-brief-list-of-business-units-google) on what breaking up Google could look like. He writes:
+Aram Zucker-Scharff wrote a [great piece](https://www.schizochronotopia.com/p/a-brief-list-of-business-units-google) on what breaking up Google could look like. Chrome, Google's web browser, came to mind as to what do with it in the event of a break up. Aram writes:
 >"Chrome isn’t a business and AMP is somewhat community run right now. These aren’t really profitable components."
 
 John Gruber of Daring Fireball presents a thought experiment on the role Chrome if it were to be spun off:
