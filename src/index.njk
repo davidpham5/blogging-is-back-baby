@@ -4,21 +4,20 @@
 {% set mainClass = 'content-grid' %}
 
 {% block content %}
-  <h1><span class="selected">Oh hey</span>, I'm David Chico Pham.</h1>
-
+  <header><h1 class="special header"><b class="strong">David Chico Pham </b>writes on technology, sourdough, and current events.</h1><h2 style="opacity: 1; transform: none; max-width: 780px;">Fantastic home cook, not bad student of history, and slightly above average engineer.</div></b></h2></header>
   <section class="paragraph">
     <p>
-		    I am a Senior Privacy Engineer at The Washington Post. I'm a self-taught web dev with an a background in history and sociology. While I didn't know it at the time, my studies gave a gift in storytelling. I've tended to gravitated towards individuals who are a bit contrarian, who are a little rebellious, and who are a little of an outsider. I usually admire their ability to think differently and innovate in ways that are not so obivious. I've been fortunate to work with some of the most talented and creative folks in media and technology.
+		    I am a Senior Privacy Engineer at The Washington Post. My path into web development is somewhat unusual -- I'm a self-taught web dev with an a background in history and sociology. I didn't realize it back then, but my studies actually gave me all the right tools I needed for writing and storytelling. As an engineer, I've been fortunate to work with some of the most talented and creative folks in media and technology.
 	  </p>
     <p>
-        As a first-generation American, a midwestern, working class, mixed race Buddhist, I did not fit in growing up. Community, to me was a strange abstract that I didn't quite get. Maybe it was because I was such an outsider that I didn't understand what it meant. I've discovered that commnunity is really how we relate to one another.
-    </p>
+        Coming from a rare background as a first-generation Mexican-Vietnamese American, Buddhist from the Midwest, and growing up in a working-class family, I often felt like an outsider. The concept of "community" seemed abstract and elusive to me. It was something I didn't quite get. I had a hard time grasping its true meaning. However, over time, I've come to understand that "community" is fundamentally about our relationships with one another. This personal site is an entry to the community of indie web creators and thinkers.
     {# <p>In my spare time I work on <a href="/sourdoughs/">making sourdoughs bread</a>, I <a href="/tinker/">tinker</a> with old ipods, and I play a lot <a href='https://steamcommunity.com/profiles/76561198116240122/'>Destiny 2</a> -- Warlock main. You can find me on <a href="/elsewhere/">various online platforms &amp; communities</a>.</p> #}
   </section>
   <h4>Chico was my nickname in school.</h4>
   <section id="front-content-display">
     <section>
       <h2>Recent Writing</h2>
+      <p class="thin">Loose, vague feelings on things I don't entirely understand yet.</p>
       {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(6) %}
       {% include "components/post-list.njk" %}
       <p>

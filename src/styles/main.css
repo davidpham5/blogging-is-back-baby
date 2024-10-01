@@ -49,7 +49,7 @@ body {
     flex-direction: column;
     transition: background-color 300ms, color 200ms;
 }
-strong {
+strong, .strong {
   font-family: 'canela_deck_trialbold', sans-serif;
 }
 
@@ -162,7 +162,11 @@ main {
     flex-grow: 1;
     margin-bottom: 2em;
 }
-
+.special.header {
+    margin: 0 auto;
+    line-height: 89.98px;
+    font-weight: 400;
+}
 article > header {
     padding: 2em 0 1em 0;
 }
@@ -172,7 +176,9 @@ article > header h1 {
 }
 
 article > header h1,
-article > header h2 {
+article > header h2,
+#front-content-display > section:nth-child(1) > h2,
+#front-content-display > section:nth-child(1) > p {
     margin: 0;
 }
 
@@ -206,7 +212,7 @@ article.note img:not(.btn-88x31) {
     height: auto;
 }
 
-article.note > header h1 {
+article.note > header h1, .special {
     font-size: 5.5rem;
 }
 
