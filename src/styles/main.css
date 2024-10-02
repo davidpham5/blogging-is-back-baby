@@ -607,5 +607,10 @@ article#page-post header h1 {
 
     article#page-post header h1 {
       font-size: 3.5rem;
-  }
+    }
+
+    .special.header {
+        font-size: 3rem;
+        line-height: 1.4;
+    }
 }
