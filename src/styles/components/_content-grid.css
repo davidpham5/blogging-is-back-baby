@@ -63,7 +63,9 @@ article.content-grid p,
 article.content-grid ul {
     grid-column: paragraph;
 }
-
+article.content-grid ul.books {
+    grid-column: content;
+}
 /*
  * List of article elements that must be breakout width
  */

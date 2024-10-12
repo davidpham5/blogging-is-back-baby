@@ -3,11 +3,14 @@ folder: lists
 ---
 {% extends "layouts/page.njk" %}
 
-{% set title = 'Bookshelf' %}
+{% set title = 'Library' %}
 {% set titlePrefix = 'Reading' %}
 {% set readBooks = bookwyrm | whereKeyEquals('shelf', 'read') %}
 {% set readingBooks = bookwyrm | whereKeyEquals('shelf', 'reading') %}
 {% set reviews = collections.resources | whereKeyEquals('resourceType', 'books') %}
+{% set subTitle %}
+  Books I’ve read that significantly influenced how I see the world.
+{% endset %}
 {% set subTitle1 %}
     📖 Books I've started and probably won't finish:
 {% endset %}

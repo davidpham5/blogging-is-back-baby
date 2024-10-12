@@ -19,7 +19,96 @@
 @import "components/_changes.css";
 @import "components/_jumbo.css";
 @import "components/_stats.css";
-
+:root {
+    --space-4: 0.25rem;
+    --space-8: 0.5rem;
+    --space-12: 0.75rem;
+    --space-16: 1rem;
+    --space-24: 1.5rem;
+    --space-32: 2rem;
+    --space-48: 3rem;
+    --space-64: 4rem;
+    --space-80: 5rem;
+    --space-96: 6rem;
+    --space-128: 8rem;
+    --space-160: 10rem;
+    --color-light-cream: #FCFBF7;
+    --color-cream: #F6F5F1;
+    --color-tinted-cream: #E6E3E1;
+    --color-black: #353534;
+    --color-gray-800: #4A4A46;
+    --color-gray-600: #73706D;
+    --color-gray-500: #8E8F94;
+    --color-gray-400: #AFB0B6;
+    --color-gray-300: #D3D3D1;
+    --color-gray-100: #E9E9E7;
+    --color-bright-crimson: #960462;
+    --color-crimson: #5F023E;
+    --color-sea-blue: #04A5BB;
+    --color-medium-sea-blue: #008BA3;
+    --color-dark-sea-blue: #00758F;
+    --color-purple: #7558B2;
+    --color-salmon: #FD8370;
+    --color-light-salmon: #FFD09C;
+    --font-serif: 'Canela Deck', serif;
+    --font-body: 'Canela Text', serif;
+    --font-sans: 'Lato', sans-serif;
+    --leading-tighter: 110%;
+    --leading-tight: 120%;
+    --leading-snug: 130%;
+    --leading-base: 140%;
+    --leading-loose: 170%;
+    --leading-looser: 200%;
+    --border-radius-sm: 0.2rem;
+    --border-radius-base: 0.4rem;
+    --border-radius-lg: 0.6rem;
+    --box-shadow-sm: 0.2px 0.2px 0.8px -10px rgba(40, 10, 0, 0.014), 0.4px 0.4px 2px -10px rgba(40, 10, 0, 0.02), 0.8px 0.8px 3.8px -10px rgba(40, 10, 0, 0.025), 1.3px 1.3px 6.7px -10px rgba(40, 10, 0, 0.03), 2.5px 2.5px 12.5px -10px rgba(40, 10, 0, 0.036), 6px 6px 30px -10px rgba(40, 10, 0, 0.05);
+    --box-shadow-md: 1px 0.9px 2.3px -3px rgba(30, 10, 10, 0.04), 2.4px 2.2px 5.5px -3px rgba(30, 10, 10, 0.05), 4.5px 4.1px 10.4px -3px rgba(30, 10, 10, 0.06), 8px 7.4px 18.5px -3px rgba(30, 10, 10, 0.07), 15px 13.8px 34.7px -3px rgba(30, 10, 10, 0.08), 36px 33px 83px -3px rgba(30, 10, 10, 0.2);
+    --box-shadow-lg: 0.2px 0.4px 0.8px -10px rgba(0, 0, 0, 0.03), 0.4px 0.9px 2px -10px rgba(0, 0, 0, 0.030), 0.8px 1.8px 3.8px -10px rgba(0, 0, 0, 0.038), 1.3px 3.1px 6.7px -10px rgba(0, 0, 0, 0.045), 2.5px 5.8px 12.5px -10px rgba(0, 0, 0, 0.06), 6px 14px 30px -10px rgba(0, 0, 0, 0.08);
+    --fc-3xs-min: (var(--fc-s-min)* 0.25);
+    --fc-3xs-max: (var(--fc-s-max)* 0.25);
+    --fc-2xs-min: (var(--fc-s-min)* 0.5);
+    --fc-2xs-max: (var(--fc-s-max)* 0.5);
+    --fc-xs-min: (var(--fc-s-min)* 0.75);
+    --fc-xs-max: (var(--fc-s-max)* 0.75);
+    --fc-s-min: (var(--f-0-min, 20));
+    --fc-s-max: (var(--f-0-max, 22));
+    --fc-m-min: (var(--fc-s-min)* 1.5);
+    --fc-m-max: (var(--fc-s-max)* 1.5);
+    --fc-l-min: (var(--fc-s-min)* 2);
+    --fc-l-max: (var(--fc-s-max)* 2);
+    --fc-xl-min: (var(--fc-s-min)* 3);
+    --fc-xl-max: (var(--fc-s-max)* 3);
+    --fc-2xl-min: (var(--fc-s-min)* 4);
+    --fc-2xl-max: (var(--fc-s-max)* 4);
+    --fc-3xl-min: (var(--fc-s-min)* 6);
+    --fc-3xl-max: (var(--fc-s-max)* 6);
+    --fc-4xl-min: (var(--fc-s-min)* 8);
+    --fc-4xl-max: (var(--fc-s-max)* 8);
+    --space-3xs: calc(((var(--fc-3xs-min) / 16)* 1rem) +(var(--fc-3xs-max) - var(--fc-3xs-min))* var(--fluid-bp));
+    --space-2xs: calc(((var(--fc-2xs-min) / 16)* 1rem) +(var(--fc-2xs-max) - var(--fc-2xs-min))* var(--fluid-bp));
+    --space-xs: calc(((var(--fc-xs-min) / 16)* 1rem) +(var(--fc-xs-max) - var(--fc-xs-min))* var(--fluid-bp));
+    --space-s: calc(((var(--fc-s-min) / 16)* 1rem) +(var(--fc-s-max) - var(--fc-s-min))* var(--fluid-bp));
+    --space-m: calc(((var(--fc-m-min) / 16)* 1rem) +(var(--fc-m-max) - var(--fc-m-min))* var(--fluid-bp));
+    --space-l: calc(((var(--fc-l-min) / 16)* 1rem) +(var(--fc-l-max) - var(--fc-l-min))* var(--fluid-bp));
+    --space-xl: calc(((var(--fc-xl-min) / 16)* 1rem) +(var(--fc-xl-max) - var(--fc-xl-min))* var(--fluid-bp));
+    --space-2xl: calc(((var(--fc-2xl-min) / 16)* 1rem) +(var(--fc-2xl-max) - var(--fc-2xl-min))* var(--fluid-bp));
+    --space-3xl: calc(((var(--fc-3xl-min) / 16)* 1rem) +(var(--fc-3xl-max) - var(--fc-3xl-min))* var(--fluid-bp));
+    --space-4xl: calc(((var(--fc-4xl-min) / 16)* 1rem) +(var(--fc-4xl-max) - var(--fc-4xl-min))* var(--fluid-bp));
+    --space-3xs-2xs: calc(((var(--fc-3xs-min) / 16)* 1rem) +(var(--fc-2xs-max) - var(--fc-3xs-min))* var(--fluid-bp));
+    --space-2xs-xs: calc(((var(--fc-2xs-min) / 16)* 1rem) +(var(--fc-xs-max) - var(--fc-2xs-min))* var(--fluid-bp));
+    --space-xs-s: calc(((var(--fc-xs-min) / 16)* 1rem) +(var(--fc-s-max) - var(--fc-xs-min))* var(--fluid-bp));
+    --space-s-m: calc(((var(--fc-s-min) / 16)* 1rem) +(var(--fc-m-max) - var(--fc-s-min))* var(--fluid-bp));
+    --space-m-l: calc(((var(--fc-m-min) / 16)* 1rem) +(var(--fc-l-max) - var(--fc-m-min))* var(--fluid-bp));
+    --space-l-xl: calc(((var(--fc-l-min) / 16)* 1rem) +(var(--fc-xl-max) - var(--fc-l-min))* var(--fluid-bp));
+    --space-xl-2xl: calc(((var(--fc-xl-min) / 16)* 1rem) +(var(--fc-2xl-max) - var(--fc-xl-min))* var(--fluid-bp));
+    --space-2xl-3xl: calc(((var(--fc-2xl-min) / 16)* 1rem) +(var(--fc-3xl-max) - var(--fc-2xl-min))* var(--fluid-bp));
+    --space-3xl-4xl: calc(((var(--fc-3xl-min) / 16)* 1rem) +(var(--fc-4xl-max) - var(--fc-3xl-min))* var(--fluid-bp));
+    --fluid-min-width: 320;
+    --fluid-max-width: 1200;
+    --fluid-screen: 100vw;
+    --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16* 1rem) /(var(--fluid-max-width) - var(--fluid-min-width)));
+}
 * {
       box-sizing: border-box;
 }
@@ -589,6 +678,27 @@ article#page-post header h1 {
     font-size: 5rem;
 }
 
+.header-title {
+    font-size: 3.8rem;
+    font-family: var(--font-serif);
+    line-height: var(--leading-tighter);
+    font-family: "canela_deck_trialthin", "Helvetica", serif;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.header-title:hover {
+    color: var(--accent);
+}
+
+.header-subtitle {
+    font-size: 1.8rem;
+    font-family: "canela_deck_trialthin", "Helvetica", serif;
+    color: var(--color-gray-400);
+    font-weight: 100;
+    line-height: 1.1;
+    margin: .0875em 0 .0875em;
+    transition: 0.3s ease-in-out;
+}
 @media (max-width: 864px) {
     .container {
         margin: 0;
