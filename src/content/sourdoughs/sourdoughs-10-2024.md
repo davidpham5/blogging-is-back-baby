@@ -17,6 +17,6 @@ featured: true
 
 
 ### News in Week of 10-14-2024
-With just weeks before the election, Donald Trump has gone full fascist. He's referred to anybody who does not support him as the ["enemy from within"](https://www.youtube.com/watch?v=9DauQjmpqZM). Why is this an example of fascism? Because it's a rhetorical tactic used by tyrants to divide people in such a manner as to solicit tribal retribution. In otherwise, us versus them. And usually, political violence becomes part of their playbook.
+With just weeks before the election, Donald Trump has gone full fascist. He's referred to anybody who does not support him as the ["enemy from within"](https://www.youtube.com/watch?v=9DauQjmpqZM). Why is this an example of fascism? Because it's a rhetorical tactic used by tyrants to divide people in such a manner as to solicit tribal retribution. In other words, us versus them. And usually, political violence becomes part of their play book.
 
-Also, the race is a tossup.
+And yet the race is still a toss up.
