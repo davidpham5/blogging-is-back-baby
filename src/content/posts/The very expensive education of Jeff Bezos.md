@@ -45,7 +45,7 @@ Also, [Jennifer Valentino Devries at NYT](https://www.threads.net/@jenvalentino_
  >
  >His explanation sounds almost absurd, and yet it reminds me of so many other opinions I've heard.
 
-Name it as education of Mr. Bezos and other billionaires, but the staff of the Post, LA Times, and USA Today, it's on their dollar. What is the extent of appeasing to a second Trump presidency before even the election? I don't know, but it may cost us more than just a paper's subscribers.
+Name it as education of Mr. Bezos and other billionaires, but the staff of the Post, LA Times, and USA Today, it's on the staff's dollar. What is the extent of appeasing to a second Trump presidency before even the election? I don't know, but it may cost us more than just a paper's subscribers.
 
 
 
