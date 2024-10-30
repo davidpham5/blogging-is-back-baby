@@ -16,3 +16,5 @@ big-buildlog.txt
 gh-pages
 gh-pages.pub
 testLast.html
+src/content/posts/.obsidian/*
+src/content/posts/Bezo's education.md
