@@ -13,6 +13,11 @@ draft: false
 ---
 # "They're so poor, all they have is money" - Kara Swasher
 
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+<a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/davidchicopham/54110938349/in/datetaken/" title="7FDA0B82-FF7B-4834-8766-31C1E4E9695E_1_105_c"><img src="https://live.staticflickr.com/65535/54110938349_3c4acc8d39_b.jpg" width="1024" height="768" alt="7FDA0B82-FF7B-4834-8766-31C1E4E9695E_1_105_c"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></div></style>
+<caption><small>Jeff Bezos at the Washington Post, ribbon cutting event in 2018. Expansion of 6th floor engineering and product.</small></caption>
+
+
 Jeff Bezos, owner of the Washington Post, wrote an opinion editorial in his own paper:
 
 > Let me give an analogy. Voting machines must meet two requirements. They must count the vote accurately, and people must _believe_ they count the vote accurately. The second requirement is distinct from and just as important as the first. Likewise with newspapers. We must be accurate, and we must be believed to be accurate. It’s a bitter pill to swallow, but we are failing on the second requirement. [...]
@@ -33,7 +38,7 @@ In my view, Mr. Bezos intervene in a such a cowardly and obnoxious way, that his
 
 > Readers have been sold on the idea that the paper stands up to the powerful, without fear or favor. If that isn't true anymore, and readers lose confidence that the paper does stand for a noble mission, they will cancel their subscriptions.
 
-Since the beginning of the year, like many media businesses, the _Post_ has made a big push to add more subscribers. That revenue funds reporters, engineers, designers, product, finance, and legal staff. It pays for the kind of investigative journalism that wins Pulitzer Prizes, like the _Post_’s [coverage of the January 6th Insurrection](https://www.washingtonpost.com/media/2022/05/09/washington-post-wins-pulitzer-prize-jan-6-coverage/).  Most of the staff at the _Post_ must feel deflated after swimming upstream for so long, only to be blindsided by a reckless, bozo decision that tossed aside their hard work and commitment to the institution. 
+Since the beginning of the year, like many media businesses, the _Post_ has made a big push to add more subscribers. That revenue funds reporters, engineers, designers, product, finance, and legal staff. It pays for the kind of investigative journalism that wins Pulitzer Prizes, like the _Post_’s [coverage of the January 6th Insurrection](https://www.washingtonpost.com/media/2022/05/09/washington-post-wins-pulitzer-prize-jan-6-coverage/).  Most of the staff at the _Post_ must feel deflated after swimming upstream for so long, only to be blindsided by a reckless, bozo decision that tossed aside their hard work and commitment to the institution.
 
 Moreover, [Dr. Drang](https://fosstodon.org/@drdrang/113387991801308851) following Mr. Bezos's reasoning by his analogy, it does not occur to Mr. Bezos his intervention is what in politics is called, "bad optics".
 
@@ -41,7 +46,7 @@ Moreover, [Dr. Drang](https://fosstodon.org/@drdrang/113387991801308851) followi
 
 It so happens that on the day Mr. Bezos and Will Lewis blocked the endorsement, [Trump visited the CEO of Blue Origin (Bezos’s space company, which has juicy sweet government contracts to launch satellites)]((https://www.thedailybeast.com/is-this-the-reason-jeff-bezos-owned-washington-post-didnt-endorse-kamala-harris-blue-origin-donald-trump/)). I'm told it's not what it looks like!
 
-Come on. Mr. Bezos's own analogy shows how disastrous a decision to block a drafted endorsement less than two weeks away from the election. Did Mr. Bezos [obey in advance](https://snyder.substack.com/p/obeying-in-advance) like in Timothy Snyder's On Tyranny? It stands to reason that indeed, Mr. Bezos lost his spine somewhere between off the coast of Miami, where his custom yacht is too big to port, and his  [Vogue photoshoot at Yellowstone](https://slate.com/human-interest/2023/11/jeff-bezos-and-lauren-sanchez-vogue-photoshoot.html), where he cosplayed with his girlfriend, um Yellowstone.  What is the point of amassing all the wealth and power if you can't stand up for your own newspaper. 
+Come on. Mr. Bezos's own analogy shows how disastrous a decision to block a drafted endorsement less than two weeks away from the election. Did Mr. Bezos [obey in advance](https://snyder.substack.com/p/obeying-in-advance) like in Timothy Snyder's On Tyranny? It stands to reason that indeed, Mr. Bezos lost his spine somewhere between off the coast of Miami, where his custom yacht is too big to port, and his  [Vogue photoshoot at Yellowstone](https://slate.com/human-interest/2023/11/jeff-bezos-and-lauren-sanchez-vogue-photoshoot.html), where he cosplayed with his girlfriend, um Yellowstone.  What is the point of amassing all the wealth and power if you can't stand up for your own newspaper.
 
 What does it say when one of the richest and most powerful person on earth, is so scared of a second-term Trump presidency, that he can't count on the rule of law such that his businesses might come under intense scrutiny, even broken up, or taken away? If even Bezos isn’t confident his business would remain secure, what message does that send to the broader business community?
 
