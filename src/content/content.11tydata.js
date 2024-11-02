@@ -16,6 +16,10 @@ module.exports = {
       const title = data.title || "default-title"; // Provide a default title if data.title is undefined
       return `/posts/${slugify(String(title))}/`; // Ensure the title is a string
     },
-    ogImageHref: (data) => ogImageFromSlug(slugify(data.title)),
+    // ogImageHref: (data) => ogImageFromSlug(slugify(data.title)),
+    ogImageHref: (data) => {
+      const title = data.title || "default-title"; // Provide a default title if data.title is undefined
+      return `/img/og-images/${slugify(String(title))}.png`; // Ensure the title is a string
+    },
   }
 };
