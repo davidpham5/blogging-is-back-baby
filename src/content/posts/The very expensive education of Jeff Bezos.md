@@ -56,7 +56,7 @@ Also, [Jennifer Valentino Devries at NYT](https://www.threads.net/@jenvalentino_
  >
  >His explanation sounds almost absurd, and yet it reminds me of so many other opinions I've heard.
 
-Call it an “education” for Bezos and his billionaire peers, but the ones footing the bill are the staff of the _Post_, _LA Times_, _USA Today_, and other papers across the country. I am very doubtful Mr. Bezos is going to write a check at the end of the year and avoid layoffs. It would suggest that he made a mistake -- something he is not capable in doing. Just how far will the appeasement go in anticipation of a second Trump term, even before the election? I don’t know, but it could cost us more than just a paper’s subscribers.
+Call it an “education” for Bezos and his billionaire peers, but the ones footing the bill are the staff of the _Post_, _LA Times_, and _USA Today_. I am very doubtful Mr. Bezos is going to write a check at the end of the year to avoid Post having to do layoffs, again. It would suggest that he made a mistake -- something he is not capable of doing. Just how far will the appeasement go in anticipation of a second Trump term, even before the election? I don’t know, but it could cost us more than just a paper’s subscribers.
 
 
 
