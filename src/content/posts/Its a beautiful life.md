@@ -16,8 +16,6 @@ My sophomore year of college, I was alone on many Friday nights. I listened to a
 ### Wedding
 My dear friend got married to the most lovely person this Monday, September 23, 2024. I was so very thankful to be with his family, our friends, and her family and friends. To see his joy, her joy, was really great. I must admit, I didn't know he could dance. Me and him are Hispanic men. There's a bit of expectation that we know how to Latin dance. But I had never seen him dance. So when Marc Anthony's **Vivir Mi Vida** played and he brought the house down, I was so moved.
 
-<!-- <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="https://www.youtube-nocookie.com/embed/YXnjy5YlDwk?si=XSjrG8WM8WNqTfML&amp;start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div> -->
-
 Before the wedding, my friend shared with me the place where he and his wife would get wed. Civic Kitchen is a cooking school, but more importantly, it's the community that my friend didn't know he needed. Cooking is such a special blessing. I could feel the love in that place.
 
 ### Extranondo
