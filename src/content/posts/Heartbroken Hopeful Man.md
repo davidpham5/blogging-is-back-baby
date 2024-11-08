@@ -32,4 +32,4 @@ You can say that you don't like the result of election, find solace that you are
 I revisit Rick Steves's History of Fascism to understand its power in capturing the minds of people.
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
-<iframe  src="https://www.youtube.com/watch?v=JU1IVW6uqM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe  src="https://www.youtube.com/watch?v=JU1IVW6uqM0" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"   allowfullscreen></iframe></div>
