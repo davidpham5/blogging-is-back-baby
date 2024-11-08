@@ -8,8 +8,6 @@ tags:
 draft: false
 ---
 
-
-
 I recently attended my friend's mom's funeral, the day before. The weight of grief can be so very hard. As I listened to my dear friend deliver his beautiful eulogy, I was struck by a realization that many men are unable to cry – not because they don't want to, but because they can't. To see my friend speak with some much love for his mom, and to see him cry, was a special moment. I cried too. Seeing my friend's pain, I felt his weight, his grief at that moment. Shortly after, I told him I loved him.
 
 Years ago, I once told my mother-in-law how I think everyone in the nation is grieving on some level. This was during the pandemic, and lots of people were dying. And lots of people were going nuts too. As people were dying and struggling to cope, I told her that I believe everyone is grieving on some level – even if they're not aware of it. For many men, the grief of losing something or someone remains buried deep inside, with no tears to shed. I think crying is a gift.

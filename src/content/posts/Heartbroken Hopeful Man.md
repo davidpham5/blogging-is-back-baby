@@ -23,9 +23,13 @@ offered this to say about the election:
 
 >It should come as no great surprise that a Democratic Party which has abandoned working class people would find that the working class has abandoned them. First, it was the white working class, and now it is Latino and Black workers as well. While the Democratic leadership defends the status quo, the American people are angry and want change. And they're right.
 
-How did the Nazi Germany recruit young men to join the Brown Shirts?  There is an idea that you will not find happy joyful men becoming Nazis. Fascism requires certain discontent, loneliness, and disaffection in young men to radicalize them with propaganda. The country made a choice to elect America's Hitler -- a statement by Vice President-Elect JD Vance in respects to President-Elect Donald Trump. 
+How did the Nazi Germany recruit young men to join the Brown Shirts?  There is an idea that you will not find happy joyful men becoming Nazis. Fascism requires certain discontent, loneliness, **humiliation** and disaffection in young men to radicalize them with propaganda. The country made a choice to elect America's Hitler -- a statement by Vice President-Elect JD Vance in respects to President-Elect Donald Trump. 
 
 I am a heartbroken hopeful man. Yes, indeed, even after the election results made it clear, the country elected a king. The work to serve our democracy starts today. I aim to gather, organize, and lift up other heartbroken hopeful people. We should not cede any uncontested and unchallenged ground. We must reach out to young men and build relationships with them. The cure to loneliness is not power and domination, but community and service. There is a faith I have in believing these unremarkable young boys can transform into remarkable men, with character and integrity. We cannot give up on them. We cannot let them be lost by the air sirens of Fascism, whispering their problems can be solved by one man.
 
 You can say that you don't like the result of election, find solace that you are not alone. Don't cooperate and definitely say no. Make it hard for Fascists to make you do what they want you to do. Make it clear that you're not afraid. Their thuggery relies on others being scared and alone. Make them work for their rule. And lastly, don't obey in advance. 
 
+I revisit Rick Steves's History of Fascism to understand its power in capturing the minds of people.
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+<iframe  src="https://www.youtube.com/watch?v=JU1IVW6uqM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
