@@ -18,7 +18,7 @@
     <section>
       <h2>Recent Writing</h2>
       <p class="thin">Loose, vague feelings on things I don't entirely understand yet.</p>
-      {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(6) %}
+      {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(12) %}
       {% include "components/post-list.njk" %}
       <p>
         Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
@@ -30,7 +30,7 @@
     {% if thoughts.length > 0 %}
       <section>
         <h2>Recent Thoughts</h2>
-        {% set postsList = thoughts | reverse | limit(3) %}
+        {% set postsList = thoughts | reverse | limit(10) %}
         {% include "components/post-list.njk" %}
         <p>
           View <a href="/thoughts/">more thoughts...</a>
