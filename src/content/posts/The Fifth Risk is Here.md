@@ -19,7 +19,7 @@ tags:
   - Orbán
   - AccuWeather
 ---
-Aram Zucker-Shraff [quotes Lissa Harris on the need of local civic information remains necessary](https://aramzs.xyz/noteworthy/post-election-journalism-needs-to-be-something-different/): 
+Aram Zucker-Scharff [quotes Lissa Harris on the need of local civic information remains necessary](https://aramzs.xyz/noteworthy/post-election-journalism-needs-to-be-something-different/): 
 
 >One thing that has become crystal clear to me is that even without robust, functioning local news, my community still needs basic civic information. So here's one thing I'm doing: Setting up a new site for my town that will hold a library of existing resources like maps, local flood analyses, comprehensive planning, local history, resources for local households and families, etc. If I can get enough local interest in it, the site will also host a calendar of local upcoming public meetings, announcements, arts and community events, things of that nature.
 
