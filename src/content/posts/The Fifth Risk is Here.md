@@ -31,7 +31,7 @@ Victor Orbán of Hungary took one of the post-Communist world's greatest success
 
 We saw an example in President Trump's first term.  President Trump replaced the  director of National Oceanic and Atmospheric Administration (NOAA), who are responsible for the National Weather Service,  with Barry Myers, an executive vice president of AccuWeather.  [Mr. Myers attempted to shut out all other weather forecast competitors and favor AccWeather](https://www.theatlantic.com/science/archive/2024/07/noaa-project-2025-weather/678987/).  
 
-Setting up a site with boring stuff like local flood analyses may not sound like a big deal if a crony loyalist for the Trump administration decides to shut off access and sell it to insurance companies. But it may be very important to a person buying their first home in an increasingly riskier flood zone. A free market can't function well when information pertaining to risk is not publicly available.  
+Setting up a site with boring stuff like local flood analysis may not sound like a big deal if a crony loyalist for the Trump administration decides to shut off access and sell it to insurance companies. But it may be very important to a person buying their first home in an increasingly riskier flood zone. A free market can't function well when information pertaining to risk is not publicly available.  
 
-- [ ] Fight against this form of corruption be setting up sites at a local level in the event Trump installs sycophants in data-collecting roles. 
+You can fight against this form of corruption be setting up sites at a local level in the event Trump installs sycophants in data-collecting roles. 
 
