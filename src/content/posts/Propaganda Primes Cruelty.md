@@ -17,9 +17,9 @@ tags:
 ---
 Reading "The Message" by Ta-Nehisi Coates, there is a passage I'd like to share with you:
 
-> When I was young, I felt the physical weight of race constantly. We had less. Our lives were more violent. And whether by genes, culture, or divine judgment, this was said to be our fault. The only tool to escape this damnation — for a lucky few — was school. Later I went out into the world and saw the other side, those who allegedly, by genes, culture, or divine judgment, had more but—as I came to understand— knew less. **These people, white people, were living under a lie. More, they were, in some profound way, suffering for the lie.**
+>When I was young, I felt the physical weight of race constantly. We had less. Our lives were more violent. And whether by genes, culture, or divine judgment, this was said to be our fault. The only tool to escape this damnation — for a lucky few — was school. Later I went out into the world and saw the other side, those who allegedly, by genes, culture, or divine judgment, had more but—as I came to understand— knew less. **These people, white people, were living under a lie. More, they were, in some profound way, suffering for the lie.**
 >
-  They had seen more of the world than I had, but not more of humanity itself. Most stunningly, I realized that they were deeply ignorant of their own country's history, and thus they had no intimate sense of how far their country could fall.
+They had seen more of the world than I had, but not more of humanity itself. Most stunningly, I realized that they were deeply ignorant of their own country's history, and thus they had no intimate sense of how far their country could fall.
 
 James Baldwin comes to mind regarding what would it mean to let go of hate: 
 
