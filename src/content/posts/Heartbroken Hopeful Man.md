@@ -16,10 +16,9 @@ My dad and I don't talk about what happened during the Vietnam War, but when I w
 
 My dad came to the States with a sense of optimism. Here, there was no war, and there were no spontaneous bombs dropping from clear skies. There were no late-night air sirens, whispering impending doom to sleeping children. There were no minefields to blow off legs and arms. That kind of violence was far away. With nothing but abundance, cocaine and champagne, and 70's rock, my dad must have felt really good about the future. Maybe his dreams, his ambitions could be founded here. Maybe everything is going to be okay.
 
-My dad's dreams and ambitions did not work out as he had imagined. He is now very much the shadow of himself today. Unemployed for years, treated less than by his white bosses, looked down upon by others in his community, seen as a man past his prime whenever he applies for senior-level jobs, his inability to provide for his family -- what that does to a man is an unrelenting sense of despair. And what that does to young man is radicalization. 
+My dad's dreams and ambitions did not work out as he had imagined. He is now very much the shadow of himself today. Unemployed for years, treated less than by his white bosses, looked down upon by others in his community, seen as a man past his prime whenever he applied for senior-level jobs, his inability to provide for his family -- what that does to a man is an unrelenting sense of despair. And what that does to a young man is radicalization. 
 
-Donald Trump won and won decisively. He won big with young men across race, income, and geography. He won young Hispanic men in a significant way. Senator Bernie Sanders
-offered this to say about the election:
+Donald Trump won and won decisively. He won big with young men across race, income, and geography. He won young Hispanic men in a significant way. Senator Bernie Sanders offered this to say about the election:
 
 >It should come as no great surprise that a Democratic Party which has abandoned working class people would find that the working class has abandoned them. First, it was the white working class, and now it is Latino and Black workers as well. While the Democratic leadership defends the status quo, the American people are angry and want change. And they're right.
 
