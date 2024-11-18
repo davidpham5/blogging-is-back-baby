@@ -37,5 +37,5 @@ Germans knew what was going on when the [Night of Broken Glass](https://encyclop
 
 I'm telling you this because when those folks share their rationalizations of said cruelty, you will feel angry. "Don't they know better? Didn't we go through this in the first Trump term? How could you be okay with this?" I want you to know that propaganda has a powerful effect on the stories people tell themselves to feel good about cruel things.  People need to feel they are a hero in their own stories. It is a way to avoid feeling the pain underneath the hate.
 
-Let us hope, it will roil enough people to say "We didn't elect you to create a Gestapo. We wanted cheaper eggs. Not children separation."  Their cruelty will change them for the worse.
+Let us hope, it will roil enough people to say "We didn't elect you to create a Gestapo. We wanted cheaper eggs. Not child separation."  Their cruelty will change them for the worse.
 
