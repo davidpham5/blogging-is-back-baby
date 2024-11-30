@@ -1,6 +1,6 @@
 ---
 title: Where Do We Go From Here
-draft: true
+draft: false
 tags:
   - James
   - Baldwin
