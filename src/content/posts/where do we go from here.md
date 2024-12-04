@@ -41,7 +41,7 @@ That is to say I totally get the appeal of Joe Rogan or Theo Von. They have a ce
 
 I sense that they are hiding something deeply dark. They might be using work as a mask to cloak themselves from anyone prying too much under the surface. That's Vice President Harris and the Democrats for a lot of young men. They see bunch of dull overachievers, with their fancy degrees and high power jobs on the coasts, telling them how to talk, think, and shit -- at least how these podcast hosts packaged it to them.
 
- There is a [politics of disorder](https://podcasts.apple.com/us/podcast/the-hidden-politics-of-disorder/id1548604447?i=1000673550695) that people plainly see in front of them. They witnessed
+ %% There is a [politics of disorder](https://podcasts.apple.com/us/podcast/the-hidden-politics-of-disorder/id1548604447?i=1000673550695) that people plainly see in front of them. They witnessed
  - [migrants being put up in hotels](https://apnews.com/article/new-york-city-migrants-asylum-hotels-183dc6f5fc563da98f3abc56d941799c)
  - [welcome signs](https://www.vox.com/future-perfect/23569848/how-to-sponsor-refugees-welcome-corps-biden) on display for asylum seekers and migrants
  - an immigration so broken that [children (under the age of 5) are made to defend themselves in front of a judge](https://www.theadvocatesforhumanrights.org/News/kids-in-court).
@@ -49,7 +49,7 @@ I sense that they are hiding something deeply dark. They might be using work as 
  - [CVS locking up everything](https://bsky.app/profile/shabazzstuart.bsky.social/post/3lc6vc2ea2s2a). 
  - A homeless people population growing out of control and human poop in alleyways and sidewalks.
  - Over 70% [Metro Bus fares](https://www.washingtonpost.com/dc-md-va/2024/10/08/metro-bus-dc-fare-evasion/)are evaded. 
- From the perspective of a young Hispanic or Asian man who voted for Trump, the Democrats represent a party who gives out benefits to the [underserving](https://sites.psu.edu/aspsy/2020/12/01/the-deserving-vs-the-undeserving-poor-how-do-we-deem-whos-worthy/) people -- a cut in line pass for the underserved.
+ From the perspective of a young Hispanic or Asian man who voted for Trump, the Democrats represent a party who gives out benefits to the [underserving](https://sites.psu.edu/aspsy/2020/12/01/the-deserving-vs-the-undeserving-poor-how-do-we-deem-whos-worthy/) people -- a cut in line pass for the underserved. %%
 
 
 
