@@ -38,10 +38,10 @@
       </section>
     {% endif %}
     <section>
-      <h2>Recent Amplifications</h2>
+      <h2>StoryStream</h2>
       {% set postsList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
       {% set forward = true %}
-      {% include "components/post-list.njk" %}
+      {% include "components/storystream.njk" %}
 
       <p>
         Subscribe to the <a href="/amplify/feed.xml">Amplified Items RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.

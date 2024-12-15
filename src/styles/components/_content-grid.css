@@ -30,6 +30,19 @@
     minmax(var(--padding-inline), 1fr) [full-width-end];
 }
 
+.content-grid h1,
+.content-grid h2,
+.content-grid h3,
+.content-grid h4,
+.content-grid h5,
+.content-grid h6, {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.content-grid p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .content-grid > *,
 .full-width > *,
 article.content-grid section > * {
