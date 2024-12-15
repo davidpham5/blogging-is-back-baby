@@ -29,7 +29,7 @@
 
     {% if thoughts.length > 0 %}
       <section>
-        <h2 class="">Recent Thoughts</h2>
+        <h2 class="text-4xl py-8">Recent Thoughts</h2>
         {% set postsList = thoughts | reverse | limit(10) %}
         {% include "components/post-list.njk" %}
         <p>
@@ -38,13 +38,13 @@
       </section>
     {% endif %}
     <section>
-      <h2>StoryStream</h2>
+      <h2 class="text-4xl py-8">StoryStream</h2>
       {% set postsList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
       {% set forward = true %}
       {% include "components/storystream.njk" %}
 
       <p>
-        Subscribe to the <a href="/amplify/feed.xml">Amplified Items RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.
+        Subscribe to the <a href="/amplify/feed.xml">storystream Items RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.
       </p>
 
       <p>You can find out more <a href="/about/">about me</a>, what I <a href="/uses/">use</a>, the books that I <a href="/books/">have been reading</a> and what I am up to <a href="/now/">now</a>.</p>
