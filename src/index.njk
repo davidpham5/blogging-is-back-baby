@@ -4,7 +4,7 @@
 {% set mainClass = 'content-grid' %}
 
 {% block content %}
-  <header><h1 class="special header"><b class="strong">David Chico Pham </b>writes on technology, sourdough, and current events.</h1><h2 style="opacity: 1; transform: none; max-width: 780px;">Fantastic home cook, not bad student of history, and slightly above average engineer.</div></b></h2></header>
+  <header><h1 class="special header"><b class="strong">David Chico Pham </b>writes on technology, sourdough, and current events.</h1><h2 class="text-4xl py-6 leading-normal" style="opacity: 1; transform: none; max-width: 780px;">Fantastic home cook, not bad student of history, and slightly above average engineer.</div></b></h2></header>
   <section class="paragraph">
     <p>
 		    I am a Senior Privacy Engineer at The Washington Post. My path into web development is somewhat unusual -- I'm a self-taught web dev with an a background in history and sociology. I didn't realize it back then, but my studies actually gave me all the right tools I needed for writing and storytelling. As an engineer, I've been fortunate to work with some of the most talented and creative folks in media and technology.
@@ -16,8 +16,8 @@
   <h4>Chico was my nickname in school.</h4>
   <section id="front-content-display">
     <section>
-      <h2>Recent Writing</h2>
-      <p class="thin">Loose, vague feelings on things I don't entirely understand yet.</p>
+      <h2 class="text-4xl pt-8 pb-0">Recent Writing</h2>
+      <p class="thin pb-4">Loose, vague feelings on things I don't entirely understand yet.</p>
       {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(12) %}
       {% include "components/post-list.njk" %}
       <p>
@@ -29,7 +29,7 @@
 
     {% if thoughts.length > 0 %}
       <section>
-        <h2>Recent Thoughts</h2>
+        <h2 class="">Recent Thoughts</h2>
         {% set postsList = thoughts | reverse | limit(10) %}
         {% include "components/post-list.njk" %}
         <p>
