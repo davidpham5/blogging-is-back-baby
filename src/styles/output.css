@@ -579,6 +579,21 @@ video {
   margin-bottom: 0px;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -601,6 +616,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.ml-\[3px\] {
+  margin-left: 3px;
 }
 
 .block {
@@ -649,6 +668,14 @@ video {
 
 .min-w-\[24px\] {
   min-width: 24px;
+}
+
+.min-w-\[238px\] {
+  min-width: 238px;
+}
+
+.min-w-\[38px\] {
+  min-width: 38px;
 }
 
 .max-w-\[560px\] {
@@ -743,6 +770,11 @@ video {
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.px-\[0px\] {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pb-0 {
@@ -2708,6 +2740,12 @@ body > header > div a:first-child {
   fill: #000;
 }
 
+@media (min-width: 640px) {
+  .sm\:mr-2 {
+    margin-right: 0.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:ml-\[-3px\] {
     margin-left: -3px;
@@ -2740,6 +2778,10 @@ body > header > div a:first-child {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
