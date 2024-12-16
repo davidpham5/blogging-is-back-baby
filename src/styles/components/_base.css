@@ -712,3 +712,7 @@ article#page-post h3 {
         line-height: 1.4;
     }
 }
+.text-sm-2x {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}

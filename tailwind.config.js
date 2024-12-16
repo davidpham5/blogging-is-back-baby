@@ -23,7 +23,7 @@ module.exports = {
       sans: ['Lato', 'sans-serif'],
       serif: ['Canela Deck', 'serif'],
       body:['Canela Text', 'serif']
-    },
+    }
   },
   plugins: [],
 };

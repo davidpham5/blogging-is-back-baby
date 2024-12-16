@@ -33,7 +33,7 @@
       <div class="flex min-w-0 flex-1 flex-col">
         <div class="flex flex-row text-gray dark:text-gray-cc md:justify-start">
           <div class="flex flex-row flex-wrap items-center pb-4 uppercase leading-130 tracking-15 text-xs dark:text-gray-cc md:pb-2">
-            <h4 class="relative z-10 mr-8 strong>
+            <span class="relative z-10 mr-8 strong>
               <time class="flex items-center font-normal" datetime="{{ post.date | dateToFormat("DDD") }}">{{ post.date | dateToFormat("DDD") }}</time>
             </h4>
           </div>
@@ -47,13 +47,13 @@
           </div>
         </div>
         <div class=" dark:text-gray-ef leading-130">
-          <div class="inline text-lg strong md:text-md">{{post.data.title}}</div>
-           <section class="post-content my-4 text-md">
+          <div class="inline text-sm-2x strong md:text-md">{{post.data.title}}</div>
+           <section class="post-content mt-4 text-sm-2x md:text-md">
             {{ post.templateContent | safe }}
           </section>
           <br>
         </div>
-        <div class="pt-8">
+        <section>
           <div class="relative z-10 text-md leading-120">
             {% if post.data.draft %}
               {% set postAttrs = "" %}
@@ -88,7 +88,7 @@
             {% endif %}
 
           </div>
-        </div>
+        </section>
       </div>
     </div>
   </div>
