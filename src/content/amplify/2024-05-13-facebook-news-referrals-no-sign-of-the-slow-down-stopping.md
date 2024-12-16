@@ -12,4 +12,4 @@ title: 'Facebook news referrals: no sign of the slow-down stopping'
 ---
 > As a share of total page views coming from external, search and social, Facebook referrals are now less than a quarter of their 2018 level, down from 30% in March 2018 to 7% in March 2024. ... Smaller sites have particularly hard hit by Facebook changes
 
-Aisha Majid writes of the Press Gazette.
+Aisha Majid writes for the Press Gazette.

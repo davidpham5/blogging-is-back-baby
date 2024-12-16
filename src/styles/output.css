@@ -969,7 +969,7 @@ body {
   transition: background-color 300ms, color 200ms;
 }
 
-strong, .strong {
+strong, .strong, .stronger {
   font-family: 'canela_deck_trialbold', sans-serif;
 }
 
