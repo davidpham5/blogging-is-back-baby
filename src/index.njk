@@ -16,7 +16,7 @@
   <h4>Chico was my nickname in school.</h4>
   <section id="front-content-display">
      <section>
-      <h2 class="text-4xl py-8 pt-8 pb-0">StoryStream</h2>
+      <h2 class="text-4xl py-8 pt-4 pb-0">StoryStream</h2>
       <p class="thin pb-4">Findings on the web, interesting stuff, or beautiful things to share</p>
       {% set postsList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
       {% set forward = true %}
@@ -42,8 +42,8 @@
     {% endif %}
 
     <section>
-      <h2 class="text-4xl pt-8 pb-0">Recent Writing</h2>
-      <h3 class="thin pb-4 my-0">Loose, vague feelings on things I don't entirely understand yet.</h3>
+      <h2 class="text-4xl pt-4 pb-0 mt-0 content-grid-header">Recent Writing</h2>
+      <h3 class="thin pb-4 my-0 content-grid-header">Loose, vague feelings on things I don't entirely understand yet.</h3>
       {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(12) %}
       {% include "components/post-list.njk" %}
       <p>

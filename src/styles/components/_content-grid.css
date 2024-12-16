@@ -39,6 +39,10 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.content-grid .content-grid-header {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .content-grid p {
     margin-top: 1rem;
     margin-bottom: 1rem;

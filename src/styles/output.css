@@ -591,6 +591,10 @@ video {
   margin-right: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -747,6 +751,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-8 {
@@ -1624,6 +1632,11 @@ article#page-post h3 {
 .content-grid h6, {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.content-grid .content-grid-header {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .content-grid p {
