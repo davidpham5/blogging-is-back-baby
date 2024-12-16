@@ -200,7 +200,7 @@ a[href]:not(:where(
   /* subdomains to exclude */
   [href*="//www.davidchicopham.com"]
 )):not(.no-ext):after {
-    content: "↗️";
+    content: "🔗";
     margin-left: 0.25rem;
     vertical-align: super;
     font-size: 0.5rem;

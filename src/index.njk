@@ -15,15 +15,19 @@
   </section>
   <h4>Chico was my nickname in school.</h4>
   <section id="front-content-display">
-    <section>
-      <h2 class="text-4xl pt-8 pb-0">Recent Writing</h2>
-      <p class="thin pb-4">Loose, vague feelings on things I don't entirely understand yet.</p>
-      {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(12) %}
-      {% include "components/post-list.njk" %}
+     <section>
+      <h2 class="text-4xl py-8 pt-8 pb-0">StoryStream</h2>
+      <p class="thin pb-4">Findings on the web, interesting stuff, or beautiful things to share</p>
+      {% set postsList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
+      {% set forward = true %}
+      {% include "components/storystream.njk" %}
+
       <p>
-        Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
+        Subscribe to the <a href="/amplify/feed.xml">Storystream RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.
       </p>
+
     </section>
+
 
     {% set thoughts = articlesList | onlyTypes(['thought']) %}
 
@@ -37,17 +41,16 @@
         </p>
       </section>
     {% endif %}
+
     <section>
-      <h2 class="text-4xl py-8">StoryStream</h2>
-      {% set postsList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
-      {% set forward = true %}
-      {% include "components/storystream.njk" %}
-
+      <h2 class="text-4xl pt-8 pb-0">Recent Writing</h2>
+      <h3 class="thin pb-4 my-0">Loose, vague feelings on things I don't entirely understand yet.</h3>
+      {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(12) %}
+      {% include "components/post-list.njk" %}
       <p>
-        Subscribe to the <a href="/amplify/feed.xml">storystream Items RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.
+        Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
       </p>
-
-      <p>You can find out more <a href="/about/">about me</a>, what I <a href="/uses/">use</a>, the books that I <a href="/books/">have been reading</a> and what I am up to <a href="/now/">now</a>.</p>
     </section>
   </section>
+  <p>You can find out more <a href="/about/">about me</a>, what I <a href="/uses/">use</a>, the books that I <a href="/books/">have been reading</a> and what I am up to <a href="/now/">now</a>.</p>
 {% endblock %}
