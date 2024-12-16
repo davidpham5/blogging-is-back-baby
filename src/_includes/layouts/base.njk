@@ -74,7 +74,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Assets, 3rd party scripts, etc -->
-    <link rel="stylesheet" href="/styles/output.css"/>
+    <link rel="stylesheet" href="/styles/output.min.css?v={{ build.timestamp | dateToFormat('yyyyMMddHHmmss') }}"/>
     <script defer data-domain="davidchicopham.com" src="https://plausible.io/js/script.js"></script>
     {% block stylesheet %}{% endblock %}
     <script src="/main.js"></script>
