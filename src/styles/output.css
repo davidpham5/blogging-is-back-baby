@@ -2758,6 +2758,13 @@ body > header > div a:first-child {
   fill: #000;
 }
 
+@media (min-width: 640px) {
+  .sm\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:ml-\[-3px\] {
     margin-left: -3px;
