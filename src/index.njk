@@ -18,8 +18,8 @@
      <section>
       <h2 class="text-4xl py-8 pt-4 pb-0">StoryStream</h2>
       <p class="thin pb-4">Findings on the web, interesting stuff, or beautiful things to share</p>
-      {% set postsList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
-      {% set forward = true %}
+      {% set postList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
+      {# {% set forward = true %} #}
       {% include "components/storystream.njk" %}
 
       <p>

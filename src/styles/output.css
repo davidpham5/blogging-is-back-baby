@@ -579,19 +579,14 @@ video {
   margin-bottom: 0px;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .mb-8 {
@@ -600,6 +595,10 @@ video {
 
 .ml-0 {
   margin-left: 0px;
+}
+
+.ml-\[3px\] {
+  margin-left: 3px;
 }
 
 .mr-8 {
@@ -616,10 +615,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.ml-\[3px\] {
-  margin-left: 3px;
 }
 
 .block {
@@ -664,14 +659,6 @@ video {
 
 .min-w-0 {
   min-width: 0px;
-}
-
-.min-w-\[24px\] {
-  min-width: 24px;
-}
-
-.min-w-\[238px\] {
-  min-width: 238px;
 }
 
 .min-w-\[38px\] {
@@ -747,11 +734,6 @@ video {
   padding-right: 0px;
 }
 
-.px-\[3px\] {
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -767,14 +749,9 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-\[7px\] {
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
-.px-\[0px\] {
-  padding-left: 0px;
-  padding-right: 0px;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-0 {
@@ -787,10 +764,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-center {
@@ -2722,15 +2695,10 @@ body > header > div a:first-child {
 
 .card {
   background-color: var(--background);
-  /* background: linear-gradient(to bottom, var(--background), #4b0082); */
-  color: #fff;
-  /* border: 2px solid; */
-  /* border-image: linear-gradient(to bottom, #ff00ff, #4b0082) 1; */
+  color: var(--text);
   border-radius: 5px;
   transition: all ease-in-out 0.3s;
   :hover {
-    /* background: linear-gradient(to right, #ff00ff ,var(--background-muted) ); */
-    /* color: #fff; */
     background: var(--background-muted);
     transition: all ease-in-out 0.3s;
   }
@@ -2738,12 +2706,6 @@ body > header > div a:first-child {
 
 .hover\:fill-black:hover {
   fill: #000;
-}
-
-@media (min-width: 640px) {
-  .sm\:mr-2 {
-    margin-right: 0.5rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -2772,16 +2734,17 @@ body > header > div a:first-child {
     padding-right: 0.5rem;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:pb-2 {
     padding-bottom: 0.5rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
