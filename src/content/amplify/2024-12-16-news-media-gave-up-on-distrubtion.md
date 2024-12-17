@@ -1,7 +1,7 @@
 ---
 date: '2024-12-16'
 source: 'The Verge'
-isBasedOn: 'The Verge - Decorder'
+isBasedOn: 'Platforms need the news — but they’re killing it'
 link: 'https://www.theverge.com/24320380/platforms-tiktok-influencers-news-media-journalism-google-matt-pearce-decoder-podcast-interview'
 slug: '2024-12-16-Matt-Pierce-LA-Times-Distrubtion-Given-Up'
 tags:

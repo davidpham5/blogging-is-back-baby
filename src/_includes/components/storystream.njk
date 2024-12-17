@@ -74,7 +74,7 @@
                 {{ postAttrs }}
                 rel="nofollow noopener noreferrer" target="_blank"
             >
-              {{ post.title or post.data.title }}
+              {{ post.data.isBasedOn or post.data.title }}
             </a>
 
             <span class="flex mt-2 tracking-wide text-sm strong uppercase tracking-15">

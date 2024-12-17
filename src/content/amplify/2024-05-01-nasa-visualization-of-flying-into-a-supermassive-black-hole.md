@@ -1,7 +1,7 @@
 ---
 title: "NASA Visualization of Flying into a Supermassive Black Hole"
 date: 2024-05-01
-isBasedOn: 'https://science.nasa.gov/universe/black-holes/supermassive-black-holes/new-nasa-black-hole-visualization-takes-viewers-beyond-the-brink/'
+isBasedOn: 'New NASA Black Hole Visualization Takes Viewers Beyond the Brink'
 source: 'kottke.org'
 link: 'https://kottke.org/24/05/nasa-visualization-of-flying-into-a-supermassive-black-hole'
 slug: '2024-05-14-nasa-visualization-of-flying-into-a-supermassive-black-hole'
