@@ -716,3 +716,8 @@ article#page-post h3 {
     font-size: 1.2rem;
     line-height: 1.5;
 }
+
+[class*="embed"] {
+    padding-left: 0;
+    border-left: 0;
+}

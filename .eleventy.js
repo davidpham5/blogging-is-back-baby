@@ -256,8 +256,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.ignores.add("src/content/amplify/2024-09**");
   }
 
-  // Ignore the folder
+  // Ignore the folder obsidian
   eleventyConfig.ignores.add("./src/content/posts/.obsidian");
+  eleventyConfig.ignores.add("./src/content/.obsidian/");
 
 	//
 	// Pass through
