@@ -7,6 +7,7 @@ const asyncFilters = require('./lib/async-filters');
 const ObjectCache = require("./lib/helpers/cache");
 const fs = require("fs");
 const pluginDrafts = require("./eleventy.config.drafts.js");
+const { DateTime } = require("luxon");
 
 require("dotenv").config();
 
@@ -96,6 +97,14 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
 
+  // Add a relative time filter
+  // eleventyConfig.addFilter("relativeTime", (dateString) => {
+  //   const now = DateTime.local();
+  //   const past = DateTime.fromISO(dateString);
+
+  //   const diff = past.toRelative({ base: now });
+  //   return diff || "just now"; // fallback to 'just now' for safety
+  // });
 
 	const numberFormat = new Intl.NumberFormat("en-GB");
 
