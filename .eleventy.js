@@ -105,7 +105,17 @@ module.exports = function (eleventyConfig) {
   //   const diff = past.toRelative({ base: now });
   //   return diff || "just now"; // fallback to 'just now' for safety
   // });
+  // Ignore the problematic files directly
+  eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.ignores.add("src/content/templates/*.md");
 
+  eleventyConfig.addTransform("preprocessFrontMatter", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith(".md")) {
+      // Replace templator placeholders with valid dates
+      content = content.replace(/date: "<% tp\.file\.creation_date\(\) %>"/g, `date: "${DateTime.now().toISODate()}"`);
+    }
+    return content;
+  });
 	const numberFormat = new Intl.NumberFormat("en-GB");
 
 	eleventyConfig.addPlugin(
