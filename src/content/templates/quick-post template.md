@@ -1,6 +1,6 @@
 ---
-title: "{{title}}"
-date: <% tp.file.creation_date() %>
+title: 
+date: <% tp.date.now("YYYY-MM-DD") %>
 source: 
 isBasedOn: 
 link: 

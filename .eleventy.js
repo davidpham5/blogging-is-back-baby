@@ -12,6 +12,14 @@ const { DateTime } = require("luxon");
 require("dotenv").config();
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addTransform("preprocessFrontMatter", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith(".md")) {
+      // Replace templator placeholders with valid dates
+      content = content.replace(/date: "<% tp\.file\.creation_date\(\) %>"/g, `date: "${DateTime.now().toISODate()}"`);
+    }
+    return content;
+  });
+
 	eleventyConfig.setUseGitIgnore(false);
 	// So that file creation on `.before` doesn't trigger a rebuild
 	eleventyConfig.setWatchThrottleWaitTime(5000);
@@ -97,25 +105,10 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
 
-  // Add a relative time filter
-  // eleventyConfig.addFilter("relativeTime", (dateString) => {
-  //   const now = DateTime.local();
-  //   const past = DateTime.fromISO(dateString);
-
-  //   const diff = past.toRelative({ base: now });
-  //   return diff || "just now"; // fallback to 'just now' for safety
-  // });
   // Ignore the problematic files directly
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.ignores.add("src/content/templates/*.md");
 
-  eleventyConfig.addTransform("preprocessFrontMatter", function(content, outputPath) {
-    if (outputPath && outputPath.endsWith(".md")) {
-      // Replace templator placeholders with valid dates
-      content = content.replace(/date: "<% tp\.file\.creation_date\(\) %>"/g, `date: "${DateTime.now().toISODate()}"`);
-    }
-    return content;
-  });
 	const numberFormat = new Intl.NumberFormat("en-GB");
 
 	eleventyConfig.addPlugin(
