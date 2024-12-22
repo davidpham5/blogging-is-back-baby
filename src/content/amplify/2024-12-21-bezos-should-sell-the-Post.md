@@ -18,4 +18,4 @@ However, there is nobody more attune to the media business nor knows more about 
 
 Bezos should sell the Post to Swasher. He should continue to follow his passion, Blue Origin and Amazon. He cares for the Post, but not nearly enough to be committed to the level that is needed. [Just looking at his recent interview with Andrew Ross Sorkin of DealBook](https://www.youtube.com/watch?v=s71nJQqzYRQ), he clearly is excited about space exploration, and not so much news and media. Shedding the Post would free him up and discharge him of any criticism around conflicts of interest.
 
-A malicious storm is coming very soon. I know the Post will be ready for it. I don't think Bezos has the stomach for the stormy seas. But Ms. Swasher certainly does.
+[A malicious storm is coming very soon](https://www.axios.com/2024/12/17/trump-legal-threats-media). I know the Post will be ready for it. I don't think Bezos has the stomach for the stormy seas. But Ms. Swasher certainly does.
