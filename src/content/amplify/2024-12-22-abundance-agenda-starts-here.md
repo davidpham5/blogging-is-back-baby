@@ -5,6 +5,11 @@ source: vox
 isBasedOn: "A public housing success story: Americans don’t have to look abroad for answers."
 link: https://www.vox.com/policy/392173/public-social-housing-success-montgomery-county-maryland
 tags:
+  - housing
+  - maryland
+  - montgomery_county
+  - abundance
+  - agenda
 ---
 I live in Montgomery County, Maryland. It makes me incredibly proud that we are a leader in housing, in a blue state nontheless. Abdallah Fayyad of Vox writes: 
 
