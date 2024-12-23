@@ -10,3 +10,4 @@ draft: true
 [Sick of screens, families are giving kids old Walkmen and MP3 players - The Washington Post](https://www.washingtonpost.com/technology/2024/12/21/kids-music-devices/)
 
 ipod repair
+- [ ] fix posts on storystream. 404 on article
