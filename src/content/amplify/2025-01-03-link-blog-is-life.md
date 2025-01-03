@@ -23,7 +23,7 @@ Ah I knew I read Simon Willison before. That piece helped me over come a bit of 
 
 >I always include **the names of the people** who created the content I am linking to, if I can figure that out. Credit is really important, and it’s also useful for myself because I can later search for someone’s name and find other interesting things they have created that I linked to in the past.
 
-Coming from the liberal arts, school drilled that copying someone else's words is plagiarism. Attribution is important. Back in my day, backlinks were a way to credit someone. Not
+Coming from the liberal arts, school drilled that copying someone else's words is plagiarism. Attribution is important. Back in my day, backlinks were a way to credit someone.
 
 > - I try to **add something extra**. My goal with any link blog post is that if you read both my post and the source material you’ll have an enhanced experience over if you read just the source material itself.
 
