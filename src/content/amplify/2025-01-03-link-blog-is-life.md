@@ -1,6 +1,6 @@
 ---
 title: A blogger's guide to link blogging
-date: 01-03-25
+date: 2025-01-03
 isBasedOn: My approach to running a link blog
 source: Simon Willison’s Weblog
 link: https://simonwillison.net/2024/Dec/22/link-blog/#the-technology
