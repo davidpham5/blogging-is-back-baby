@@ -3,9 +3,4 @@
     color: var(--text);
     border-radius: 5px;
     transition: all ease-in-out 0.3s;
-
-    :hover {
-        background: var(--background-muted);
-        transition: all ease-in-out 0.3s;
-    }
 }

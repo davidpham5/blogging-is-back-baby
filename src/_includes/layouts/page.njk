@@ -50,7 +50,24 @@
             {% if cite and cite.name %}
               {% set citeAnchorText = cite.name %}
             {% endif %}
-            <a href="{{referringUri or isBasedOn or canonical or cite.href }}" target="_blank" title="{{citeAnchorText | stripAllQuotes}}">{{citeAnchorText}}</a></small>
+
+            {% if contentType == 'amplify' %}
+              {% set postUrl = link %}
+              <a class="text-md leading-120 text-gray-100 underline"
+                  aria-label="{{ title }}"
+                  href="{{ postUrl }}"
+                  title="Read {{ title}}"
+                  {{ postAttrs }}
+                  rel="nofollow noopener noreferrer" target="_blank"
+                >
+                  {{ isBasedOn or title }}
+                </a>
+              <span class="flex my-2 tracking-wide text-sm strong uppercase tracking-15">
+                [<!-- -->{{source}}<!-- -->]
+              </span>
+            {% else %}
+              <a href="{{referringUri or isBasedOn or canonical or cite.href }}" target="_blank" title="{{citeAnchorText | stripAllQuotes}}"></a></small>
+            {% endif %}
           {% endif %}
     </article>
 {% endblock %}
