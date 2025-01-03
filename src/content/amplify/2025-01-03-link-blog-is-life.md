@@ -1,5 +1,5 @@
 ---
-title: A blogger's guide to link blogging
+title: Link blogging is back, baby
 date: 2025-01-03
 isBasedOn: My approach to running a link blog
 source: Simon Willison’s Weblog
@@ -11,8 +11,8 @@ tags:
   - guidelines
 ---
 
-[My approach to running a link blog](https://simonwillison.net/2024/Dec/22/link-blog/#the-technology)'
 
+Simon Willison offers informal guidelines to link blogging. Let me share with you some of them: 
 
 >Back in November 2022 I wrote [What to blog about](https://simonwillison.net/2022/Nov/6/what-to-blog-about/), which started with this:
 

@@ -1,5 +1,5 @@
 ---
-title: 
+title: Give a gift of a restored iPod
 date: 2024-12-21
 source: The Washington Post
 isBasedOn: 
@@ -10,4 +10,4 @@ draft: true
 [Sick of screens, families are giving kids old Walkmen and MP3 players - The Washington Post](https://www.washingtonpost.com/technology/2024/12/21/kids-music-devices/)
 
 ipod repair
-- [ ] fix posts on storystream. 404 on article
+- [x] fix posts on storystream. 404 on article
