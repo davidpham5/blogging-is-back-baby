@@ -4,7 +4,6 @@
     <div class="relative flex flex-row border-b border-solid border-gray-cc dark:border-gray-31  max-w-container-sm sm:py-2 md:px-4 lg:py-6">
       <div class="w-38 relative flex min-w-[38px] flex-col md:ml-[-3px] md:items-start md:mr-6">
         {% set postUrl = post.url %}
-
           <div class="absolute ml-0">
             <a href="{{ postUrl }}" title="Read {{ post.title or post.data.title }}"rel="nofollow noopener noreferrer">
             <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.51 284.18" width="24" height="50" class="h-50">
@@ -50,7 +49,7 @@
           </div>
         </div>
         <div class=" dark:text-gray-ef leading-130">
-          <div class="inline text-sm-2x strong md:text-md">{{post.data.title}}</div>
+          <div class="inline text-sm-2x strong md:text-md"><a href="{{postUrl}}" title="Read {{ post.title or post.data.title }}">{{post.data.title}}</a></div>
            <section class="post-content mt-4 text-sm-2x md:text-md">
             {{ post.templateContent | safe }}
           </section>
