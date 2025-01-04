@@ -1682,6 +1682,10 @@ article.content-grid section:not(.two-columns) {
   grid-template-columns: inherit;
 }
 
+.content-grid > .full-width blockquote {
+  width: 115%;
+}
+
 /*
  * List of article elements that must be paragraph width
  */
