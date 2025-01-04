@@ -1676,7 +1676,8 @@ article.content-grid section:not(.two-columns) > .breakout {
 
 .content-grid > .full-width,
 article.content-grid section:not(.two-columns) {
-  grid-column: full-width;
+  /* grid-column: full-width; */
+  grid-column: content;
   display: grid;
   grid-template-columns: inherit;
 }
@@ -2749,20 +2750,16 @@ body > header > div a:first-child {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-1 {
+    margin-left: 0.25rem;
+  }
+
   .md\:ml-\[-3px\] {
     margin-left: -3px;
   }
 
   .md\:mr-6 {
     margin-right: 1.5rem;
-  }
-
-  .md\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .md\:ml-1 {
-    margin-left: 0.25rem;
   }
 
   .md\:mt-\[30px\] {

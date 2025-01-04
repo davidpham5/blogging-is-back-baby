@@ -67,8 +67,8 @@ article.content-grid section:not(.two-columns) > .breakout {
 
 .content-grid > .full-width,
 article.content-grid section:not(.two-columns) {
-    grid-column: full-width;
-
+    /* grid-column: full-width; */
+    grid-column: content;
     display: grid;
     grid-template-columns: inherit;
 }
