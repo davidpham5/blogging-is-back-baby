@@ -1629,6 +1629,10 @@ article#page-post h3 {
   padding-bottom: 100%;
 }
 
+.embed-container.vox-podcast {
+  padding-bottom: 44%;
+}
+
 /*
  * From Kevin Powell's video: A new approach to container and wrapper classes
  * @see https://www.youtube.com/watch?v=c13gpBrnGEw

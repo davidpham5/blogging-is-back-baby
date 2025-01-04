@@ -16,8 +16,8 @@ isBasedOn: Are men okay? Our modern masculinity problem, explained.
 slug:
 ---
 
-<style>.embed-container { position: relative; padding-bottom: 30%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-<div class='embed-container'>
+<style>.embed-container { position: relative; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='embed-container vox-podcast'>
 	<iframe frameBorder="0" height="482" scrolling="no" src="https://playlist.megaphone.fm/?e=VMP8520090430"
 width="100%"></iframe>
 </div>

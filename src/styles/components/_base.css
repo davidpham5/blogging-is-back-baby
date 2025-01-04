@@ -723,6 +723,7 @@ article#page-post h3 {
     padding-left: 0;
     border-left: 0;
 }
+
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -745,4 +746,7 @@ article#page-post h3 {
 
 .embed-container.bandcamp-iframe {
     padding-bottom: 100%;
+}
+.embed-container.vox-podcast {
+    padding-bottom: 44%;
 }
