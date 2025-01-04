@@ -700,7 +700,9 @@ article#page-post h3 {
         grid-column: 1;
         grid-row: auto;
     }
-
+    #front-content-display {
+        gap: 0;
+    }
     article#page-post header h1 {
       font-size: 3.5rem;
     }

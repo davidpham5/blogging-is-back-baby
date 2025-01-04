@@ -116,7 +116,7 @@
     {% include "../components/jumbo-nav.njk" %}
 </header>
 
-<main {{ ('class="'+ mainClass +'"') | safe if mainClass }}>
+<main {{ ('class="'+ mainClass +' max-[414px]:px-4"') | safe if mainClass }}>
     {% block content %}
         {{ content | safe }}
     {% endblock %}
