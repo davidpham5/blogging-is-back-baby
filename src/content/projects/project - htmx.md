@@ -43,3 +43,14 @@ I recall a conversation I had about the use of `htmx`, or rather where/when to u
 
 ----
 
+**2025-01-06**
+
+`hx-get` and swapping out `html` partials on response to a user interaction or event is a similar idea to Astro's Island Architecture.
+[Islands architecture | Docs](https://docs.astro.build/en/concepts/islands/), [Understanding Astro islands architecture - LogRocket Blog](https://blog.logrocket.com/understanding-astro-islands-architecture/), and [Server Islands | Astro](https://astro.build/blog/future-of-astro-server-islands/)
+
+- Astro would be swapping out react components 
+- this pattern in swapping out components has a benefit in rendering a smaller footprint and render cycles
+- Would it create a thinner client?
+
+
+
