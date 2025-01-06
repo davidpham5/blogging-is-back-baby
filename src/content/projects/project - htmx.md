@@ -1,5 +1,5 @@
 ---
-title: HTMX
+title: Learning HTMX
 tags:
   - htmx
   - overeview
@@ -7,7 +7,8 @@ tags:
   - petros
   - exploring
   - TIL
-featured: false
+featured: true
+date: 2024-12-28
 ---
 
 I am exploring `htmx`. I learned Alexander Petros was a former colleague of mine and he is now a core developer for `htmx`. We've never met, but we correspond on slack. I reached out to him after watching his [talk at Big Sky Con](https://www.youtube.com/embed/inRB6ull5WQ?si=pRAHAF0hM5z3UZ1w) and shared with him my admiration for his work.
@@ -31,5 +32,14 @@ I am reading through [Hypermedia Systems](https://www.lulu.com/shop/deniz-ak%C5%
 <button hx-get=/users hx-swap=outerHTML>View Users</button>
 ```
 
+
 - `hx-swap=outerHTML` means "replace outerHTML which means the button" or other words, replace button with `ul` list
+
+----
+
+**2025-01-06**
+
+I recall a conversation I had about the use of `htmx`, or rather where/when to use it. A site that doesn't have much interactivity is a good candidate for `htmx` because static sites don't need a shadow dom, or a thick client. Swapping out html should not rely on a data structure, like JSON. 
+
+----
 
