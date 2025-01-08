@@ -2740,6 +2740,12 @@ body > header > div a:first-child {
   transition: all ease-in-out 0.3s;
 }
 
+.card li {
+  list-style: initial;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
