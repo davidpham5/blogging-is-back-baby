@@ -24,4 +24,4 @@ Nilay Patel interviews with Matt Pearce, formerly of the LA Times, for Decoder. 
 width="100%"></iframe>
 </div>
 
-Kara Swasher has been known to refer to platforms such as Facebook and Google as "ravenous information thieves". I think thats being too generous to them.
+Kara Swisher has been known to refer to platforms such as Facebook and Google as "ravenous information thieves". I think thats being too generous to them.
