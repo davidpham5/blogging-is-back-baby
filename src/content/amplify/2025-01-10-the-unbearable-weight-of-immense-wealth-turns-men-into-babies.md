@@ -11,7 +11,7 @@ tags:
   - airpods
   - innovation
 ---
-What is it that turns seeming grown men into babies. Does having billions of dollars do something to their brains?
+What is it that turns seemingly grown men into babies. Does having billions of dollars do something to their brains?
 
 [Chance Miller of 9to5 Mac](https://9to5mac.com/2025/01/10/mark-zuckerberg-joe-rogan-apple-innovation/) listened to Mark Zuckerberg air his grievances to Joe Rogan without acknowledging his only invention (Facebook) was 20 years ago (2005) as well:
 
