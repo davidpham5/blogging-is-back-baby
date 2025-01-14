@@ -1,5 +1,5 @@
 ---
-title: yeah right
+title: Yeah Right
 date: 2025-01-11
 source: Reuters
 isBasedOn: Bezos sees no threat from Musk-Trump ties in space race
