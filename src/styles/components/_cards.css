@@ -9,3 +9,7 @@
     margin-bottom: 0.5rem;
     margin-left: 1rem;
 }
+
+.theme-blush .card blockquote {
+    color: var(--text);
+}
