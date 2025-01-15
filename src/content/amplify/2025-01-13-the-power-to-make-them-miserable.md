@@ -16,7 +16,7 @@ tags:
 ---
   
 
-Octavia Butler wrote [*Parable of the Sower*](https://bookshop.org/a/9695/9781538732182) in 1993. In many ways she was a prophet in describing a profoundly prescient future in the mid-2020's -- the present. There is a passage that really captures people's sentiment in the 2024 election. Emphasis is mine.
+Octavia Butler wrote [*Parable of the Sower*](https://bookshop.org/a/9695/9781538732182) in 1993. In many ways she was a prophet in describing a profoundly prescient future. The book took place in the mid-2020's. There is a powerful passage that in my view, captures something about the 2024 election. Emphasis is mine.
 
 >  People are setting more fires to cover crimes although why they would bother these days, I don't know. The police are no threat to criminals. People are setting fires to do what our arsonist did last night —- to get the neighbors of the arson victim to leave their own homes unguarded. People are setting fires to get rid of whomever they dislike from personal enemies to anyone who looks or sounds foreign or racially different. **People are setting fires because they're frustrated, angry, hopeless. They have no power to improve their lives, but they have the power to make others even more miserable.** And the only way to prove to yourself that you have power is to use it. - page 143
 
