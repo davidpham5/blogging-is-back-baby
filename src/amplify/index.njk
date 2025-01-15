@@ -13,11 +13,11 @@ folder: amplify
 {% set subTitle = '<strong>' + allPosts.length +'</strong> Amplified Links' %}
 {% set headingClass = 'writing-index' %}
 {% set paginationBase = "amplify" %}
-{% set forward = true %}
+{% set forward = false %}
 
 {% block pageContent %}
   <p>
-    The Amplify section is for amplifying content posted by other people and on other sites. Think of it as somewhere between a link post and a reblog. It pulls together posts and writing by others that I think are worth sharing, but where I don't have much that I want to write about them. It includes all my saves exported from Pocket.
+    The web still has amazing things to share. Outside of the big platforms, there are still folks who creating beautiful things, writing fasinating words, and sharing their discoveries. This section is an archive of a lot of my commentary on stuff.
   </p>
     {% for year, items in postsByYear %}
         <section>
