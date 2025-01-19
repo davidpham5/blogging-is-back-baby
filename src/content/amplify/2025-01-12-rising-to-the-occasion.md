@@ -1,5 +1,5 @@
 ---
-title: "Rising to the occasion: The Washington Post investigates what caused Palisades fire"
+title: What caused Palisades fire?
 date: 2025-01-12
 source: The Washington Post
 isBasedOn: What caused the Palisades blaze? Visual evidence points to a recent fire nearby.
@@ -15,10 +15,10 @@ tags:
   - washington
   - post
 ---
-The Washington Post is really a special place. Our reporters and journalists are smartest in the business. Brianna Sacks, Joyce Sohyun Lee, Imogen Piper and Aaron C. Davis dove deep in what could of caused the recent historic fires in LA. We've built some powerful tools for our journalists in recent years, one of which is designed to help sift through mounds of visual data. The work of engineers, data scientist, and of course our reporters really shows in this piece.
+The Washington Post's Brianna Sacks, Joyce Sohyun Lee, Imogen Piper and Aaron C. Davis dive deep in what could of caused the recent historic fires in LA. The Post built some powerful tools for journalists in recent years, one of which is designed to help sift through mounds of visual data. The work of engineers, data scientist, and of course our reporters really shows in this piece.
 
 One passage stood out to me, I'd like to share: 
 
 > The Post identified the burn scar of the New Year’s Eve fire using false-color satellite imagery taken before and after the blaze. The technique tracks changes to vegetation in satellite imagery. Healthy plant cover appears red, while the scorched ground appears blue to brown.
 
-Our staff at the Post rise to the occasion; always will.
+The staff at the Post rise to the occasion; always will.
