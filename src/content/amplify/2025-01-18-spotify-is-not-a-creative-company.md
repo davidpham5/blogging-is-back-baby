@@ -17,7 +17,7 @@ draft: false
 ---
 I forget who may of said this, but often, the DNA of a company is rooted in *how they were founded*. Facebook, Instagram, and Threads are deeply uninspiring utilitarian chaos apps. Meta is not a creative company nor innovative. All of Mr. Zuckerberg's success was through acquisitions and building one of the most successful ad businesses ever.
 
-Spotify's use of good-enough AI generated background music or [Ghost Artists](https://bookshop.org/a/9695/9781668083505)(Liz Pelly's book, Mood Machine, references it as such) is undercutting real artists through playlists, which people put on not to listen but as white noise. Elizebeth Lopatto of the Verge wrote a good-read-this-now piece:
+Spotify's use of good-enough AI generated background music or [Ghost Artists](https://bookshop.org/a/9695/9781668083505)(Liz Pelly's book, Mood Machine, references it as such) is undercutting real artists through playlists, which people put on not to listen but as white noise. Elizebeth Lopatto of the Verge wrote a go-read-this-now piece:
 
 >⁠⁠Spotify was initially designed as an advertising company⁠⁠; its paid tier was the result of a concession to major labels in early negotiations over streaming rights.
 
