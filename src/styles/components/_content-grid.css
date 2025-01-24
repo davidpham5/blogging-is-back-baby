@@ -74,6 +74,7 @@ article.content-grid section:not(.two-columns) {
 }
 .content-grid > .full-width blockquote {
     width: 115%;
+    margin-left: -1rem;
 }
 /*
  * List of article elements that must be paragraph width
