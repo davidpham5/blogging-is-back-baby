@@ -1,11 +1,19 @@
 ---
-title: Anti-Corruption Platform
+title: The Backlash
 date: 2025-01-26
 source: BlueSky
-isBasedOn: 
-link: 
-tags: 
-draft: true
+isBasedOn: the backlash to all of this is going to be enormous
+link: https://bsky.app/profile/did:plc:e62gb2ushvtvjvqcbrxeaw2n
+tags:
+  - chris
+  - hayes
+  - progressivism
+  - teddy
+  - roosevelt
+  - aoc
+  - berine
+  - sanders
+draft: false
 ---
 Chris Hayes believes there will be a giant backlash to Trump administration's cruel actions.
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:e62gb2ushvtvjvqcbrxeaw2n/app.bsky.feed.post/3lglvvotthk2u" data-bluesky-cid="bafyreie4cdns54ylgkr2acovgnsoezy3uejelojrmmmxsct7jf4jkgzm3m"><p lang="en">Feel deep in my bones that the backlash to all of this is going to be enormous. Not sure how it will manifest and when it will explode into view, but confident it’s coming.</p>&mdash; Chris Hayes (<a href="https://bsky.app/profile/did:plc:e62gb2ushvtvjvqcbrxeaw2n?ref_src=embed">@chrislhayes.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:e62gb2ushvtvjvqcbrxeaw2n/post/3lglvvotthk2u?ref_src=embed">January 25, 2025 at 5:00 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
