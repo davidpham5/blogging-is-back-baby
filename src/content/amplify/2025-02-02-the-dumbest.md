@@ -1,5 +1,5 @@
 ---
-title: the Dumbest
+title: The Dumbest
 date: 2025-02-02
 source: WSJ
 isBasedOn: The Dumbest Trade War Fallout Begins
