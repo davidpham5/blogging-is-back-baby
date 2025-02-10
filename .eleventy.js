@@ -8,7 +8,7 @@ const ObjectCache = require("./lib/helpers/cache");
 const fs = require("fs");
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const { DateTime } = require("luxon");
-
+const { dayOfTheWeek } = require("./lib/helpers/dayOfTheWeek");
 require("dotenv").config();
 
 module.exports = function (eleventyConfig) {
@@ -294,7 +294,6 @@ module.exports = function (eleventyConfig) {
 	//
 
 	eleventyConfig.setLibrary("md", require("./lib/helpers/markdown"));
-
 
   eleventyConfig.on('eleventy.after', async ({ dir, results, runMode, outputMode }) => {
     // Run me after the build ends

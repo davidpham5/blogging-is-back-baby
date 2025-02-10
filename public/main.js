@@ -35,6 +35,7 @@ function setTheme(themeName) {
 	current.classList.add("current");
 }
 
+
 // Set theme before page renders
 (function () {
 	setTheme(localStorage.getItem("theme") || "ftl");
