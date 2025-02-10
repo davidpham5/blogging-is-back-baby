@@ -2,7 +2,7 @@
 
 {% set articlesList = collections.post | excludeStubs %}
 {% set mainClass = 'content-grid' %}
-
+<script>console.log('hello')</script>
 {% block content %}
   <header><h1 class="special header"><span class="strong">David Chico Pham </span>writes on technology, sourdough, and current events.</h1><div class="text-4xl py-6 leading-normal" style="opacity: 1; transform: none; max-width: 780px;">Fantastic home cook, not bad student of history, and slightly above average engineer.</div></b></h2></header>
   <section class="paragraph">
@@ -26,8 +26,6 @@
         Subscribe to the <a href="/amplify/feed.xml">Storystream RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.
       </p>
     </section>
-
-
     {% set thoughts = articlesList | onlyTypes(['thought']) %}
 
     {% if thoughts.length > 0 %}
@@ -42,14 +40,29 @@
     {% endif %}
 
     <section>
-      <h2 class="text-4xl pt-4 pb-0 mt-0 content-grid-header">Recent Writing</h2>
+      <h2 class="text-4xl pt-4 pb-0 mt-0 content-grid-header">Essays</h2>
       <h3 class="thin pb-4 my-0 content-grid-header">Loose, vague feelings on things I don't entirely understand yet.</h3>
       {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(12) %}
       {% include "components/post-list.njk" %}
       <p>
         Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
       </p>
+      <section>
+      {% set turbo = articlesList | onlyTypes(['turbo']) %}
+
+      {% if turbo.length == 0 %}
+      <h2 class="text-4xl py-8 pt-4 pb-0">Turbocharged hyperlinks</h2>
+      <p class="thin pb-4">Chaos desires order -- links to things that happened</p>
+        {% set postsList = turbo | reverse | limit(10) %}
+        {% include "components/post-list.njk" %}
+        <p>
+          View <a href="/turbo/">more hyperlinks</a>
+        </p>
+      {% endif %}
+      </section>
     </section>
+
   </section>
+
   <p>You can find out more <a href="/about/">about me</a>, what I <a href="/uses/">use</a>, the books that I <a href="/books/">have been reading</a> and what I am up to <a href="/now/">now</a>.</p>
 {% endblock %}
