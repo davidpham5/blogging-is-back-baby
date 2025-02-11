@@ -7,6 +7,7 @@ node_modules/
 .cache
 build
 .env
+.env-json.json
 docs
 .DS_Store
 **/.DS_Store

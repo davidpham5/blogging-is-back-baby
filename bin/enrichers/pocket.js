@@ -16,10 +16,10 @@ const transformExportToJSON = (data) => {
   //console.log(data);
 	//const customElements = window.customElements;
 	//const HTMLElement = window.HTMLElement;
-  var linkList = [...document.querySelectorAll('li')].map(el => { 
+  var linkList = [...document.querySelectorAll('li')].map(el => {
     console.log(el, el.outerHTML, el.firstChild.tagName, el.querySelector('A') )
     if (el.firstChild.tagName !== 'A') return;
-    let aChild = el.querySelector('A'); 
+    let aChild = el.querySelector('A');
     let dateString =  aChild.getAttribute('time_added');
     let dateObj = new Date(parseInt(dateString) * 1000);
           // Generate a file-slug YYYY-MM-DD string from the date
@@ -35,9 +35,9 @@ const transformExportToJSON = (data) => {
       console.log('Date error', e, dateString);
       throw new Error('Could not parse date' + dateString)
     }
-    let dataSet = { 
-      link: aChild.href, 
-      date: isoDate, 
+    let dataSet = {
+      link: aChild.href,
+      date: isoDate,
       tags: aChild.getAttribute('tags').split(',').filter(e => e).map(tag => tag.toLowerCase()),
       title: aChild.textContent,
       content: '',
@@ -59,11 +59,11 @@ const getPocketExport = () => {
   return links;
 }
 
-const writeLinkToAmplify = (linkObj) => {
+const writeLinkToTurbo = (linkObj) => {
   return processObjectToMarkdown(
     "title",
     "content",
-    "./src/content/amplify",
+    "./src/content/turbo-hyperlinks",
     linkObj
   )
 }
@@ -72,7 +72,7 @@ const processPocketExport = () => {
   const pocketExport = transformExportToJSON(getPocketExport());
   //write
   let writeResults = pocketExport.map((link) => {
-    return writeLinkToAmplify(link);
+    return writeLinkToTurbo(link);
   })
   return writeResults;
 };
@@ -80,7 +80,7 @@ const processPocketExport = () => {
 
 module.exports = {
   make: async () => {},
-	writeAmplify: async () => {
+	writeTurbo: async () => {
 		//var finishedArray = await Promise.all(quoteArray);
 		var result = processPocketExport();
 		return result;
