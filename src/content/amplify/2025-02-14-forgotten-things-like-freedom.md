@@ -1,5 +1,5 @@
 ---
-title: The Ax Forgets
+title: Forgotten Things Like Freedom
 date: 2025-02-14
 source: Andor
 isBasedOn: The Ax Forgets
