@@ -22,7 +22,7 @@ I am reading Chris Hayes book, [The Sirens' Call](https://bookshop.org/a/9695/97
 
 At the very heart of celebrity's relationship to a fan is this lopsided, one way street: the fan knows a lot about the celebrity but the celebrity doesn't know much about the fan. This need to be recognized, to be understood, and to be seen is deep. It's why ultimately the relationship can be characterized as artificial, unsatisfying, shallow, and ephemeral. 
 
-I'm personally deeply uncomfortable with meeting any of people I admire. I am keenly aware of the power asymmetry. Whenever I meet a new person, I try really hard to get to know a person at their core. I can't stand shallow small talk. 
+I'm personally deeply uncomfortable with meeting any of the people I admire. I am keenly aware of the power asymmetry. Whenever I meet a new person, I try really hard to get to know a person at their core. I can't stand shallow small talk. I get bored very quickly and move on.
 
 What is a fan's small interaction with a famous person but a version of shallow small talk.
 
