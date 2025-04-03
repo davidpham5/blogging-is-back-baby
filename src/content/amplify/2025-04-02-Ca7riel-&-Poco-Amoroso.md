@@ -12,7 +12,7 @@ tags:
   - tiny
   - desk
 ---
-I've been listening to this NPR Tiny Desk over and over again. I really like the Latin jazz they're doing. I can't eying the shirts, especially the exaggerated faces of Ca7riel and Poco Amoroso. 
+I've been listening to this [NPR Tiny Desk](https://www.youtube.com/watch?v=9kqnsoY94L8) over and over again. I really like the Latin jazz, funk, hip-hop they're doing. I can't help but eye the shirts the band is wearing, especially the exaggerated faces of Ca7riel and Poco Amoroso. 
 
 When I studied aboard in Mexico, I came back to the States with an appreciation for Latin jazz. I had a whole phase of it for a couple years.
 
