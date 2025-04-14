@@ -14,4 +14,4 @@ tags:
 ---
 > As the great physicist Richard Feynman said, “The first principle is that you must not fool yourself and you are the easiest person to fool.”
 
-Fundamentally my worldview, to a frustrating extend in my self-confidence, is the what I know is in fact true. I have a little voice in my head that says, "you're fooling yourself." 
+Fundamentally my worldview, to a frustrating extend in my self-confidence, is does what I know is in fact true. I have a little voice in my head that says, "you're fooling yourself." 
