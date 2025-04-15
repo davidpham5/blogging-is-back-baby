@@ -17,7 +17,7 @@ tags:
   - el
   - Salvador
 ---
-The brilliant and always direct, Adam Serwer of the Atlantic makes it very clear: we are in a constitutional crisis right now. Trump is openly shrugging at ¯\_(ツ)/¯ the direct decision from the Supreme Court. But in the most unserious and contempt way:
+The brilliant and always direct, Adam Serwer of the Atlantic makes it very clear: we are in a constitutional crisis right now. Trump is openly shrugging at ¯\_(ツ)/¯ a decision from the Supreme Court, but in the most unserious and contemptful way:
 
 > Last week, the Supreme Court [instructed the Trump administration](https://www.theatlantic.com/politics/archive/2025/04/supreme-court-confronts-donald-trump/682402/)to follow a lower court’s directive to “facilitate” Abrego Garcia’s return...the Trump administration has chosen a third way: pretending it is complying while refusing to do so.
 
@@ -35,4 +35,4 @@ The Supreme Court is now faced with a real decision.
 
 > The Roberts Court will now have to decide whether to side with the Constitution or with a lawless president asserting the power to disappear people at will. This is not a power that any person, much less an American president, is meant to have.
 
-I don't believe Chief Justice Roberts can save the nation from stomach flopping into the abyss. The fall is infinite and looking up is watching the light shrinking into darkness. 
+I don't believe Chief Justice Roberts can save the nation from stomach flopping into the abyss. The fall is infinite. Looking up is to bare witness to the light shrinking into darkness. There is no going back.
