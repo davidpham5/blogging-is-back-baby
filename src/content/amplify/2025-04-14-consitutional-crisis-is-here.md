@@ -25,7 +25,7 @@ A character that nobody thought would become a central villain in the descend to
 
 > During the Oval Office meeting, Rubio [chimed in to say](https://bsky.app/profile/atrupar.com/post/3lmrwtnpd6s2b) that “no court in the United States has a right to conduct the foreign policy of the United States.
 
-I hope when we are the other side of this, these folks face justice at the Hague. Secretary Rubio does not have any place in history besides standing next to Castro and Stalin.
+I hope when we are the other side of this, these folks face justice at the Hague. Secretary Rubio does not have any place in history besides standing next to Castro and Pinochet.
 
 Trump is definitely planning on rounding up citizens on fake criminal charges, with no trial or legal recourse. He has found his secret police and gulag in ICE and El Salvador’s Centro de Confinamiento del Terrorismo (CECOT). The Supreme Court is acutely aware of the dangers of such a plan:
 
