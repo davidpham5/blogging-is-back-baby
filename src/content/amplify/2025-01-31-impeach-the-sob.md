@@ -23,7 +23,7 @@ Tariffs are taxes by another name. Trump is about to raise taxes on everyone by 
 
 Paul Krugman, who god love him is more profane since leaving the Times titles his latest piece, [The End of North America](https://substack.com/home/post/p-156204095). He argues we've built a continental-scale machine that moves, assembles, and builds over *$1.8 trillion* of stuff.  Tariffs are about to bust that all to pieces, hurting business, workers, and consumers. We as consumers are going to witness the highest taxes in decades, at a time when inflation is a major driver to voter discontent. 
 
-What are we going to do about it? Well, I think a better question is what are the Republicans going to do about it. They're in charge. [Democrats should **note** prop a corrupt regime](https://www.offmessage.net/p/dont-prop-up-the-corrupt-trump-regime). Will they stop the president from deploying illegal tariffs -- excuse me -- illegal taxes? 
+What are we going to do about it? Well, I think a better question is what are the Republicans going to do about it. They're in charge. [Democrats should **not** prop a corrupt regime](https://www.offmessage.net/p/dont-prop-up-the-corrupt-trump-regime). Will they stop the president from deploying illegal tariffs -- excuse me -- illegal taxes? 
 
 Illegal, you may ask? The president has a wide aperture in respects to the kinds of tariffs he can impose, but he cannot scream in all caps, something like drug trafficking as the reason. Krugman: 
 
