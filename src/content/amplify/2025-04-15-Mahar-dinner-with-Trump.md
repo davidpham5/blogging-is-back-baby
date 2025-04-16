@@ -19,7 +19,7 @@ In an opinion piece, Leon Krauze for the Washington Post lists examples of peopl
 
 > Herbert Matthews of the New York Times [traveled to the Cuban mountains](https://www.nytimes.com/1957/02/24/archives/cuban-rebel-is-visited-in-hideout-castro-is-still-alive-and-still.html) to interview Fidel Castro, then a little-known guerrilla leader. The reporter came back enthralled. “The personality of the man is overpowering,” Matthews wrote.
 > 
-  Joseph Stalin was remembered by close comrades such as Nikita Khrushchev as a man who could be jovial in private settings, telling jokes and singing Georgian folk songs late into the night — just before ordering purges that would cost thousands of lives.
+> Joseph Stalin was remembered by close comrades such as Nikita Khrushchev as a man who could be jovial in private settings, telling jokes and singing Georgian folk songs late into the night — just before ordering purges that would cost thousands of lives.
 >  
 > Richard M. Nixon and Henry A. Kissinger were both startled during their historic 1972 visit to China: Mao joked with them, played with words and made them feel at ease — a deliberate mask concealing one of history’s most devastating authoritarian records.
 
