@@ -1,5 +1,5 @@
 ---
-title: The Clarity is the mssage
+title: The clarity is the message
 date: 2025-04-16
 source: Baldwin & Co
 isBasedOn: This Dialogue Might Get Erased—So We’re Making It Loud! The Conversation America Will Try to Bury!
