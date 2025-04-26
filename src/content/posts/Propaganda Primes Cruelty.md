@@ -35,7 +35,7 @@ That [tariff that Trump](https://apnews.com/article/tariffs-trump-taxes-imports-
 
 Germans knew what was going on when the [Night of Broken Glass](https://encyclopedia.ushmm.org/content/en/article/the-night-of-broken-glass) happened. They knew the Nazis ordered firemen not to put out the flames on Jewish synagogues. Some were gleeful in that cruelty. Many remained [silent](https://en.wikipedia.org/wiki/Kristallnacht#In_Germany), [ignored it entirely](https://www.history.com/topics/holocaust/kristallnacht), or quietly said to themselves, "[the Nation will be better without them](https://archive.org/details/kristallnacht19300stei/page/3)".
 
-I'm telling you this because when those folks share their rationalizations of said cruelty, you will feel angry. "Don't they know better? Didn't we go through this in the first Trump term? How could you be okay with this?" I want you to know that propaganda has a powerful effect on the stories people tell themselves to feel good about cruel things.  People need to feel they are a hero in their own stories. It is a way to avoid feeling the pain underneath the hate.
+I'm telling you this because when those folks share their rationalizations of said cruelty, you will feel angry. "Don't they know better? Didn't we go through this in the first Trump term? How could you be okay with this?" I want you to know that propaganda has a powerful effect on the stories people tell themselves to feel good about cruel things. People need to feel they are a hero in their own stories. It is a way to avoid feeling the pain underneath the hate.
 
 Let us hope, it will roil enough people to say "We didn't elect you to create a Gestapo. We wanted cheaper eggs. Not child separation."  Their cruelty will change them for the worse.
 
