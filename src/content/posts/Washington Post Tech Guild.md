@@ -14,7 +14,7 @@ tags:
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/davidchicopham/54541701521/in/datetaken/" title="washington post tech guild final vote tally"><img src="https://live.staticflickr.com/65535/54541701521_34c8044973_b.jpg" alt="washington post tech guild final vote tally"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </div>
 
-On May 23, 2025, we, the Washington Post Tech Guild, won 82% of the vote and became a newly minted certified union, all under the ownership of Jeffrey Bezos, the third richest man on Earth..
+On May 23, 2025, we, the Washington Post Tech Guild, won 82% of the vote and became a newly minted certified union, all under the ownership of Jeffrey Bezos, the third richest man on Earth.
 
 Why have a tech union? That question was hard to answer for very long time. We as dreamers of dreams, the engineers and designers in tech were promised we too can make a dent in the universe. We were the next founders. We were on the verge of the next big thing. 
 
