@@ -22,9 +22,9 @@ Ezra Klein on How I write [shares the same belief](https://open.substack.com/pub
 <iframe src="https://www.youtube.com/embed/smb7hy6KufQ?si=eQX5IaWKIKaGhbZJ&amp;start=2646" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-You can only make connections through grappling and struggling with text. Curiosity is necessary in expanding one's mind, even done poorly it's worth the pain of frustration and dissatisfaction. 
+You can only make connections through grappling and struggling with text. Curiosity is the driver in expanding one's mind, even done poorly it's worth the pain of frustration and dissatisfaction. In engaging in a codebase, or subject for hours, it changes you. You grow. You learn. You struggle.
 
-AI advocates usually gesture to technological improvement in the past and the jobs of old such as horse shit collector when cars were increasingly became more common. The horse shit collector became the factory worker or so we are told. What's interesting is that whoever is saying this is usually a wealthy man who owned the factory. In this case, though, it's the ravenous information thieves in Silicon Valley, promising turbo charge your programming game. It's a lie. AI is a theft of the mind. Again here's James view on labor and the promise of new jobs: 
+AI advocates usually gesture to technological improvement displacing the jobs of old such as the horse shit collector with new jobs, like factory car worker. What's interesting is that whoever is saying this is usually a wealthy man who owned the factory. In this case, though, it's the ravenous information thieves in Silicon Valley, promising turbo charge your programming game. It's a lie. AI is a theft of the mind. Again here's James view on labor and the promise of new jobs: 
 
 > The Luddite movement is an interesting piece of history. People often remember the part about breaking machines in factories. Today, people refer to those who refuse to use new productivity-enhancing technology as, _Luddites_. But the movement was not about sabotage. At least, it had a purpose and sabotage was only one strategy used by people to try and enact change and gain bargaining power.
 > 
