@@ -34,3 +34,4 @@ AI advocates usually gesture to technological improvement displacing the jobs of
 
 And there's the rub. Let's say the co-pilot tools do actually increase productivity. It isn't like workers see shorter hours or bigger paychecks. Folks like Mr. Bezos get richer with a smaller workforce doing more. What do we as workers get in return? Lesser benefits and 2% raise and another year maybe of employment.
 
+We might trading something more than our time and efficiency. Our minds might get weaker as we rely on these AI tools to do the heavy lifting of thinking.
