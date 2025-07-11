@@ -1,6 +1,6 @@
 ---
 title: They're Literally Angry at Superman for Being Nice
-date: 07-10-25
+date: 2025-07-10
 source: The Present Age - Parker Molloy
 isBasedOn: They're Literally Angry at Superman for Being Nice
 link: https://www.readtpa.com/p/theyre-literally-angry-at-superman
