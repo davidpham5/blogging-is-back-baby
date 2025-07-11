@@ -1,5 +1,5 @@
 ---
-title: AI is theft of the mind
+title: Ai Steals Education
 date: 2025-06-22
 source: Agentultra
 isBasedOn: Why I Won't Use AI
