@@ -48,15 +48,16 @@
         Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
       </p>
       <section>
-      {% set turbo = articlesList | onlyTypes(['turbo']) %}
+      {% set turboLinks = readwise.articles %}
 
-      {% if turbo.length == 0 %}
+      {% if turboLinks.length > 0 %}
       <h2 class="text-4xl py-8 pt-4 pb-0">Turbocharged hyperlinks</h2>
       <p class="thin pb-4">Chaos desires order -- links to things that happened</p>
-        {% set postsList = turbo | reverse | limit(10) %}
-        {% include "components/post-list.njk" %}
+        <ul class="post-list">
+          {% include "components/turbo-links.njk" %}
+        </ul>
         <p>
-          View <a href="/turbo/">more hyperlinks</a>
+          View <a href="/turbo/">more turbo links</a>
         </p>
       {% endif %}
       </section>

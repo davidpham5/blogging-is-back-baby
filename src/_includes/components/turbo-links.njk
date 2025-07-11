@@ -1,0 +1,58 @@
+{% for article in turboLinks %}
+  {% if article.title %}
+    <li class="post-list-item">
+      <article class="card overflow-hidden mb-8">
+        <!--Image with Overlay -->
+        <div class="relative w-full h-48 mb-4">
+          {% if article.image_url %}
+          <img src="{{ article.image_url }}" alt="{{ article.title }}" class="w-full h-full object-cover">
+          <!-- Black overlay with opacity -->
+          <div class="absolute bg-black bg-opacity-40 top-0 w-full h-full"></div>
+          <!-- Title overlay -->
+          <div class="absolute flex justify-center align-middle p-4 top-0 w-full h-full">
+            <h3 class="font-semibold text-3xl top-0 p-2 flex flex-col justify-center text-white" style="text-shadow: 0 1px 0 rgba(0,0,0,0.8), 0 -1px 0 rgba(255,255,255,0.3), 0 2px 4px rgba(0,0,0,0.6);">
+              <a href="{{ article.source_url }}" target="_blank" rel="noopener" class="hover:underline">
+              {{ article.title }}
+              </a>
+            </h3>
+          </div>
+        {% else %}
+          <!-- Fallback for no image -->
+          <div class="w-full h-full bg-gray-800 flex items-center justify-center">
+            <div class="text-center">
+              <svg class="w-12 h-12 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"></path>
+              </svg>
+              <h3 class="text-white font-semibold text-lg leading-tight px-4">
+                <a href="{{ article.source_url }}" target="_blank" rel="noopener" class="hover:underline">
+                  {{ article.title }}
+                </a>
+              </h3>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+      <!-- Content below image -->
+      <div class="px-4 pb-4">
+
+        {% if article.note %}
+          <p class="text-sm italic text-gray-100 mb-3">Note: {{ article.note }}</p>
+        {% endif %}
+
+        <div class="flex flex-wrap items-center text-xs text-gray-100 uppercase tracking-wide">
+          <time class="mr-2" datetime="{{ article.date | dateToFormat('iso') }}">
+            {{ article.date | dateToFormat("DDD") }}
+          </time>
+          <span class="mr-2">•</span>
+          <span class="mr-2">[{{ article.site_name }}]</span>
+          {% if article.author %}
+              <span class="mr-2">•</span>
+            <span>{{ article.author }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+  {% endif %}
+  </li>
+{% endfor %}
