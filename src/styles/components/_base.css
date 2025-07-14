@@ -778,3 +778,9 @@ article#page-post h3 {
 .right-0 { right: 0; }
 .bottom-0 { bottom: 0; }
 .left-0 { left: 0; }
+
+.foreground-color,
+.theme-ftl a:link.foreground-color,
+.theme-ftl a:visited.foreground-color {
+    color: var(--foreground);
+}
