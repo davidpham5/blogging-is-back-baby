@@ -50,7 +50,7 @@ async function getRecentBookmarks() {
     if (data?.items) {
       // Transform raindrop bookmarks into turbo link format
       const articles = data.items.map(item => {
-        console.log({item});
+        // console.log({item});
         return {
           id: item._id,
           title: item.title,
@@ -59,7 +59,7 @@ async function getRecentBookmarks() {
           note: item.note || '',
           source_url: item.link,
           raindrop_url: `https://raindrop.io/my/0/item/${item._id}`,
-          author: item.domain || '',
+          // author: item.domain || '',
           site_name: item.domain || '',
           created_at: item.created,
           updated_at: item.lastUpdate,
