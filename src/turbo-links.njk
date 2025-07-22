@@ -1,0 +1,31 @@
+---
+permalink: /turbo-links/
+eleventyNavigation:
+  key: Turbo Links
+  order: 5
+layout: layouts/page.njk
+title: Turbocharged Hyperlinks
+description: Chaos desires order -- links to things that happened
+---
+
+<header>
+  <h1>{{ title }}</h1>
+  <p class="lead">{{ description }}</p>
+</header>
+
+<section>
+  {% set turboLinks = raindrop.articles %}
+  
+  {% if turboLinks.length > 0 %}
+    <ul class="post-list">
+      {% include "components/turbo-links.njk" %}
+    </ul>
+  {% else %}
+    <p>No turbo links available at the moment.</p>
+  {% endif %}
+</section>
+
+<section>
+  <h2>About Turbo Links</h2>
+  <p>These are bookmarks and interesting links I've saved from around the web, powered by <a href="https://raindrop.io" target="_blank" rel="noopener">Raindrop.io</a>. They represent things that caught my attention, sparked curiosity, or seemed worth preserving for future reference.</p>
+</section>
