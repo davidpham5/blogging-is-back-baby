@@ -23,11 +23,11 @@ The Atlantic shares some [astonishing pictures](https://www.theatlantic.com/phot
 
 These couple pictures are incredible: 
 <div class="embed-container">
-<img src="https://kottke.org/cdn-cgi/image/format=auto,fit=scale-down,width=1200,metadata=none/plus/misc/images/china-solar-02.jpg" srcset="https://kottke.org/cdn-cgi/image/format=auto,fit=scale-down,width=1200,metadata=none/plus/misc/images/china-solar-02.jpg" sizes="(max-width: 500px) 500px, 1200px" loading="lazy" width="1300" height="793" border="0" alt="overhead view of a solar farm surrounded by water" class="medium-zoom-image">
+<img src="https://kottke.org/cdn-cgi/image/format=auto,fit=scale-down,width=1200,metadata=none/plus/misc/images/china-solar-02.jpg"  sizes="(max-width: 500px) 500px, 1200px" loading="lazy" width="1300" height="793" border="0" alt="overhead view of a solar farm surrounded by water" class="medium-zoom-image">
 </div>
 
 <div class="embed-container">
-<img src="https://cdn.theatlantic.com/thumbor/uEbEAuMSJvXOpMqEIZCCSSsy39Y=/0x0:3804x2536/1856x1238/media/img/posts/2025/07/a09_G_2151681013/original.jpg" srcset="https://cdn.theatlantic.com/thumbor/uEbEAuMSJvXOpMqEIZCCSSsy39Y=/0x0:3804x2536/1856x1238/media/img/posts/2025/07/a09_G_2151681013/original.jpg" sizes="(max-width: 500px) 500px, 1200px" loading="lazy" width="1300" height="793" border="0" alt="Floating solar panels sit in several grids on the surface of a reservoir." class="medium-zoom-image"
+<img src="https://cdn.theatlantic.com/thumbor/uEbEAuMSJvXOpMqEIZCCSSsy39Y=/0x0:3804x2536/1856x1238/media/img/posts/2025/07/a09_G_2151681013/original.jpg" sizes="(max-width: 500px) 500px, 1200px" loading="lazy" width="1300" height="793" border="0" alt="Floating solar panels sit in several grids on the surface of a reservoir." class="medium-zoom-image" />
 </div>
 
 I am glad the clean energy revolution is still speeding ahead, but we gave up this century when Trump signed said bill into law.
