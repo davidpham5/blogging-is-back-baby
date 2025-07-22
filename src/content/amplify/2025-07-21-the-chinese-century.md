@@ -5,6 +5,13 @@ source: The Atlantic
 isBasedOn: "Photos: The Scale of China’s Solar-Power Projects"
 link: https://www.theatlantic.com/photography/archive/2025/07/photos-china-solar-power-energy/683488/?gift=4Zru9TENS_XSTZPABzJJ2kCE6Fb-nlpjURSwXsZz4CE&utm_source=copy-link&utm_medium=social&utm_campaign=share
 tags:
+  - china
+  - energy
+  - renewable
+  - clean
+  - century
+  - america
+  - trump
 ---
 I read some of [How The World Really Works](https://bookshop.org/p/books/how-the-world-really-works-the-science-behind-how-we-got-here-and-where-we-re-going-vaclav-smil/18154510) by Vaclav Smil. The basic premise is that GDP or the prosperity of a country is deeply related to its energy consumption. There are only a handful of countries that can produce abundant cheap fossil fuels, the US as one of them. The United States in the 20th century witness unparalleled growth as a consequence of securing said cheap fossil fuels. Some have referred the 20th Century as the [American Century](https://en.wikipedia.org/wiki/American_Century) because the US dominated in just about everything. 
 
