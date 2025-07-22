@@ -16,7 +16,7 @@ Thump the bass.
 <iframe src="https://www.youtube.com/embed/pmlqEKklWqs?si=_oUP8SdWrf5JstWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-I just love the album the cover here. The exaggerated fists reminds me of Ludacris albums.
+I just love album cover here. The exaggerated fists reminds me of Ludacris albums.
 
 <div class="embed-container">
 <iframe src="https://www.youtube.com/embed/IGXS45Gp8jA?si=QAe8kkZltFCA157k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
