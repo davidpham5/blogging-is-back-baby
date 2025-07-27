@@ -1,0 +1,28 @@
+
+<!-- Pagination Navigation -->
+{% if pagination.pages.length > 1 %}
+    <nav aria-label="Turbo Links Pagination" class="pagination mt-8 flex justify-between items-center">
+      <div>
+        {% if pagination.previousPageHref %}
+          <a href="{{ pagination.previousPageHref }}" class="btn btn-secondary"><span class="btn-text-with-icon">← Previous</span></a>
+        {% endif %}
+      </div>
+
+      <div class="flex space-x-2">
+        {% for pageEntry in pagination.pages %}
+          {% if page.url == pageEntry %}
+            <span class="px-3 py-2 bg-blue-600 text-white rounded">{{ loop.index }}</span>
+          {% else %}
+            <a href="{{ pageEntry }}" class="px-3 py-2 border rounded hover:bg-gray-100">{{ loop.index }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div>
+        {% if pagination.nextPageHref %}
+          <a href="{{ pagination.nextPageHref }}" class="btn btn-primary"><span class="text-blue-50">Next →</span></a>
+        {% endif %}
+      </div>
+    </nav>
+  {% endif %}
+

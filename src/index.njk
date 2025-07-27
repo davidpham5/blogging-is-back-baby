@@ -48,7 +48,7 @@
         Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
       </p>
       <section>
-      {% set turboLinks = raindrop.articles %}
+      {% set turboLinks = raindrop.articles | limit(10) %}
 
       {% if turboLinks.length > 0 %}
       <h2 class="text-4xl py-8 pt-4 pb-0">Turbocharged hyperlinks</h2>

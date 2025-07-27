@@ -1,5 +1,9 @@
 ---
-permalink: /turbo-links/
+pagination:
+  data: raindrop.articles
+  size: 15
+  alias: turboLinks
+permalink: "turbo-links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
 eleventyNavigation:
   key: Turbo Links
   order: 5
@@ -14,18 +18,26 @@ description: Chaos desires order -- links to things that happened
 </header>
 
 <section>
-  {% set turboLinks = raindrop.articles %}
-  
   {% if turboLinks.length > 0 %}
-    <ul class="post-list">
+    {% if pagination.pages.length > 1 %}
+      {% include "components/pagination.njk" %}
+    {% endif %}
+    <ul class="post-list my-12">
       {% include "components/turbo-links.njk" %}
     </ul>
+
   {% else %}
     <p>No turbo links available at the moment.</p>
   {% endif %}
+
+  {% if pagination.pages.length > 1  && pagination.pages.length < 5%}
+    {% include "components/pagination.njk" %}
+  {% endif %}
 </section>
 
-<section>
+
+
+<section class="mt-8">
   <h2>About Turbo Links</h2>
-  <p>These are bookmarks and interesting links I've saved from around the web, powered by <a href="https://raindrop.io" target="_blank" rel="noopener">Raindrop.io</a>. They represent things that caught my attention, sparked curiosity, or seemed worth preserving for future reference.</p>
+  <p>The retweet and reblog is a powerful link amplifier mechanism. The old web had backlinks as the main currency in knowing what's good, cool, or interesting. It was the way to share and build a web without social media. Turbo Link is a retweet or reblog to amplifiy the things I am paying attention to.</p>
 </section>

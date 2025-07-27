@@ -1,0 +1,68 @@
+<!-- Modern Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {% for article in turboLinks %}
+    {% if article.title %}
+      <article class="card overflow-hidden group hover:scale-105 transition-transform duration-300">
+        <!-- Image Section with Overlay -->
+        <div class="relative aspect-square overflow-hidden">
+          {% if article.image_url %}
+            <img src="{{ article.image_url }}" alt="{{ article.title }}"
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          {% else %}
+            <!-- Fallback pattern -->
+            <div class="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+              <svg class="w-16 h-16 text-white opacity-50" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          {% endif %}
+
+          <!-- Gradient overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+          <!-- Title overlay on hover -->
+          <div class="absolute inset-0 p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h3 class="text-white font-semibold text-lg leading-tight my-4 mx-0">
+              {{ article.title }}
+            </h3>
+          </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="py-4">
+          <h3 class="font-semibold text-base leading-tight mb-2 group-hover:hidden">
+            <a href="{{ article.source_url }}" target="_blank" rel="noopener"
+               class="hover:underline no-link"
+               aria-label="Read {{ article.title }}"
+               title="Read {{ article.title }}">
+              {{ article.title | truncate(60) }}
+            </a>
+          </h3>
+
+          <!-- Hidden content shown on hover -->
+          <div class="hidden group-hover:block">
+            <a href="{{ article.source_url }}" target="_blank" rel="noopener"
+               class="inline-block w-full text-center py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors no-ext">
+              Read Article →
+            </a>
+          </div>
+
+          <!-- Always visible meta -->
+          <div class="text-xs opacity-60 mt-2 group-hover:hidden">
+            <time datetime="{{ article.date | dateToFormat('iso') }}">
+              {{ article.date | dateToFormat("MMM DD") }}
+            </time>
+            <span class="mx-1">•</span>
+            <span>{{ article.site_name }}</span>
+          </div>
+
+          {% if article.note %}
+            {# <div class="mt-2 group-hover:hidden">
+              <p class="text-xs italic opacity-70 bg-gray-100 p-2 rounded">{{ article.note | truncate(80) }}</p>
+            </div> #}
+          {% endif %}
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>

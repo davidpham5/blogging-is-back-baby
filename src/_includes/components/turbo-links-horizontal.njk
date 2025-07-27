@@ -1,0 +1,64 @@
+<!-- Horizontal Card Layout -->
+<div class="space-y-6">
+  {% for article in turboLinks %}
+    {% if article.title %}
+      <article class="card overflow-hidden flex flex-col md:flex-row box-shadow-2xl hover:shadow-xl transition-shadow duration-300 p-3">
+        <!-- Image Section -->
+        {% if article.image_url %}
+          <div class="md:w-1/3 lg:w-1/4 relative">
+            <div class="aspect-video md:aspect-square relative overflow-hidden">
+              <img src="{{ article.image_url }}" alt="{{ article.title }}"
+                   class="w-full h-full object-cover">
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- Content Section -->
+        <div class="flex-1 px-4 flex flex-col justify-between">
+          <div>
+            <h3 class="font-semibold text-xl leading-tight mb-3">
+              <a href="{{ article.source_url }}" target="_blank" rel="noopener"
+                 class="hover:underline no-ext"
+                 aria-label="Read {{ article.title }}"
+                 title="Read {{ article.title }}">
+                {{ article.title }}
+              </a>
+            </h3>
+
+            {% if article.summary %}
+              <p class="text-base opacity-80 mb-4 line-clamp-2">{{ article.summary }}</p>
+            {% endif %}
+
+            {% if article.note %}
+              <div class="rounded mb-4">
+                <p class="text-sm italic"><strong>Note:</strong> {{ article.note }}</p>
+              </div>
+            {% endif %}
+          </div>
+
+          <!-- Meta Information -->
+          <div class="flex flex-wrap items-center text-sm opacity-70 mt-4">
+            <time class="mr-2" datetime="{{ article.date | dateToFormat('iso') }}">
+              {{ article.date | dateToFormat("DDD") }}
+            </time>
+            <span class="mr-4">•</span>
+            <span class="mr-4 font-medium">{{ article.site_name }}</span>
+            {% if article.author %}
+              <span class="mr-4">•</span>
+              <span class="italic">by {{ article.author }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

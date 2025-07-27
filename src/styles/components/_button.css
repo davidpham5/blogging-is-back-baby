@@ -38,3 +38,6 @@ img.btn-88x31{
     min-width: 88px;
     max-height: 31px;
 }
+.btn-text-with-icon {
+    color: var(--foreground);
+}

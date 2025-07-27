@@ -32,7 +32,7 @@ async function getRecentBookmarks() {
     }
 
     // Get recent bookmarks from all collections, sorted by creation date descending
-    const response = await fetch('https://api.raindrop.io/rest/v1/raindrops/0?sort=-created&perpage=10', {
+    const response = await fetch('https://api.raindrop.io/rest/v1/raindrops/0?sort=-created&perpage=50', {
       method: 'GET',
       headers
     });
@@ -49,30 +49,29 @@ async function getRecentBookmarks() {
 
     if (data?.items) {
       // Transform raindrop bookmarks into turbo link format
-      const articles = data.items.map(item => {
-        // console.log({item});
-        if (item.tags.includes("private")) {
-          return null; // Skip private items
-        }
-        return {
-          id: item._id,
-          title: item.title,
-          summary: item.excerpt || '',
-          image_url: item.cover || null,
-          note: item.note || '',
-          source_url: item.link,
-          raindrop_url: `https://raindrop.io/my/0/item/${item._id}`,
-          // author: item.domain || '',
-          site_name: item.domain || '',
-          created_at: item.created,
-          updated_at: item.lastUpdate,
-          date: item.created,
-          data: {
-            contentType: 'turbo',
-            tags: ['raindrop', 'saved', 'turbo link']
-          }
-        };
-      });
+      const articles = data.items
+        .filter(item => !item.tags.includes("private")) // Filter out private items first
+        .map(item => {
+          // console.log({item});
+          return {
+            id: item._id,
+            title: item.title,
+            summary: item.excerpt || '',
+            image_url: item.cover || null,
+            note: item.note || '',
+            source_url: item.link,
+            raindrop_url: `https://raindrop.io/my/0/item/${item._id}`,
+            // author: item.domain || '',
+            site_name: item.domain || '',
+            created_at: item.created,
+            updated_at: item.lastUpdate,
+            date: item.created,
+            data: {
+              contentType: 'turbo',
+              tags: ['raindrop', 'saved', 'turbo link']
+            }
+          };
+        });
 
       // Log the transformed articles
       // console.log(chalk.green('[raindrop]'), 'Transformed bookmarks:');
