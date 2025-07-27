@@ -51,6 +51,9 @@ async function getRecentBookmarks() {
       // Transform raindrop bookmarks into turbo link format
       const articles = data.items.map(item => {
         // console.log({item});
+        if (item.tags.includes("private")) {
+          return null; // Skip private items
+        }
         return {
           id: item._id,
           title: item.title,
