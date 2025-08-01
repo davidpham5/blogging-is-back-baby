@@ -32,7 +32,7 @@ async function getRecentBookmarks() {
     }
 
     // Get recent bookmarks from all collections, sorted by creation date descending
-    const response = await fetch('https://api.raindrop.io/rest/v1/raindrops/0?sort=-created&perpage=50', {
+    const response = await fetch('https://api.raindrop.io/rest/v1/raindrops/0?sort=-created&perpage=150', {
       method: 'GET',
       headers
     });
@@ -68,7 +68,7 @@ async function getRecentBookmarks() {
             date: item.created,
             data: {
               contentType: 'turbo',
-              tags: ['raindrop', 'saved', 'turbo link']
+              tags: item.tags.length > 0 ? item.tags.map(tag => tag.toLowerCase()) : ['raindrop', 'turbo link'],
             }
           };
         });
