@@ -1,5 +1,5 @@
 ---
-title: "Too Big to Fail: AI bubble will pop but the bailed out"
+title: AI is Bubble Popping But It Doesn't Know It Yet
 date: 2025-08-05
 source: Blood in the Machine - Brian Merchant
 isBasedOn: The AI bubble is so big it's propping up the US economy (for now)
@@ -7,7 +7,13 @@ link: https://www.bloodinthemachine.com/p/the-ai-bubble-is-so-big-its-propping?u
 tags:
   - AI
   - bubble
-draft: true
+  - ghost
+  - fediverse
+  - verge
+  - OpenAI
+  - nilay
+  - patel
+draft: false
 ---
 Brian Merchant makes a convincing case the US has a AI bubble on it's hands and it is staggeringly massive. Quoting a [WSJ column](https://www.wsj.com/tech/ai/silicon-valley-ai-infrastructure-capex-cffe0431?st=oLCAcg&reflink=desktopwebshare_permalink) by Paul Kedrosky, Merchant sets up just how big this AI bubble is:
 
@@ -23,4 +29,9 @@ The private sector is under going a government size stimulus program. These comp
 
 > To me, this is just screaming bubble. I’m sure I’m not alone. In fact I _know_ I’m not alone. I’m thinking especially of [Ed Zitron’s impassioned and](https://www.wheresyoured.at/the-haters-gui/) _[](https://www.wheresyoured.at/the-haters-gui/)_[thorough guide to the AI bubble](https://www.wheresyoured.at/the-haters-gui/); a rundown of how much money is being poured into and spent on AI vs how much money these products are making, and surprise, the situation as it stands is not sustainable.
 
-So imagine this amount of spending and investment without the consumer demand. Chatbots as a product have limited application in people's lives, especially at work. 
+These companies, openAI, perplexity, anthropic, etc, are all unprofitable. They are burning billions in venture capital and have little to show for. There has not been one company out there, in the 3 years chatGPT released 3.0, that has been able to build a successful genAI product.
+
+The reason is,"fundamentally, generative AI does not let companies build something new," argues Ed Zitron in his piece [AI is a money trap](https://www.wheresyoured.at/ai-is-a-money-trap/?ref=ed-zitrons-wheres-your-ed-at-newsletter)
+Meanwhile the [Nilay Patel](https://bsky.app/profile/reckless.bsky.social/post/3lvqn6sjvtc2u), Verge's hype-man for blogs -- golden age tech if I may say, announced SB Nation is becoming a next gen social network, powered by ActivtyPub. [Ghost also announced](https://aramzs.xyz/noteworthy/ghost-is-building-a-blogger-decentralized-future/) you will be able to publish to fediverse apps, including bluesky. Essentially, the future of media is the blog.
+
+The main thesis of this site is blogging is back, baby.
