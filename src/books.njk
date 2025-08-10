@@ -3,7 +3,7 @@ folder: lists
 ---
 {% extends "layouts/page.njk" %}
 
-{% set title = 'Library' %}
+{% set title = 'Reading is a joyful part of my life.' %}
 {% set titlePrefix = 'Reading' %}
 {% set readBooks = bookwyrm | whereKeyEquals('shelf', 'read') %}
 {% set readingBooks = bookwyrm | whereKeyEquals('shelf', 'reading') %}
@@ -20,7 +20,7 @@ folder: lists
 
 {% block pageContent %}
     <section>
-        <h2>{{ subTitle1 }}</h2>
+        <h2 class="">{{ subTitle1 }}</h2>
         {% set books = readingBooks %}
         {% include "components/book-grid.njk" %}
     </section>
