@@ -44,8 +44,8 @@
     margin-bottom: 0;
 }
 .content-grid p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 .content-grid > *,
 .full-width > *,

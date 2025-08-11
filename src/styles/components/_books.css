@@ -1,3 +1,189 @@
+/* Library Page Styles */
+.library-intro {
+    text-align: center;
+}
+
+.library-description {
+    font-size: 3.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.library-section {
+    margin: 4rem 0;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.section-subtitle {
+    font-size: 1rem;
+}
+
+/* Book Library Grid */
+.book-library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.book-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-4px);
+}
+
+.book-link {
+    text-decoration: none;
+    display: block;
+}
+
+.book-cover {
+    position: relative;
+    aspect-ratio: 2/3;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.book-card:hover .book-cover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.book-card:hover .cover-image {
+    transform: scale(1.02);
+}
+
+.cover-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--background-muted), var(--color-cream));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.placeholder-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.placeholder-author {
+    font-size: 0.75rem;
+    line-height: 1.2;
+}
+
+.book-meta {
+    text-align: center;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
+}
+
+.book-title a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.book-title a:hover {
+    color: var(--color-primary);
+}
+
+.book-subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+.book-author {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.book-review-indicator {
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.review-badge {
+    background: var(--color-primary);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.book-rating {
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .book-library {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .library-description {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-library {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1rem;
+    }
+
+    .book-title {
+        font-size: 0.8rem;
+    }
+
+    .book-author,
+    .book-subtitle {
+        font-size: 0.75rem;
+    }
+}
+
+/* Legacy book grid styles for backward compatibility */
 ul.books {
     margin: 1em 0 0 0;
     padding: 0;
@@ -18,7 +204,6 @@ ul.books .info{
 
 ul.books .info h3{
     font-size: 1rem;
-
     margin-bottom: 0.5rem;
 }
 
@@ -44,7 +229,6 @@ ul.books .img-placeholder{
 
 ul.books a{
     display: block;
-    /* height: 240px; */
 }
 
 ul.books img {
@@ -53,7 +237,6 @@ ul.books img {
     height: 100%;
     box-shadow: var(--box-shadow-lg);
     transform: scale3d(1.02, 1.02, 1.02);
-    /* opacity: 0.2; */
 }
 
 ul.books .title {

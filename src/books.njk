@@ -3,33 +3,25 @@ folder: lists
 ---
 {% extends "layouts/page.njk" %}
 
-{% set title = 'Reading is a joyful part of my life.' %}
-{% set titlePrefix = 'Reading' %}
+{% set title = 'Attention Expanding Technology: Books' %}
+{% set titlePrefix = 'Library' %}
 {% set readBooks = bookwyrm | whereKeyEquals('shelf', 'read') %}
 {% set readingBooks = bookwyrm | whereKeyEquals('shelf', 'reading') %}
 {% set reviews = collections.resources | whereKeyEquals('resourceType', 'books') %}
-{% set subTitle %}
-  Books I’ve read that significantly influenced how I see the world.
-{% endset %}
-{% set subTitle1 %}
-    📖 Books I've started and probably won't finish:
-{% endset %}
-{% set subTitle2 %}
-    📚 Books I've finished, hooray:
-{% endset %}
+{% set subTitle = 'Freedom to learn'%}
 
 {% block pageContent %}
-    <section>
-        <h2 class="">{{ subTitle1 }}</h2>
+    <section class="library-section">
+        <h2 class="section-title">Currently Reading</h2>
+        <p class="section-subtitle">Books I've started and probably won't finish</p>
         {% set books = readingBooks %}
-        {% include "components/book-grid.njk" %}
+        {% include "components/book-library.njk" %}
     </section>
 
-    <section>
-        <h2>{{ subTitle2 }}</h2>
+    <section class="library-section">
+        <h2 class="section-title">Finished Books</h2>
+        <p class="section-subtitle">Books I've finished, hooray</p>
         {% set books = readBooks %}
-        {% include "components/book-grid.njk" %}
+        {% include "components/book-library.njk" %}
     </section>
-    <hr/>
-    {% include "components/book-layout-inspiration.njk" %}
 {% endblock %}
