@@ -1559,6 +1559,12 @@ article p {
   text-justify: inter-word;
 }
 
+article .book-meta p {
+  text-align: center;
+  -moz-text-align-last: auto;
+       text-align-last: auto;
+}
+
 article.note img:not(.btn-88x31) {
   max-width: 100%;
   height: auto;
@@ -2569,7 +2575,7 @@ figure.three picture img {
 .book-library {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 2rem;
+  gap: 2.1rem;
   margin: 2rem 0;
 }
 
@@ -2649,9 +2655,10 @@ figure.three picture img {
 }
 
 .book-title a {
-  color: var(--text-color);
-  text-decoration: none;
+  color: var(--foreground);
+  text-decoration: underline;
   transition: color 0.2s ease;
+  text-underline-offset: 3px;
 }
 
 .book-title a:hover {

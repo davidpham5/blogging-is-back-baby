@@ -29,7 +29,7 @@
 .book-library {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 2rem;
+    gap: 2.1rem;
     margin: 2rem 0;
 }
 
@@ -108,9 +108,10 @@
 }
 
 .book-title a {
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--foreground);
+    text-decoration: underline;
     transition: color 0.2s ease;
+    text-underline-offset: 3px;
 }
 
 .book-title a:hover {

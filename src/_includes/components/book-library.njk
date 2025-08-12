@@ -13,9 +13,9 @@
             <a href="{{ href }}" class="book-link no-ext" aria-label="View {{ book.title }}">
                 <div class="book-cover">
                     {% if book.cover %}
-                        <img 
-                            loading="lazy" 
-                            src="{{ book.cover.url }}" 
+                        <img
+                            loading="lazy"
+                            src="{{ book.cover.url }}"
                             alt="Cover of {{ book.title }}"
                             class="cover-image"
                         >
@@ -31,9 +31,9 @@
                     {% endif %}
                 </div>
             </a>
-            
+
             <div class="book-meta">
-                <h3 class="book-title">
+                <h3 class="book-title strong">
                     <a href="{{ href }}" class="no-ext">{{ book.title }}</a>
                 </h3>
                 {% if book.subtitle %}
@@ -44,7 +44,7 @@
                         {{ author.name }}{{ "," if not loop.last }}
                     {% endfor %}
                 </p>
-                
+
                 {% if review %}
                     <div class="book-review-indicator">
                         <span class="review-badge">Review Available</span>

@@ -275,6 +275,10 @@ article p {
     text-align-last: left;
     text-justify: inter-word;
 }
+article .book-meta p {
+    text-align: center;
+    text-align-last: auto;
+}
 
 article.note img:not(.btn-88x31) {
     max-width: 100%;
