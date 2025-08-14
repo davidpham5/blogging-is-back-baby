@@ -14,4 +14,4 @@ tags:
 <iframe src="https://www.youtube.com/embed/ljHdccyQbT4?si=LVCQOoZd96_qpund" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-Hip hop is the music of the freed black man. Tyler the Creator is sharing a freedom that beautiful and joyous. The video is NSFW. Watch it though.
+Hip hop is the music of the freed black man. Tyler the Creator is sharing a freedom that is beautiful and joyous. The video is NSFW. Watch it though.
