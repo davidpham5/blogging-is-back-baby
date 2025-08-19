@@ -1,5 +1,5 @@
 ---
-title: AI is Bubble Popping But It Doesn't Know It Yet
+title: The Sound of AI Bubble Pop Will Be Enormous
 date: 2025-08-05
 source: Blood in the Machine - Brian Merchant
 isBasedOn: The AI bubble is so big it's propping up the US economy (for now)
