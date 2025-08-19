@@ -33,6 +33,11 @@
     margin: 2rem 0;
 }
 
+.content-grid .book-library p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
 .book-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

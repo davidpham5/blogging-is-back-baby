@@ -2144,10 +2144,11 @@ article#page-post h3 {
 }
 
 .content-grid p {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
+.content-grid
 .content-grid > *,
 .full-width > *,
 article.content-grid section > * {
@@ -2577,6 +2578,11 @@ figure.three picture img {
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 2.1rem;
   margin: 2rem 0;
+}
+
+.content-grid .book-library p {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 .book-card {
