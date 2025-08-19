@@ -21,7 +21,12 @@ The Atlantic shares some [astonishing pictures](https://www.theatlantic.com/phot
 
 >As the Trump administration’s “Big, Beautiful Bill” eliminates many clean-energy incentives in the U.S., China continues huge investments in wind and solar power, reportedly accounting for 74 percent of all projects now under construction worldwide.
 
-These couple pictures are incredible: 
+These few pictures are incredible: 
+<div class="embed-container">
+<img src="https://cdn.theatlantic.com/thumbor/O2uBBD_-on-_PGwCq2TLMmORR-8=/0x0:3402x2268/1856x1238/media/img/posts/2025/07/a02_G_2217042307/original.jpg" sizes="(max-width: 500px) 500px, 1200px" loading="lazy" width="1300" height="793" border="0" alt="A crane on a floating barge positions a large solar panel for installation." class="medium-zoom-image"/>
+</div>
+
+
 <div class="embed-container">
 <img src="https://kottke.org/cdn-cgi/image/format=auto,fit=scale-down,width=1200,metadata=none/plus/misc/images/china-solar-02.jpg"  sizes="(max-width: 500px) 500px, 1200px" loading="lazy" width="1300" height="793" border="0" alt="overhead view of a solar farm surrounded by water" class="medium-zoom-image">
 </div>
