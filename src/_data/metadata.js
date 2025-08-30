@@ -4,7 +4,7 @@ module.exports = {
 		url: process.env.REPOSITORY_URL,
 	},
 	title: "David Chico Pham | Cooking Code and Eating Knowledge",
-	description: "Microblog and feed from David Pham.",
+	description: "Bloggin is back, baby.",
 	url: "https://davidchicopham.com",
 	feedUrl: "https://davidchicopham.com/writing/feed.xml",
 	author: {
