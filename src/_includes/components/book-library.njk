@@ -1,0 +1,59 @@
+<div class="book-library">
+    {% for book in books %}
+        {% set review = reviews | whereFileSlugEquals(book.openlibraryKey) %}
+        {% if review %}
+            {% set href = review.url %}
+            {% set isReview = true %}
+        {% else %}
+            {% set href = book.id %}
+            {% set isReview = false %}
+        {% endif %}
+
+        <div class="book-card">
+            <a href="{{ href }}" class="book-link no-ext" aria-label="View {{ book.title }}">
+                <div class="book-cover">
+                    {% if book.cover %}
+                        <img
+                            loading="lazy"
+                            src="{{ book.cover.url }}"
+                            alt="Cover of {{ book.title }}"
+                            class="cover-image"
+                        >
+                    {% else %}
+                        <div class="cover-placeholder">
+                            <div class="placeholder-title">{{ book.title }}</div>
+                            <div class="placeholder-author">
+                                {% for author in book.authors %}
+                                    {{ author.name }}{{ "," if not loop.last }}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </a>
+
+            <div class="book-meta">
+                <h3 class="book-title strong">
+                    <a href="{{ href }}" class="no-ext">{{ book.title }}</a>
+                </h3>
+                {% if book.subtitle %}
+                    <p class="book-subtitle">{{ book.subtitle }}</p>
+                {% endif %}
+                <p class="book-author">
+                    {% for author in book.authors %}
+                        {{ author.name }}{{ "," if not loop.last }}
+                    {% endfor %}
+                </p>
+
+                {% if review %}
+                    <div class="book-review-indicator">
+                        <span class="review-badge">Review Available</span>
+                        {% if review.data.rating %}
+                            <span class="book-rating">{{ review.data.rating | ratingToStars }}</span>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>

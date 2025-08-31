@@ -10,7 +10,7 @@ title: 'Membership'
     <h1 class="text-3xl m-0">Support David Chico Pham with a membership.</h1>
 
     <section class="">
-      <p>Hello there, greetings and saluations! Happy {{ "" | dayOftheWeek }} from the District <span class="text-red-600">★★★</span>. If you are regular here, or a particular piece made you think, consider supporting my efforts so I can know my work is meaningful to you. An independent web has always depended on people like you: beautiful, handsome, incredibly smart and funny.</p>
+      <p>Hello there, greetings and saluations! Happy <span id="dayOfTheWeek"></span>  from the District <span class="text-red-600">★★★</span>. If you are regular here, or a particular piece made you think, consider supporting my efforts so I can know my work is meaningful to you. An independent web has always depended on people like you: beautiful, handsome, incredibly smart and funny.</p>
       <a href="" class="no-ext flex" onclick="">
         <div class="flex items-start mb-6 bg-white hover:border-blue-700 rounded-2xl cursor-pointer">
           <div class="mx-4 flex flex-col items-center justify-center w-16 h-full">
@@ -63,4 +63,9 @@ title: 'Membership'
       </a>
     </section>
 </article>
+
+<script>
+  // Calculate the current day of the week on runtime
+  document.getElementById('dayOfTheWeek').textContent = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+</script>
 {%- endblock -%}

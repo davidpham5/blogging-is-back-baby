@@ -38,3 +38,19 @@ img.btn-88x31{
     min-width: 88px;
     max-height: 31px;
 }
+.btn-text-with-icon {
+    color: var(--foreground);
+}
+
+.btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn.disabled:before {
+    border-radius: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}

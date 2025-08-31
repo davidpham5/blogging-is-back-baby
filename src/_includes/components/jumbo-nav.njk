@@ -17,27 +17,29 @@
 {% endfor %}
 
 {% set videoMediaCount = videoMediafullArray.length %}
-
+{% set storystreamCount = (collections.contentTypes | findBySlug('amplify') | values('items')).length %}
+{% set writingsCount = (collections.post | excludeStubs | excludeTypes(['mirror', 'resource', 'project', 'amplify', 'sourdoughs'])).length %}
 <section class="jumbo-nav breakout" data-source="src/_includes/components/jumbo-nav.njk">
     <nav>
         <dl>
             <dt>Writing</dt>
-            <dd><a href="/posts"><span>{{ grouped.get('post').length }}</span><span>Posts</span></a></dd>
-            <dd><a href="/essays"><span>{{ grouped.get('essay').length }}</span><span>Essays</span></a></dd>
-            <dd><a href="/tutorials"><span>{{ grouped.get('tutorial').length }}</span><span>Tutorials</span></a></dd>
+            {# <dd><a href="/posts"><span>{{ grouped.get('post').length }}</span><span>Posts</span></a></dd> #}
+            <dd><a href="/writing"><span>{{ writingsCount }}</span><span>Essays</span></a></dd>
+            {# <dd><a href="/tutorials"><span>{{ grouped.get('tutorial').length }}</span><span>Tutorials</span></a></dd> #}
             <dd><a href="/noteworthy"><span>{{ grouped.get('noteworthy').length }}</span><span>Noteworthy</span></a></dd>
             <dd><a href="/thoughts"><span>{{ grouped.get('thought').length }}</span><span>Thoughts</span></a></dd>
-            <dd><a href="/glossary"><span>{{ grouped.get('glossary').length }}</span><span>Glossary</span></a></dd>
+            {# <dd><a href="/glossary"><span>{{ grouped.get('glossary').length }}</span><span>Glossary</span></a></dd> #}
             <dd><a href="/stubs"><span>{{ stubs.length }}</span><span>Stubs</span></a></dd>
             <dd><a href="/writing" title="View all Writing (archive)"><small>View all <span aria-hidden="true">→</span></small></a></dd>
         </dl>
         <dl>
             <dt>Lists/Collections</dt>
-            <dd><a href="/lists/film-and-tv/"><span>{{ videoMediaCount }}</span><span>Films & TV</span></a></dd>
-            <dd><a href="/lists/listened-to/"><span>*</span><span>Listened To</span></a></dd>
-            <dd><a href="/books"><span>{{ read.length }}</span><span>My Bookshelf</span></a></dd>
+            <dd><a href="/amplify" title="View storystream links"><span>{{storystreamCount}}</span><span>StoryStream</span></a></dd>
+            <dd><a href="/turbo-links" title="View turbo links"><span>{{ raindrop.articles.length }}</span><span>Turbo Links</span></a></dd>
+            {# <dd><a href="/lists/film-and-tv/"><span>{{ videoMediaCount }}</span><span>Films & TV</span></a></dd>
+            <dd><a href="/lists/listened-to/"><span>*</span><span>Listened To</span></a></dd> #}
+            <dd><a href="/books"><span>{{ read.length }}</span><span>Books of a Worker</span></a></dd>
             <dd><a href="/antilibrary"><span>{{ antilibrary.length }}</span><span><em>The</em> Antilibrary</span></a></dd>
-            <dd><a href="/amplify" title="View amplified links"><span>*</span><span>Amplified</span></a></dd>
             <dd><a href="/lists" title="View all lists and collections (archive)"><small>View all <span aria-hidden="true">→</span></small></a></dd>
         </dl>
         <dl>

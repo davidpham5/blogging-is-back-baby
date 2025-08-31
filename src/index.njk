@@ -7,7 +7,7 @@
   <header><h1 class="special header"><span class="strong">David Chico Pham </span>writes on technology, sourdough, and current events.</h1><div class="text-4xl py-6 leading-normal" style="opacity: 1; transform: none; max-width: 780px;">Fantastic home cook, not bad student of history, and slightly above average engineer.</div></b></h2></header>
   <section class="paragraph">
     <p>
-		    I am a Senior Privacy Engineer at The Washington Post. My path into web development is somewhat unusual -- I'm a self-taught web dev with an a background in history and sociology. I didn't realize it back then, but my studies actually gave me all the right tools I needed for writing and storytelling. As an engineer, I've been fortunate to work with some of the most talented and creative folks in media and technology.
+		    I am a Senior Privacy Engineer at The Washington Post. My path into web development is somewhat unusual -- I'm a self-taught web dev with a background in history and sociology. I didn't realize it back then, but my studies actually gave me all the right tools I needed for writing and storytelling. As an engineer, I've been fortunate to work with some of the most talented and creative folks in media and technology.
 	  </p>
     <p>
         As a first-generation Mexican-Vietnamese American, Buddhist from the Midwest, and working-class person, I often felt like an outsider. The concept of "community" seemed abstract and elusive to me. It was something I didn't quite get. I had a hard time grasping its true meaning. However, over time, I've come to understand that "community" is fundamentally about our relationships with one another. This personal site is an entry to the community of indie web creators and thinkers.
@@ -48,16 +48,17 @@
         Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
       </p>
       <section>
-      {% set turbo = articlesList | onlyTypes(['turbo']) %}
+      {% set turboLinks = raindrop.articles | limit(10) %}
 
-      {% if turbo.length == 0 %}
+      {% if turboLinks.length > 0 %}
       <h2 class="text-4xl py-8 pt-4 pb-0">Turbocharged hyperlinks</h2>
-      <p class="thin pb-4">Chaos desires order -- links to things that happened</p>
-        {% set postsList = turbo | reverse | limit(10) %}
-        {% include "components/post-list.njk" %}
-        <p>
-          View <a href="/turbo/">more hyperlinks</a>
-        </p>
+      <p class="thin pb-4">Chaos desires order -- links to bring clarity</p>
+        <ul class="post-list">
+          {% include "components/turbo-links.njk" %}
+        </ul>
+         <p>
+        Subscribe to the <a href="/turbo-links/feed.xml">turbocharged hyperlinks RSS feed</a> or view the entire <a href="/turbo-links/">archive</a> for more.
+      </p>
       {% endif %}
       </section>
     </section>

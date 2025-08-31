@@ -1,0 +1,43 @@
+---
+pagination:
+  data: raindrop.articles
+  size: 15
+  alias: turboLinks
+permalink: "turbo-links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
+eleventyNavigation:
+  key: Turbo Links
+  order: 5
+layout: layouts/page.njk
+title: Turbocharged Hyperlinks
+description: Chaos desires order -- links to things that happened
+---
+
+<header>
+  <h1>{{ title }}</h1>
+  <p class="lead">{{ description }}</p>
+</header>
+
+<section>
+  {% if turboLinks.length > 0 %}
+    {% if pagination.pages.length > 1 %}
+      {% include "components/pagination.njk" %}
+    {% endif %}
+    <ul class="post-list my-12">
+      {% include "components/turbo-links.njk" %}
+    </ul>
+
+  {% else %}
+    <p>No turbo links available at the moment.</p>
+  {% endif %}
+
+  {% if pagination.pages.length > 1 %}
+    {% include "components/pagination.njk" %}
+  {% endif %}
+</section>
+
+
+
+<section class="mt-8">
+  <h2>About Turbo Links</h2>
+  <p>The retweet and reblog are powerful link amplifier mechanisms. The old web had backlinks as the main currency in knowing what's good, cool, or interesting. It was the way to share and build a web without social media. Turbo Links are a version of the retweet or the reblog to amplify the things I am paying attention to.</p>
+</section>

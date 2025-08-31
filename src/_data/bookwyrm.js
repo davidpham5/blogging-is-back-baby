@@ -39,8 +39,9 @@ module.exports = async function () {
 
 	const username = buildData.bookwyrm.username;
 	const cache = new ObjectCache("bookwyrm");
+	const isDevelopment = buildData.env === 'development';
 
-	if (cache.has("books")) {
+	if (cache.has("books") && !isDevelopment) {
 		console.log(
 			chalk.blue("[@davidpham5/bookwyrm]"),
 			`Found Cached bookwyrm feed for [${username}]…`
@@ -49,7 +50,9 @@ module.exports = async function () {
 	} else {
 		console.log(
 			chalk.blue("[@davidpham5/bookwyrm]"),
-			`Fetching bookwyrm feed for [${username}]...`
+			isDevelopment ? 
+				`Fetching bookwyrm feed for [${username}] (cache disabled in dev mode)...` :
+				`Fetching bookwyrm feed for [${username}]...`
 		);
 	}
 
@@ -105,8 +108,10 @@ module.exports = async function () {
 		}
 	}
 
-	await cache.set("books", books);
-	await cache.set("authors", authorCache, cache.forever);
+	if (!isDevelopment) {
+		await cache.set("books", books);
+		await cache.set("authors", authorCache, cache.forever);
+	}
 
 	return books;
 };

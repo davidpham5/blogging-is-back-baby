@@ -19,3 +19,6 @@ gh-pages.pub
 testLast.html
 src/content/posts/.obsidian/*
 src/content/.obsidian/
+
+# posts i wish not to be published
+src/content/posts/Short Bio for Election 2025.md

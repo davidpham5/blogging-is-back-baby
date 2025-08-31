@@ -15,7 +15,6 @@ tags:
   - "2024"
   - Elections
 ---
-
 The weekend before March 11th, 2020, we saw friends at a local beer garden. We joked but not joked that this could be the last time we see each other for awhile. The COVID-19 virus was making it’s way down to DC. 
 
 A couple weeks before that lovely outing, we visited the in-laws. They lived near a Giant Foods store and we stopped there to pick up supplies. We bought lots can goods, non-perishable items, wipes, etc. I thought to myself it was a matter of time before it got to DC. We best prepare.

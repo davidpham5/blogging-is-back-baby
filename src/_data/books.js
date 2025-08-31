@@ -159,12 +159,13 @@ module.exports = async function () {
 
 	// If we have items to cache, then cache them.
 	if (items.length > 0) {
+		const isDevelopment = buildData.env === 'development';
 		cache.setKey("books", {
-			ttl: Math.floor(Date.now() / 1000 + 30 * 60),
+			ttl: isDevelopment ? 0 : Math.floor(Date.now() / 1000 + 30 * 60),
 			data: items,
 		});
 		cache.save();
-		console.log(chalk.blue("[@davidpham5/bookwyrm-books]"), "cache persisted");
+		console.log(chalk.blue("[@davidpham5/bookwyrm-books]"), isDevelopment ? "cache disabled (dev mode)" : "cache persisted");
 	}
 
 	return items;

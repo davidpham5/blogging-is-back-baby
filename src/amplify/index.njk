@@ -9,8 +9,8 @@ folder: amplify
 {% set allPosts = collections.contentTypes | findBySlug('amplify') | values('items') %}
 {% set postsByYear = allPosts | groupByYear %}
 {% set titlePrefix = 'Index' %}
-{% set title = 'Amplify Archive' %}
-{% set subTitle = '<strong>' + allPosts.length +'</strong> Amplified Links' %}
+{% set title = 'Storystream Archive' %}
+{% set subTitle = '<strong>' + allPosts.length +'</strong> Storystream Links' %}
 {% set headingClass = 'writing-index' %}
 {% set paginationBase = "amplify" %}
 {% set forward = false %}
