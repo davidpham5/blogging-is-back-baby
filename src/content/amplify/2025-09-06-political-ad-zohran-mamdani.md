@@ -10,7 +10,7 @@ tags:
   - political
   - ad
 ---
-What a generational political talent. This political ad does more in conveying his message (we are doing very well in raising money that we met the cap) and his call to action (give us your time instead).
+What a generational political talent. This political ad does more in conveying his message (we are doing very well in raising money that we met the cap) and his call to action (give us your time instead) than the Trump campaign could ever muster.
 
 Democrats of the last war are lost with a finger up their nose. But Zohran Mamdani aint.
 
