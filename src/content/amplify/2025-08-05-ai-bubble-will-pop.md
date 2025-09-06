@@ -31,8 +31,4 @@ The private sector is under going a government size stimulus program. These comp
 
 These companies, openAI, perplexity, anthropic, etc, are all unprofitable. They are burning billions in venture capital and have little to show for. There has not been one company out there, in the 3 years chatGPT released 3.0, that has been able to build a successful genAI product.
 
-Ed Zitron in his piece [AI is a money trap](https://www.wheresyoured.at/ai-is-a-money-trap/?ref=ed-zitrons-wheres-your-ed-at-newsletter) argues,"fundamentally, generative AI does not let companies build something new." I think thats true and it reflects the monocultural malaise and stagnation that we are currently in. 
-
-%% Meanwhile, [Nilay Patel](https://bsky.app/profile/reckless.bsky.social/post/3lvqn6sjvtc2u), Verge's hype-man for blogs -- golden age tech if I may say -- announced SB Nation is becoming a next gen social network, powered by ActivtyPub. [Ghost also announced](https://aramzs.xyz/noteworthy/ghost-is-building-a-blogger-decentralized-future/) you will be able to publish to fediverse apps, including bluesky. Essentially, the future of media is the blog.
-
-The main thesis of this site is blogging is back, baby. %%
+Ed Zitron in his piece [AI is a money trap](https://www.wheresyoured.at/ai-is-a-money-trap/?ref=ed-zitrons-wheres-your-ed-at-newsletter) argues,"fundamentally, generative AI does not let companies build something new." I think thats true and it reflects the monocultural malaise and stagnation that we are currently in.
