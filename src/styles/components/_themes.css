@@ -53,6 +53,7 @@ html.theme-corn-flower,
     --foreground: #232323;
     --foreground-muted: #384043;
     --accent: #7754b0;
+    --accent-muted: #351249;
 
     --jumbo-nav-background-color: #0b0026;
 }
@@ -86,6 +87,7 @@ html.theme-summer,
     --foreground: #34435e;
     --foreground-muted: #b57f50;
     --accent: #ff6392;
+    --accent-muted: #ff3561;
 }
 
 html.theme-blush,
@@ -95,6 +97,7 @@ html.theme-blush,
     --foreground: #113d6a;
     --foreground-muted: #bab1b5;
     --accent: #ab3c61;
+    --accent-muted: #3f0f17;
 }
 
 html.theme-blue,
@@ -104,6 +107,7 @@ html.theme-blue,
     --foreground: #fbf8be;
     --foreground-muted: #bdc5ad;
     --accent: #fbbc55;
+    --accent-muted: #ff9f1c;
 }
 
 html.theme-ftl,
@@ -113,6 +117,7 @@ html.theme-ftl,
     --foreground: #fbf8be;
     --foreground-muted: #bdc5ad;
     --accent: #0f89a7;
+    --accent-muted: #10b4d8;
     --jumbo-nav-background-color: #832e1c;
     --jumbo-nav-text-color: white;
     --jumbo-nav-accent-color: #eaf0e5;

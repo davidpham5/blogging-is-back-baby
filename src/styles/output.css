@@ -952,11 +952,6 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-blue-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 246 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
@@ -2165,6 +2160,11 @@ article#page-post h3 {
   color: var(--foreground);
 }
 
+.text-shadow-letterpress a:link,
+.text-shadow-letterpress a:visited {
+  text-shadow: -0.7px 0px 1px var(--accent-muted);
+}
+
 /*
  * From Kevin Powell's video: A new approach to container and wrapper classes
  * @see https://www.youtube.com/watch?v=c13gpBrnGEw
@@ -2393,6 +2393,7 @@ html.theme-corn-flower,
   --foreground: #232323;
   --foreground-muted: #384043;
   --accent: #7754b0;
+  --accent-muted: #351249;
   --jumbo-nav-background-color: #0b0026;
 }
 
@@ -2424,6 +2425,7 @@ html.theme-summer,
   --foreground: #34435e;
   --foreground-muted: #b57f50;
   --accent: #ff6392;
+  --accent-muted: #ff3561;
 }
 
 html.theme-blush,
@@ -2433,6 +2435,7 @@ html.theme-blush,
   --foreground: #113d6a;
   --foreground-muted: #bab1b5;
   --accent: #ab3c61;
+  --accent-muted: #3f0f17;
 }
 
 html.theme-blue,
@@ -2442,6 +2445,7 @@ html.theme-blue,
   --foreground: #fbf8be;
   --foreground-muted: #bdc5ad;
   --accent: #fbbc55;
+  --accent-muted: #ff9f1c;
 }
 
 html.theme-ftl,
@@ -2451,6 +2455,7 @@ html.theme-ftl,
   --foreground: #fbf8be;
   --foreground-muted: #bdc5ad;
   --accent: #0f89a7;
+  --accent-muted: #10b4d8;
   --jumbo-nav-background-color: #832e1c;
   --jumbo-nav-text-color: white;
   --jumbo-nav-accent-color: #eaf0e5;
@@ -3531,11 +3536,6 @@ body > header > div a:first-child {
   border-color: rgb(29 78 216 / var(--tw-border-opacity, 1));
 }
 
-.hover\:bg-blue-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
@@ -3554,11 +3554,6 @@ body > header > div a:first-child {
 .hover\:bg-purple-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:text-gray-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-gray-900:hover {

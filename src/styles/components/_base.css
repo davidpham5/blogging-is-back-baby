@@ -788,3 +788,8 @@ article#page-post h3 {
 .theme-ftl a:visited.foreground-color {
     color: var(--foreground);
 }
+
+.text-shadow-letterpress a:link,
+.text-shadow-letterpress a:visited {
+    text-shadow: -0.7px 0px 1px var(--accent-muted);
+}
