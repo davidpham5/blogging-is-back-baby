@@ -109,14 +109,7 @@
               Cancel
             </button>
             <button
-              onclick="shareWithTurboComment({{ loop.index0 }},
-                '{{ article.title | replace("'", "\\'") }}',
-                '{{ article.source_url }}',
-                {% if article.note %}'
-                  {{ article.note | replace("'", "\\'") }}'
-                {% else %}
-                  null
-                {% endif %})"
+              onclick="shareWithTurboComment({{ loop.index0 }}, {{ article.title | dump }}, {{ article.source_url | dump }}, {{ article.note | dump }})"
               class="px-4 py-1 bg-blue-500 text-white text-xs rounded hover:bg-blue-600 transition-colors strong">
                 Share to Bluesky
             </button>
