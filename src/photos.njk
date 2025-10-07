@@ -1,0 +1,571 @@
+---
+layout: layouts/page.njk
+title: Photography
+description: A collection of my photography available for print purchase
+templateName: photos
+mainClass: content-grid
+---
+
+<section class="photo-gallery">
+  <div class="gallery-intro">
+    <p>A collection of photographs I've captured over the years. Each image is available for purchase as high-quality prints in various sizes.</p>
+    
+    <div class="category-filters">
+      {% for category in photos.categories %}
+        <button class="filter-btn {% if category.id == 'all' %}active{% endif %}" 
+                data-category="{{ category.id }}" 
+                onclick="filterPhotos('{{ category.id }}')">
+          {{ category.name }}
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="photo-grid" id="photo-grid">
+    {% for photo in photos.collection %}
+      <div class="photo-card" data-category="{{ photo.tags | join(' ') }}" onclick="openPhotoModal('{{ photo.id }}')">
+        <img src="{{ photos.generateCloudinaryUrl(photo.cloudinaryId, 'c_fill,w_400,h_400,q_auto') }}" 
+             alt="{{ photo.title }}" 
+             loading="lazy">
+        <div class="photo-overlay">
+          <h3>{{ photo.title }}</h3>
+          {% if photo.featured %}
+            <span class="featured-badge">Featured</span>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="photo-modal" id="photo-modal" style="display: none;">
+    <div class="modal-backdrop" onclick="closePhotoModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closePhotoModal()">&times;</button>
+      <img id="modal-image" src="" alt="">
+      <div class="modal-info">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <div id="modal-meta"></div>
+        
+        <div class="print-options">
+          <h4>Print Options</h4>
+          
+          <div class="option-group">
+            <h5>Size</h5>
+            <div id="size-options" class="size-options">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+          
+          <div class="option-group">
+            <h5>Material</h5>
+            <div id="material-options" class="material-options">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+          
+          <div class="price-calculator">
+            <div class="total-price">
+              Total: $<span id="total-price">0</span>
+            </div>
+          </div>
+          
+          <button class="purchase-btn" onclick="initiatePurchase()">Purchase Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Photo data from server-side
+const photosData = {{ photos.collection | dump | safe }};
+const cloudName = "{{ photos.cloudName }}";
+const printOptions = {{ photos.printOptions | dump | safe }};
+
+function generateCloudinaryUrl(publicId, transformation = '') {
+  const baseUrl = `https://res.cloudinary.com/${cloudName}/image/upload`;
+  return transformation ? `${baseUrl}/${transformation}/${publicId}` : `${baseUrl}/${publicId}`;
+}
+
+function filterPhotos(category) {
+  const cards = document.querySelectorAll('.photo-card');
+  const buttons = document.querySelectorAll('.filter-btn');
+  
+  // Update active button
+  buttons.forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`[data-category="${category}"]`).classList.add('active');
+  
+  // Filter cards
+  cards.forEach(card => {
+    const cardCategories = card.dataset.category;
+    if (category === 'all' || cardCategories.includes(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+function openPhotoModal(photoId) {
+  const photo = photosData.find(p => p.id === photoId);
+  if (!photo) return;
+  
+  const modal = document.getElementById('photo-modal');
+  const modalImage = document.getElementById('modal-image');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDescription = document.getElementById('modal-description');
+  const modalMeta = document.getElementById('modal-meta');
+  const sizeOptions = document.getElementById('size-options');
+  const materialOptions = document.getElementById('material-options');
+  
+  const fullSizeUrl = generateCloudinaryUrl(photo.cloudinaryId, 'c_limit,w_1200,q_auto');
+  
+  modalImage.src = fullSizeUrl;
+  modalImage.alt = photo.title;
+  modalTitle.textContent = photo.title;
+  modalDescription.textContent = photo.description;
+  
+  // Set photo metadata
+  modalMeta.innerHTML = `
+    <div class="photo-meta">
+      <p><strong>Date:</strong> ${new Date(photo.dateCreated).toLocaleDateString()}</p>
+      <p><strong>Location:</strong> ${photo.location}</p>
+      <p><strong>Camera:</strong> ${photo.camera}</p>
+      <p><strong>Lens:</strong> ${photo.lens}</p>
+      <p><strong>Settings:</strong> ${photo.settings}</p>
+    </div>
+  `;
+  
+  // Populate size options
+  sizeOptions.innerHTML = '';
+  Object.entries(photo.printSizes).forEach(([size, info]) => {
+    if (info.available) {
+      const label = document.createElement('label');
+      label.innerHTML = `
+        <input type="radio" name="print-size" value="${size}" data-price="${info.price}">
+        ${size} - $${info.price}
+      `;
+      sizeOptions.appendChild(label);
+    }
+  });
+  
+  // Populate material options
+  materialOptions.innerHTML = '';
+  printOptions.materials.forEach(material => {
+    const label = document.createElement('label');
+    label.innerHTML = `
+      <input type="radio" name="print-material" value="${material.name}" data-multiplier="${material.priceMultiplier}">
+      ${material.name} - ${material.description}
+    `;
+    materialOptions.appendChild(label);
+  });
+  
+  // Set current photo for purchase
+  window.currentPhoto = photo;
+  
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closePhotoModal() {
+  const modal = document.getElementById('photo-modal');
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+function initiatePhotoManagement() {
+  const adminPanel = document.createElement('div');
+  adminPanel.innerHTML = `
+    <div class="admin-panel">
+      <h3>Add New Photo</h3>
+      <form id="photo-upload-form">
+        <input type="text" placeholder="Cloudinary Public ID" id="cloudinary-id" required>
+        <input type="text" placeholder="Title" id="photo-title" required>
+        <textarea placeholder="Description" id="photo-description"></textarea>
+        <input type="text" placeholder="Tags (comma-separated)" id="photo-tags">
+        <button type="submit">Add Photo</button>
+      </form>
+    </div>
+  `;
+  document.body.appendChild(adminPanel);
+}
+
+function calculatePrice() {
+  const selectedSize = document.querySelector('input[name="print-size"]:checked');
+  const selectedMaterial = document.querySelector('input[name="print-material"]:checked');
+  const totalPriceEl = document.getElementById('total-price');
+  
+  if (selectedSize && selectedMaterial) {
+    const basePrice = parseFloat(selectedSize.dataset.price);
+    const multiplier = parseFloat(selectedMaterial.dataset.multiplier);
+    const total = Math.round(basePrice * multiplier);
+    totalPriceEl.textContent = total;
+  } else {
+    totalPriceEl.textContent = '0';
+  }
+}
+
+function initiatePurchase() {
+  const selectedSize = document.querySelector('input[name="print-size"]:checked');
+  const selectedMaterial = document.querySelector('input[name="print-material"]:checked');
+  
+  if (!selectedSize) {
+    alert('Please select a print size');
+    return;
+  }
+  
+  if (!selectedMaterial) {
+    alert('Please select a material');
+    return;
+  }
+  
+  const size = selectedSize.value;
+  const material = selectedMaterial.value;
+  const basePrice = parseFloat(selectedSize.dataset.price);
+  const multiplier = parseFloat(selectedMaterial.dataset.multiplier);
+  const totalPrice = Math.round(basePrice * multiplier);
+  
+  // Create order summary
+  const orderSummary = {
+    photo: window.currentPhoto,
+    size: size,
+    material: material,
+    price: totalPrice,
+    timestamp: new Date().toISOString()
+  };
+  
+  // Simple purchase flow - you'd integrate with Stripe, PayPal, etc.
+  const userEmail = prompt(`Order Summary:
+Photo: ${orderSummary.photo.title}
+Size: ${size}
+Material: ${material}
+Total: $${totalPrice}
+
+Enter your email address to proceed:`);
+  
+  if (userEmail) {
+    // Here you would typically:
+    // 1. Send order to your backend
+    // 2. Process payment via Stripe/PayPal
+    // 3. Send confirmation email
+    
+    alert(`Thank you! Your ${size} ${material} print order for $${totalPrice} has been received. You'll receive payment instructions and order confirmation via email at ${userEmail}.`);
+    closePhotoModal();
+    
+    // For development, log the order
+    console.log('Order placed:', { ...orderSummary, customerEmail: userEmail });
+  }
+}
+
+// Add event listeners for price calculation
+document.addEventListener('change', (e) => {
+  if (e.target.name === 'print-size' || e.target.name === 'print-material') {
+    calculatePrice();
+  }
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closePhotoModal();
+  }
+});
+</script>
+
+<style>
+.photo-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.gallery-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-intro p {
+  font-size: 1.1rem;
+  color: var(--foreground-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.photo-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--background-muted);
+}
+
+.photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 1.5rem 1rem 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover .photo-overlay {
+  transform: translateY(0);
+}
+
+.photo-overlay h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.featured-badge {
+  background: var(--accent);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Category Filters */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.filter-btn {
+  background: var(--background-muted);
+  color: var(--foreground);
+  border: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* Modal Styles */
+.photo-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  background: var(--background);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modal-content img {
+  max-width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.modal-info {
+  padding: 2rem;
+  width: 40%;
+  overflow-y: auto;
+}
+
+.modal-info h3 {
+  margin-top: 0;
+  color: var(--foreground);
+}
+
+.modal-info p {
+  color: var(--foreground-muted);
+  line-height: 1.6;
+}
+
+/* Photo Meta */
+.photo-meta {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--background-muted);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.photo-meta p {
+  margin: 0.3rem 0;
+  color: var(--foreground-muted);
+}
+
+.photo-meta strong {
+  color: var(--foreground);
+}
+
+/* Print Options */
+.print-options {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--foreground-muted);
+}
+
+.print-options h4 {
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.option-group {
+  margin-bottom: 1.5rem;
+}
+
+.option-group h5 {
+  margin: 0 0 0.5rem 0;
+  color: var(--foreground);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.size-options, .material-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.size-options label, .material-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.size-options label:hover, .material-options label:hover {
+  background: var(--background-muted);
+  border-color: var(--accent);
+}
+
+.price-calculator {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: var(--background-muted);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.total-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.purchase-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.purchase-btn:hover {
+  background: var(--accent);
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .modal-content {
+    flex-direction: column;
+    max-height: 80vh;
+  }
+  
+  .modal-content img {
+    max-width: 100%;
+    max-height: 50vh;
+  }
+  
+  .modal-info {
+    width: 100%;
+    max-height: 30vh;
+  }
+}
+</style>
