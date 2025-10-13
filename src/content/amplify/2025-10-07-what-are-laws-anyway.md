@@ -29,4 +29,4 @@ Actors include not just Senator Schumer and Representative Jeffries, but I'd arg
 
 How you may ask? What would Steve Jobs say and do? Maybe taking out one page ads in Wall Street Journal or flooding the social media market with ads demanding tariffs to lowered. I will go further: leak Esptein's iCloud account, with all the text messages from him. If corporate power is largest it hasn't been since the second gilded age, then let's encourage Mr. Cook to join the rebellion. 
 
-What can be said when facing such an extreme political climate? What is the point of laws when the President can just not follow them and the Republican Congress doesn’t do anything about it. We've blown passed constitutional crisis. We are instead in a constitutional nadir, flatlining as we argue extension healthcare subsidies.
+What can be said when facing such an extreme political climate? What is the point of laws when the President can just not follow them and the Republican Congress doesn’t do anything about it. We've blown passed constitutional crisis. We are instead in a constitutional nadir, flatlining as we argue extending ACA healthcare subsidies.
