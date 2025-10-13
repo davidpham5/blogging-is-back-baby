@@ -17,11 +17,11 @@ Garrett Graff's excellent essay is on the shutdown and Democrats last chance at 
 
 Currently the Democrats are winning public opinion, but not in terms of the above problem. Instead the Democrats went back to their safe topic: healthcare. However, this is one senator that is calling what it is, and that is Chris Murphy. 
 
-<div class="embed-containe">
+<div class="embed-container">
 <iframe src="https://www.youtube.com/embed/-MTtkaJvANI?si=J4BcF06Rn-gpeWG_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-Meanwhile the media and Democrats are treating this is as politics as usual. Graff is arguing that we are not even remotely in that space.
+Meanwhile the media and Republicans are treating this is as politics as usual. Graff is arguing that we are not even remotely in that space.
 
 > We aren’t just outside the bounds of normal constitutional operations; we’re several standard deviations outside anything America has ever experienced before. We can clearly see what’s happening is wrong—illegal and unconstitutional—and the actors who can do something about that just … aren’t.
 
