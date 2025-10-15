@@ -18,6 +18,8 @@ tags:
 
 I helped organize my workplace. We started around when COVID vaccines were starting to circulate. We had about a few people in a slack channel at first, but we grew over time. After 4 years of underground organizing, we went public and won our election. Today I am an elected official for my union. 
 
-There is no work I am more proud -- no app I've built -- than building a worker-led union. The working class deserves unions. It's the basis of power and reigning in the excesses of the billionaire class. Here we stand at the abyss, where they tell us to AI in everything such that they can make more money. Do we see a dollar more in our salaries? Do we have more affordable healthcare? Or how about working from home instead commuting to the office while national guard and ICE agents patrol in the city? No we don't.
+There is no work I am more proud of -- no app I've built -- than building a worker-led union. I feel that in my bones.
+
+The working class deserves unions. It's the basis of power for everyday people. Moreover, its a way to rein in the excesses of the billionaire class. Here we stand at the abyss, where they tell us to use AI in everything such that they can make more money. Do we see a dollar more in our salaries if we are 5x more productive? Do we have more affordable healthcare if we get those prompts in? Or how about working from home instead commuting to the office while national guard and ICE agents patrol in the city? No we don't.
 
 If there is a path to fighting back and claiming our power, it's organizing, collective action, and unionizing. 
