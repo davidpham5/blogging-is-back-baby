@@ -1,5 +1,5 @@
 ---
-title: Building a union in your workplace
+title: Every worker deserves a union in the age of AI
 date: 2025-10-15
 source: The Money with Katie show
 isBasedOn: A Practical Way to Fight for a Brighter Financial Future—Together
