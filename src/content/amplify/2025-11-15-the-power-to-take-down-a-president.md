@@ -15,7 +15,7 @@ I am closely watching the panic that setting in at the White House, the MAGA Mov
 
 [Trump attempted to pressure Representative Boebart](https://newrepublic.com/post/203100/donald-trump-lauren-boebert-epstein-files-petition) to rescind her vote in the petition to discharge in the Situation Room at the White House. She did not and with 218 votes, the House is set to vote next Wednesday on releasing the files.
 
-It is quite fascinating Attorney General Pam Bondi become a human pretzels when testifying in front of Congress about Esptein Files. There is rumors that the photos of Trump with half naked girls ( presumably underage ) among many others in the Esptein files. Bondi notably did not answer if she saw photos in Epstein's safe when she testified before the Senate.
+It is quite fascinating Attorney General Pam Bondi become a human pretzels when testifying in front of Congress about Esptein Files. There is rumors that the [photos of Trump with half naked girls](https://www.yahoo.com/news/epstein-showed-photos-trump-topless-215004755.html?guccounter=1) ( presumably underage ) among many others in the Esptein files. Bondi notably did not answer if she saw photos in Epstein's safe when she testified before the Senate.
 
 <div class="embed-container">
 <iframe src="https://www.youtube.com/embed/hrRiDMEAhA0?si=eGEyIjjpyo0hYl6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
