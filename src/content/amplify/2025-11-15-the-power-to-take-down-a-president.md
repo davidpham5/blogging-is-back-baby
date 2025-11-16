@@ -13,7 +13,7 @@ tags:
 ---
 I am closely watching the panic that setting in at the White House, the MAGA Movement, and right wing media ecosystem. Megyn Kelly, as a vile person herself, [stacked rank rape by noting rape of a 15 of year is not as bad as to an 5 year old](https://www.motherjones.com/politics/2025/11/megyn-kelly-epstein-pedophilia-russell-brand/). Kelly, a mother herself has a 14 year old daughter. 
 
-[Trump attempted to pressure Representative Boebart](https://newrepublic.com/post/203100/donald-trump-lauren-boebert-epstein-files-petition) to rescind her vote in the petition to discharge in the Situation at the White House. She did not and with 218 votes, the House is set to vote next Wednesday on releasing the files.
+[Trump attempted to pressure Representative Boebart](https://newrepublic.com/post/203100/donald-trump-lauren-boebert-epstein-files-petition) to rescind her vote in the petition to discharge in the Situation Room at the White House. She did not and with 218 votes, the House is set to vote next Wednesday on releasing the files.
 
 It is quite fascinating Attorney General Pam Bondi become a human pretzels when testifying in front of Congress about Esptein Files. There is rumors that the photos of Trump with half naked girls ( presumably underage ) among many others in the Esptein files. Bondi notably did not answer if she saw photos in Epstein's safe when she testified before the Senate.
 
