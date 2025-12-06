@@ -153,7 +153,7 @@ function getStringHash(string) {
 
 async function getRecentTracks() {
   if (cache.has('recent-tracks')) return cache.get('recent-tracks');
-  console.log(chalk.blue('[@photogabble/last-fm]'), 'Fetching Recent History');
+  // console.log(chalk.blue('[@photogabble/last-fm]'), 'Fetching Recent History');
 
   const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&limit=25&api_key=${key}&format=json`);
   const data = await response.json();
@@ -194,7 +194,7 @@ async function getAlbumInfo({artistName, albumName, mbid}) {
 
 async function getTopTracks() {
   if (cache.has('top-tracks')) return cache.get('top-tracks');
-  console.log(chalk.blue('[@photogabble/last-fm]'), 'Fetching Top Tracks');
+  // console.log(chalk.blue('[@photogabble/last-fm]'), 'Fetching Top Tracks');
 
   const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${username}&period=3month&limit=25&api_key=${key}&format=json`);
   const data = await response.json();
@@ -235,7 +235,7 @@ async function getTopTracks() {
 
 async function getTopAlbums() {
   if (cache.has('top-albums')) return cache.get('top-albums');
-  console.log(chalk.blue('[@photogabble/last-fm]'), 'Fetching Top Albums');
+  // console.log(chalk.blue('[@photogabble/last-fm]'), 'Fetching Top Albums');
 
   const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${username}&period=3month&limit=16&api_key=${key}&format=json`);
   const data = await response.json();

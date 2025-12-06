@@ -1,11 +1,11 @@
 async function getPhotos () {
   const url = process.env.CLOUNDINARY_CLOUD_URL;
   if (!url) {
-    console.log('Cloudinary URL not set in environment variables');
+    // console.log('Cloudinary URL not set in environment variables');
     return [];
   }
 
-  console.log('Fetching photos from Cloudinary...');
+  // console.log('Fetching photos from Cloudinary...');
 
   try {
     const response = await fetch(url);
@@ -13,12 +13,12 @@ async function getPhotos () {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log({data});
+    // console.log({data});
     return data;
   } catch {
-    console.log('Error fetching photos from Cloudinary');
+    // console.log('Error fetching photos from Cloudinary');
   } finally {
-    console.log('Fetch attempt finished');
+    // console.log('Fetch attempt finished');
   }
 }
 getPhotos();

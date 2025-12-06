@@ -1,8 +1,8 @@
 function isDraft (data) {
-  console.log('draft check: ', data.title, data.draft, data.publish)
+  // console.log('draft check: ', data.title, data.draft, data.publish)
   // Logic needed to be replicated in lib/collections.js
   if(data.draft || (data.hasOwnProperty('publish') && data.publish === false))  {
-    console.log('draft status: ', data.title, data.draft, data.publish)
+    // console.log('draft status: ', data.title, data.draft, data.publish)
     return true;
   } else {
     return false;

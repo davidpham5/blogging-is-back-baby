@@ -20,18 +20,18 @@ const fetchUrl = async (url, timeout = 8000) => {
 
 module.exports = async function () {
 	if (hasTimedOut) {
-		console.log(
-			chalk.blue("[@davidpham5/bookwyrm-books]"),
-			chalk.yellow("WARNING"),
-			"Not re-fetching upstream feed. Restart process to try again"
-		);
+		// console.log(
+		// 	chalk.blue("[@davidpham5/bookwyrm-books]"),
+		// 	chalk.yellow("WARNING"),
+		// 	"Not re-fetching upstream feed. Restart process to try again"
+		// );
 		return [];
 	}
 
-	console.log(
-		chalk.blue("[@davidpham5/bookwyrm-books]"),
-		"Fetching bookwrym feed"
-	);
+	// console.log(
+	// 	chalk.blue("[@davidpham5/bookwyrm-books]"),
+	// 	"Fetching bookwrym feed"
+	// );
 
 	let cache = flatCache.load("bookwyrm-social-api");
 
@@ -41,10 +41,10 @@ module.exports = async function () {
 		const ttl = Math.floor(cachedItem.ttl - Date.now() / 1000);
 
 		if (ttl > 0) {
-			console.log(
-				chalk.blue("[@davidpham5/bookwyrm-books]"),
-				`Found Cached bookwyrm feed for [${username}]…`
-			);
+			// console.log(
+			// 	chalk.blue("[@davidpham5/bookwyrm-books]"),
+			// 	`Found Cached bookwyrm feed for [${username}]…`
+			// );
 			return cachedItem.data;
 		}
 	}
@@ -59,11 +59,11 @@ module.exports = async function () {
 			return Number(last.searchParams.get("page"));
 		})
 		.catch((e) => {
-			console.warn(
-				chalk.blue("[@davidpham5/bookwyrm-books]"),
-				chalk.yellow("WARNING"),
-				"Upstream has gone away, unable to fetch bookwyrm outbox before timeout"
-			);
+			// console.warn(
+			// 	chalk.blue("[@davidpham5/bookwyrm-books]"),
+			// 	chalk.yellow("WARNING"),
+			// 	"Upstream has gone away, unable to fetch bookwyrm outbox before timeout"
+			// );
 			hasTimedOut = true;
 			return 0;
 		});
@@ -124,11 +124,11 @@ module.exports = async function () {
 				})
 			)
 			.catch((e) => {
-				console.warn(
-					chalk.blue("[@davidpham5/bookwyrm-books]"),
-					chalk.yellow("WARNING"),
-					"Upstream has gone away, unable to fetch bookwyrm outbox before timeout"
-				);
+				// console.warn(
+				// 	chalk.blue("[@davidpham5/bookwyrm-books]"),
+				// 	chalk.yellow("WARNING"),
+				// 	"Upstream has gone away, unable to fetch bookwyrm outbox before timeout"
+				// );
 				hasTimedOut = true;
 				return [];
 			});
@@ -137,10 +137,10 @@ module.exports = async function () {
 	let books = [];
 
 	for (let page = 1; page <= numberOfPages; page++) {
-		console.log(
-			chalk.blue("[@davidpham5/bookwyrm-books]"),
-			`Fetching bookwyrm feed for [${username}] page ${page} of ${numberOfPages}…`
-		);
+		// console.log(
+		// 	chalk.blue("[@davidpham5/bookwyrm-books]"),
+		// 	`Fetching bookwyrm feed for [${username}] page ${page} of ${numberOfPages}…`
+		// );
 		const items = await fetchPage(page);
 		items.every((item) => books.push(item));
 	}
@@ -165,7 +165,7 @@ module.exports = async function () {
 			data: items,
 		});
 		cache.save();
-		console.log(chalk.blue("[@davidpham5/bookwyrm-books]"), isDevelopment ? "cache disabled (dev mode)" : "cache persisted");
+		// console.log(chalk.blue("[@davidpham5/bookwyrm-books]"), isDevelopment ? "cache disabled (dev mode)" : "cache persisted");
 	}
 
 	return items;

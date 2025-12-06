@@ -9,11 +9,11 @@ async function getRecentSavedArticles() {
 
   const token = process.env.READWISE_TOKEN;
   if (!token) {
-    console.log(chalk.yellow('[readwise]'), 'No READWISE_TOKEN found, returning empty array');
+    // console.log(chalk.yellow('[readwise]'), 'No READWISE_TOKEN found, returning empty array');
     return [];
   }
 
-  console.log(chalk.blue('[readwise]'), 'Fetching recent saved articles from Readwise...');
+  // console.log(chalk.blue('[readwise]'), 'Fetching recent saved articles from Readwise...');
 
   try {
     const response = await fetch('https://readwise.io/api/v3/list/', {
@@ -67,7 +67,7 @@ async function getRecentSavedArticles() {
       return articles;
     }
   } catch (error) {
-    console.error(chalk.red('[readwise]'), 'Error fetching articles:', error.message);
+    // console.error(chalk.red('[readwise]'), 'Error fetching articles:', error.message);
     return [];
   }
 

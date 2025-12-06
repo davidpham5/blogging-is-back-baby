@@ -8,20 +8,20 @@ const fetchUrl = async (url, timeout = 8000) => {
 	const controller = new AbortController();
 	const id = setTimeout(() => controller.abort(), timeout);
 	try {
-		console.warn(
-			chalk.blue("[@davidpham5/bookwyrm]"),
-			chalk.green("[OK]"),
-			`Fetching: ${url}`
-		);
+		// console.warn(
+		// 	chalk.blue("[@davidpham5/bookwyrm]"),
+		// 	chalk.green("[OK]"),
+		// 	`Fetching: ${url}`
+		// );
 		const response = await fetch(url, { signal: controller.signal });
 		clearTimeout(id);
 		return response;
 	} catch (e) {
-		console.warn(
-			chalk.blue("[@davidpham5/bookwyrm]"),
-			chalk.yellow("WARNING"),
-			"Upstream has gone away, unable to fetch bookwyrm outbox before timeout"
-		);
+		// console.warn(
+		// 	chalk.blue("[@davidpham5/bookwyrm]"),
+		// 	chalk.yellow("WARNING"),
+		// 	"Upstream has gone away, unable to fetch bookwyrm outbox before timeout"
+		// );
 		hasTimedOut = true;
 		throw e;
 	}
@@ -29,11 +29,11 @@ const fetchUrl = async (url, timeout = 8000) => {
 
 module.exports = async function () {
 	if (hasTimedOut) {
-		console.log(
-			chalk.blue("[@davidpham5/bookwyrm]"),
-			chalk.yellow("WARNING"),
-			"Not re-fetching upstream feed. Restart process to try again"
-		);
+		// console.log(
+		// 	chalk.blue("[@davidpham5/bookwyrm]"),
+		// 	chalk.yellow("WARNING"),
+		// 	"Not re-fetching upstream feed. Restart process to try again"
+		// );
 		return [];
 	}
 
@@ -42,18 +42,18 @@ module.exports = async function () {
 	const isDevelopment = buildData.env === 'development';
 
 	if (cache.has("books") && !isDevelopment) {
-		console.log(
-			chalk.blue("[@davidpham5/bookwyrm]"),
-			`Found Cached bookwyrm feed for [${username}]…`
-		);
+		// console.log(
+		// 	chalk.blue("[@davidpham5/bookwyrm]"),
+		// 	`Found Cached bookwyrm feed for [${username}]…`
+		// );
 		return cache.get("books");
 	} else {
-		console.log(
-			chalk.blue("[@davidpham5/bookwyrm]"),
-			isDevelopment ? 
-				`Fetching bookwyrm feed for [${username}] (cache disabled in dev mode)...` :
-				`Fetching bookwyrm feed for [${username}]...`
-		);
+		// console.log(
+		// 	chalk.blue("[@davidpham5/bookwyrm]"),
+		// 	isDevelopment ?
+		// 		`Fetching bookwyrm feed for [${username}] (cache disabled in dev mode)...` :
+		// 		`Fetching bookwyrm feed for [${username}]...`
+		// );
 	}
 
 	const shelves = ["read", "to-read", "reading"];
@@ -64,20 +64,20 @@ module.exports = async function () {
 		let nextPage = 1;
 
 		while (nextPage) {
-			console.log(
-				chalk.blue("[@davidpham5/bookwyrm]"),
-				`Fetching bookwyrm shelf [${shelf}/${nextPage}]`
-			);
+			// console.log(
+			// 	chalk.blue("[@davidpham5/bookwyrm]"),
+			// 	`Fetching bookwyrm shelf [${shelf}/${nextPage}]`
+			// );
 			let url = `https://${buildData.bookwyrm.instance}/user/${username}/shelf/${shelf}.json?page=${nextPage}`;
 			const data = await fetchUrl(url).then((res) => res.json());
-      console.log({data});
+      // console.log({data});
 			for (const item of data.orderedItems) {
 				if (!item.openlibraryKey) {
-					console.warn(
-						chalk.blue("[@davidpham5/bookwyrm]"),
-						chalk.yellow("WARNING"),
-						`Book ${item.title} <${item.id}> has no open library key set, skipping.`
-					);
+					// console.warn(
+					// 	chalk.blue("[@davidpham5/bookwyrm]"),
+					// 	chalk.yellow("WARNING"),
+					// 	`Book ${item.title} <${item.id}> has no open library key set, skipping.`
+					// );
 					continue;
 				}
 				const authors = await Promise.all(

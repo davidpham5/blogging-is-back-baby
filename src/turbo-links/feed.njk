@@ -2,7 +2,7 @@
 permalink: /turbo-links/feed.xml
 eleventyExcludeFromCollections: true
 ---
-{% set postsList = raindrop.articles | limit(100) %}<?xml version="1.0" encoding="utf-8"?>
+{% set postsList = turboLinks.articles | limit(100) %}<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
     <title type="text">Turbo Links by {{metadata.author.shortname or metadata.author.name}}</title>
     <subtitle type="text">Turbocharged hyperlinks - chaos desires order, links to things that happened.</subtitle>

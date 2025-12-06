@@ -48,6 +48,12 @@
           </time>
           <span class="mr-2">•</span>
           <span class="mr-2">[{{ article.site_name }}]</span>
+          <span class="mr-2">•</span>
+          {% if article.raindrop_url %}
+            <a href="{{ article.raindrop_url }}" target="_blank" rel="noopener" class="text-xs px-2 py-0.5 bg-blue-100 hover:bg-blue-200 rounded transition-colors" title="View on Raindrop">Raindrop</a>
+          {% elif article.instapaper_url %}
+            <a href="{{ article.instapaper_url }}" target="_blank" rel="noopener" class="text-xs px-2 py-0.5 bg-amber-100 hover:bg-amber-200 rounded transition-colors" title="View on Instapaper">Instapaper</a>
+          {% endif %}
           {% if article.author %}
               <span class="mr-2">•</span>
             <span>{{ article.author }}</span>
