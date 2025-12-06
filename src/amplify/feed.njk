@@ -23,7 +23,7 @@ eleventyExcludeFromCollections: true
             {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
             <entry>
                 <title>{{ post.data.title }}</title>
-                <link href="{{ post.data.isBasedOn }}"/>
+                <link href="{{ post.data.link or post.data.referringUri or post.data.canonical or absolutePostUrl }}"/>
                 <updated>{{ post.date | dateToRfc3339 }}</updated>
                 <id>{{ absolutePostUrl }}</id>
                 <content type="html">
