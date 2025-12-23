@@ -17,7 +17,7 @@ tags:
   - danger
   - present
 ---
-<div class="embed-container">
+<div class="img-container">
 <img style="width: 100%; max-width: 600px; height: 100%;" src="https://res.cloudinary.com/dpham5/image/upload/v1766525596/Blog/IMG_0266_yjngww.jpg" />
 </div>
 
