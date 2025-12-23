@@ -25,7 +25,7 @@ In the latest episode to Unclear and Present Danger (A Few Good Men), John Ganz 
 
 My wife, daughter and I shortly went over to a real great unused book store. Lo and behold, on their 2025 recent publications, Ganz's book was there for $8. I was so thrilled to find a used copy of his book. 
 
-John Ganz is a real clear thinker to our age of propaganda, neofascism and nativist vibe. Books like his offer history as a teacher and help make sense of our time.
+John Ganz is a real clear thinker to our age of propaganda, neofascism and nativist vibe. Books like his offer history as a teacher and help make sense of our time. Do yourself a favor and buy a copy. 
 
 <div class="embed-container">
 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/a-few-good-men/id1592411580?i=1000742403337"></iframe></div>
