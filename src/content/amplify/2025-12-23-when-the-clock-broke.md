@@ -30,3 +30,9 @@ John Ganz is a real clear thinker to our age of propaganda, neofascism and nativ
 <div class="embed-container">
 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/a-few-good-men/id1592411580?i=1000742403337"></iframe></div>
 
+Jamelle Bouie did a video exploring Vance nativist pivot and illustrated Vance as no different from David Duke's own white supremacy views. 
+
+<div class="embed-container">
+<iframe src="https://www.youtube.com/embed/zJuikC2nouc?si=VBcD21qDAeGFQxUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+To tie it back to Ganz's book, Patrick Buchanan ran on a nativist platform and gained a significant minority support in the Republican party to only be taken up by Trump and now Vance. These ideas don't come from nowhere. They are part of a long stretch of men claiming who gets to be American, and who gets to be prosperous in this nation. Vance as a pig man who eats slop and fucks couches for fun is not to be underestimated in his political project to become the successor of Trumpism.
