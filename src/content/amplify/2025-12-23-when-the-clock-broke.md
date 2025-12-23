@@ -27,8 +27,8 @@ My wife, daughter and I shortly went over to a real great unused book store. Lo 
 
 John Ganz is a real clear thinker to our age of propaganda, neofascism and nativist vibe. Books like his offer history as a teacher and help make sense of our time.  At the heart of the book is who gets to be American. Do yourself a favor and buy a copy.
 
-<div class="embed-container">
-<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/a-few-good-men/id1592411580?i=1000742403337"></iframe></div>
+
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/a-few-good-men/id1592411580?i=1000742403337"></iframe>
 
 Jamelle Bouie did a video exploring Vance nativist pivot and illustrated Vance as no different from David Duke's own white supremacy views. 
 
