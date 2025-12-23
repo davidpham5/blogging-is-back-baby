@@ -18,7 +18,7 @@ tags:
   - present
 ---
 <div class="embed-container">
-<img style="width: 100%; max-width: 600px;" src="https://res.cloudinary.com/dpham5/image/upload/v1766525596/Blog/IMG_0266_yjngww.jpg" />
+<img style="width: 100%; max-width: 600px; height: 100%;" src="https://res.cloudinary.com/dpham5/image/upload/v1766525596/Blog/IMG_0266_yjngww.jpg" />
 </div>
 
 In the latest episode to Unclear and Present Danger (A Few Good Men), John Ganz plugged his book, *When the Clock Broke* as a good gift for a history buff, a political junkie or a sharp teenager. I made a mental note to buy the physical copy of the book. Throughout the year, I read some of Ganz's pieces on Unpopular Front substack and borrowed from my local library an ebook copy. 
