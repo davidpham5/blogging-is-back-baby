@@ -1,10 +1,21 @@
 ---
 title: When the clock broke
 date: 2025-12-23
-source:
-isBasedOn:
-link:
+source: Unclear and Present Danger Podcast
+isBasedOn: A Few Good Men
+link: https://podcasts.apple.com/us/podcast/unclear-and-present-danger/id1592411580
 tags:
+  - ganz
+  - john
+  - when
+  - the
+  - clock
+  - broke
+  - books
+  - podcasts
+  - unclear
+  - danger
+  - present
 ---
 <div class="embed-container">
 <img style="width: 100%; max-width: 600px;" src="https://res.cloudinary.com/dpham5/image/upload/v1766525596/Blog/IMG_0266_yjngww.jpg" />
