@@ -23,7 +23,7 @@ tags:
 
 In the latest episode to Unclear and Present Danger (A Few Good Men), John Ganz plugged his book, *When the Clock Broke* as a good gift for a history buff, a political junkie or a sharp teenager. I made a mental note to buy the physical copy of the book. Throughout the year, I read some of Ganz's pieces on Unpopular Front substack and borrowed from my local library an ebook copy. 
 
-My wife, daughter and I shortly went over to a real great unused book store. Lo and behold, on their 2025 recent publications, Ganz's book was there for $8. I was so thrilled to find a used copy of his book. 
+My wife, daughter and I shortly went over to a real great used bookstore. Lo and behold, on their 2025 recent publications, Ganz's book was there for $8. I was so thrilled to find a used copy of his book. 
 
 John Ganz is a real clear thinker to our age of propaganda, neofascism and nativist vibe. Books like his offer history as a teacher and help make sense of our time.  At the heart of the book is who gets to be American. Do yourself a favor and buy a copy.
 
