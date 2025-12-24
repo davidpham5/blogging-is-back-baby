@@ -37,4 +37,4 @@ Jamelle Bouie did a video exploring Vance nativist pivot and illustrated Vance a
 
 To tie it back to Ganz's book, Patrick Buchanan ran on a nativist platform and gained a significant minority support in the Republican party to only be taken up by Trump and now Vance. These ideas don't come from nowhere. They are part of a long stretch of men claiming who gets to be American, and who gets to be prosperous in this nation is one of blood and soil and not one of credo. Vance as a pig man who eats slop and fucks couches for fun is not to be underestimated in his political project to be the successor of Trumpism. He believes he can ride like a klansman, a George Wallace, and a Buchanan and win. He is a David Duke of our time but without the charm and likability.
 
-Oh did I forget to say that fucking couches is just an internet rumor?
+Oh did I forget to say that him fucking couches is just an internet rumor?
