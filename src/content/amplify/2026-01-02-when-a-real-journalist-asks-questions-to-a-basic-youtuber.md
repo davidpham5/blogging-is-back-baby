@@ -2,7 +2,7 @@
 title: When a real journalist asks questions to a basic youtuber
 date: 2026-01-02
 source: "@whatsup_cv - Instagram"
-isBasedOn: Youtuber discovers journalism can make you look like a fool
+isBasedOn: When a real journalist asks questions to a basic youtuber
 link: https://www.instagram.com/reel/DS7tVuZDQas/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
 tags:
   - youtuber
