@@ -9,7 +9,7 @@ tags:
   - Google
   - engineering
 ---
-> 16. Admitting what you don’t know creates more safety than pretending you do.**
+>   16. Admitting what you don’t know creates more safety than pretending you do.
 > 
 > **Senior engineers who say “I don’t know” aren’t showing weakness - they’re creating permission. When a leader admits uncertainty, it signals that the room is safe for others to do the same. The alternative is a culture where everyone pretends to understand and problems stay hidden until they explode.**
 > 
