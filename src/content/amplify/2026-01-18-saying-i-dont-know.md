@@ -17,6 +17,6 @@ tags:
 > 
 > **Model curiosity, and you get a team that actually learns.**
 
-The most difficult challenge in my career has been admitting, "I don't know". When your intelligence is the currency to which you succeed in school, and at a job, you work very hard to signal that you're smart. "I don't know" meant weakness of the mind and a level of incompetency. 
+The most difficult challenge in my career has been admitting, "I don't know". When your intelligence is the currency to which you succeed in school, and at a job, you work very hard to signal to a lot people how you're clever you are. "I don't know" meant weakness of the mind and a level of incompetency, to me. 
 
-What I've learned is that, "I don't know", is an invitation to learning, together. It has become a superpower of mine -- to say it in many different ways -- while maintaining a sense of security among my friends and colleagues. 
+What I've understand is that, "I don't know", is an invitation to learn, not just for myself, but as a team. I like to say to my colleagues, "we'll learn, together." It's really the best when we figure out something as a team.
