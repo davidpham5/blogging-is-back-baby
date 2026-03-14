@@ -1,0 +1,186 @@
+
+{% for item in mainFeedItems %}
+
+  {# ── Storystream (amplify) card ───────────────────────────────────── #}
+  {% if item._feedType == 'amplify' %}
+    {% set post = item.post %}
+    {% set postUrl = post.url %}
+    <div class="card rounded-lg shadow-xl overflow-hidden mb-8 text-2xl flex flex-1 flex-col lg:mr-100 sm:max-w-container-sm">
+      <div class="relative flex flex-row border-b border-solid border-gray-cc dark:border-gray-31 max-w-container-sm sm:py-2 md:px-4 lg:py-6">
+        <div class="w-38 relative flex min-w-[38px] flex-col md:ml-[-3px] md:items-start md:mr-6">
+          <div class="absolute ml-0">
+            <a href="{{ postUrl }}" title="Read {{ post.title or post.data.title }}" rel="nofollow noopener noreferrer">
+              <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.51 284.18" width="24" height="50">
+                <defs>
+                  <linearGradient id="gradient-main-{{ loop.index0 }}" gradientTransform="rotate(90)">
+                    <stop offset="40%" stop-color="#FF3D00"></stop>
+                    <stop offset="55%" stop-color="#3CFFD0"></stop>
+                  </linearGradient>
+                </defs>
+                <g id="Layer_2"><g id="Layer_1-2">
+                  <path fill="url(#gradient-main-{{ loop.index0 }})" d="M110.91,165.78h0c-18-15.39-18-32,0-47.39h0a67.26,67.26,0,1,0-87.31,0h0c18,15.39,18,32,0,47.39h0a67.26,67.26,0,1,0,87.31,0Z"></path>
+                </g></g>
+              </svg>
+              <div class="relative ml-[3px] my-2 z-10 h-3 flex justify-center text-center text-[12px] strong leading-none tracking-normal text-yellow-100 hover:text-gray-900 hover:shadow hover:transition-transform">DP</div>
+            </a>
+          </div>
+          {% set externalUrl = post.data.link %}
+          <div class="z-10 h-4 w-4 max-[430px]:mt-8 max-[430px]:ml-1 md:mt-[30px] md:ml-1">
+            <a href="{{ externalUrl }}" target="_blank" class="flex w-full justify-center no-ext">
+              <svg width="14" height="14" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>External Link</title>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.8999 0.400024H10.8999V4.40002H9.8999V2.10713L4.8999 7.10713L4.1928 6.40002L9.1928 1.40002H6.8999V0.400024ZM2.3999 2.90002C2.12604 2.90002 1.8999 3.12617 1.8999 3.40002V8.90002C1.8999 9.03263 1.95258 9.15981 2.04635 9.25358C2.14012 9.34735 2.26729 9.40002 2.3999 9.40002H7.8999C8.03251 9.40002 8.15969 9.34735 8.25346 9.25358C8.34722 9.15981 8.3999 9.03263 8.3999 8.90002V5.90002H9.3999V8.90002C9.3999 9.29785 9.24187 9.67938 8.96056 9.96068C8.67926 10.242 8.29773 10.4 7.8999 10.4H2.3999C2.00208 10.4 1.62055 10.242 1.33924 9.96068C1.05794 9.67938 0.899902 9.29785 0.899902 8.90002V3.40002C0.899902 2.57388 1.57376 1.90002 2.3999 1.90002H5.3999V2.90002H2.3999Z" fill="#000" style="--darkreader-inline-fill: #ffffff;"></path>
+              </svg>
+            </a>
+            <div class="mt-4">
+              <a href="https://bsky.app/intent/compose?text={{ (post.data.title | urlencode) }}%0A%0A{{ (metadata.url + postUrl) | urlencode }}"
+                  target="_blank" rel="noopener noreferrer" aria-label="Share on Bluesky" class="flex w-full justify-center no-ext">
+                <svg class="transition" width="20" height="20" fill="currentColor" viewBox="0 0 568 501" xmlns="http://www.w3.org/2000/svg">
+                  <title>Share on Bluesky</title>
+                  <path d="M123.121 33.6637C188.241 82.5526 258.281 181.681 284 234.873C309.719 181.681 379.759 82.5526 444.879 33.6637C491.866 1.61183 568 -28.9064 568 57.9464C568 75.2916 558.055 203.659 552.222 224.501C531.947 296.954 458.067 315.434 392.347 304.249C507.222 323.8 536.444 388.56 473.333 453.32C353.473 576.312 301.061 422.461 284 384.039C266.939 422.461 214.527 576.312 94.6667 453.32C31.5556 388.56 60.7778 323.8 175.653 304.249C109.933 315.434 36.0533 296.954 15.7778 224.501C9.94444 203.659 0 75.2916 0 57.9464C0 -28.9064 76.1333 1.61183 123.121 33.6637Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex min-w-0 flex-1 flex-col mb-2">
+          <div class="flex flex-row md:justify-start">
+            <div class="flex flex-row flex-wrap items-center pb-4 uppercase leading-130 tracking-15 text-xs md:pb-2">
+              <span class="relative z-10 mr-8 stronger">
+                <time class="flex items-center font-normal" datetime="{{ post.date | dateToFormat('DDD') }}">{{ post.date | dateToFormat("DDD") }}</time>
+              </span>
+            </div>
+          </div>
+          <div class="dark:text-gray-ef leading-130">
+            <div class="inline text-sm-2x strong md:text-md"><a href="{{ postUrl }}" title="Read {{ post.title or post.data.title }}">{{ post.data.title }}</a></div>
+            <section class="post-content mt-4 text-sm-2x md:text-md">
+              {{ post.templateContent | safe }}
+            </section>
+            <br>
+          </div>
+          <section>
+            <div class="relative z-10 text-md leading-120">
+              {% set storyStreamUrl = post.data.link or post.data.isBasedOn %}
+              <a class="text-md leading-120 text-gray-100 underline"
+                  aria-label="{{ post.title or post.data.title }}"
+                  href="{{ storyStreamUrl }}"
+                  title="Read {{ post.title or post.data.title }}"
+                  rel="nofollow noopener noreferrer" target="_blank">
+                {{ post.data.isBasedOn or post.data.title }}
+              </a>
+              <span class="flex my-2 tracking-wide text-sm strong uppercase tracking-15">
+                [<!-- -->{{ post.data.source }}<!-- -->]
+              </span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  {# ── Turbolink card ───────────────────────────────────────────────── #}
+  {% else %}
+    {% set article = item.article %}
+    {% if article.title %}
+    <div class="post-list-item">
+      <article class="card overflow-hidden mb-8">
+        <!-- Image with Overlay -->
+        <div class="relative w-full h-48 mb-4 hover:scale-105 transition-transform duration-300">
+          {% if article.image_url %}
+            <img src="{{ article.image_url }}" alt="{{ article.title }}" class="w-full h-full object-cover">
+            <div class="absolute bg-black bg-opacity-40 top-0 w-full h-full"></div>
+            <div class="absolute flex justify-center align-middle p-4 top-0 w-full h-full">
+              <h3 class="font-semibold text-3xl top-0 p-2 flex flex-col justify-center text-shadow-letterpress">
+                <a href="{{ article.source_url }}" target="_blank" rel="noopener" class="accent hover:underline foreground-color"
+                   aria-label="Read {{ article.title }}" title="Read {{ article.title }}">
+                  {{ article.title }}
+                </a>
+              </h3>
+            </div>
+          {% else %}
+            <!-- Fallback for no image -->
+            <div class="w-full h-full bg-gray-800 flex items-center justify-center">
+              <div class="text-center">
+                <svg class="w-12 h-12 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"></path>
+                </svg>
+                <h3 class="text-white font-semibold text-lg leading-tight px-4">
+                  <a href="{{ article.source_url }}" target="_blank" rel="noopener" class="hover:underline">
+                    {{ article.title }}
+                  </a>
+                </h3>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+
+        <!-- Content below image -->
+        <div class="pb-4">
+          {% if article.note %}
+            <p class="post-content text-sm-2x md:text-md mb-3">{{ article.note }}</p>
+          {% endif %}
+
+          <div class="flex flex-wrap items-center text-xs uppercase tracking-wide">
+            <time class="mr-2" datetime="{{ article.date | dateToFormat('iso') }}">
+              {{ article.date | dateToFormat("DDD") }}
+            </time>
+            <span class="mr-2">•</span>
+            <span class="mr-2">[{{ article.site_name }}]</span>
+            {% if article.author %}
+              <span class="mr-2">•</span>
+              <span>{{ article.author }}</span>
+            {% endif %}
+            <span class="mr-2">•</span>
+            <div class="flex items-center justify-start gap-1 mr-2">
+              <div class="flex gap-2">
+                <button onclick="toggleTurboComment('main-{{ loop.index0 }}')"
+                        class="flex items-center text-xs rounded transition-colors"
+                        aria-label="Share on Bluesky with comment">
+                  <svg class="transition" width="16" height="16" fill="currentColor" viewBox="0 0 568 501" xmlns="http://www.w3.org/2000/svg">
+                    <title>Share on Bluesky</title>
+                    <path d="M123.121 33.6637C188.241 82.5526 258.281 181.681 284 234.873C309.719 181.681 379.759 82.5526 444.879 33.6637C491.866 1.61183 568 -28.9064 568 57.9464C568 75.2916 558.055 203.659 552.222 224.501C531.947 296.954 458.067 315.434 392.347 304.249C507.222 323.8 536.444 388.56 473.333 453.32C353.473 576.312 301.061 422.461 284 384.039C266.939 422.461 214.527 576.312 94.6667 453.32C31.5556 388.56 60.7778 323.8 175.653 304.249C109.933 315.434 36.0533 296.954 15.7778 224.501C9.94444 203.659 0 75.2916 0 57.9464C0 -28.9064 76.1333 1.61183 123.121 33.6637Z"/>
+                  </svg>
+                  <div class="ml-2 uppercase tracking-wide">Quote Retweet</div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comment box (initially hidden) -->
+          <div class="mt-3 hidden" id="turbo-comment-main-{{ loop.index0 }}">
+            <div class="bg-gray-50 rounded-lg p-3 mb-3">
+              <div class="text-xs text-gray-500 mb-2">Preview:</div>
+              <blockquote class="border-l-3 border-blue-400 pl-3 text-sm">
+                <span class="text-black italic">{{ article.title }}</span>
+              </blockquote>
+              {% if article.note %}
+                <br /><span class="text-gray-600">{{ article.note }}</span>
+              {% endif %}
+            </div>
+            <textarea
+              id="comment-main-{{ loop.index0 }}"
+              placeholder="Add your thoughts on this article..."
+              maxlength="250"
+              class="w-full p-3 border border-gray-300 rounded-lg text-sm resize-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+              rows="3"></textarea>
+            <div class="flex justify-between items-center mt-2">
+              <span class="text-xs">
+                <span id="char-count-main-{{ loop.index0 }}">0</span> /250 characters
+              </span>
+              <div class="flex gap-2">
+                <button onclick="cancelTurboComment('main-{{ loop.index0 }}')"
+                        class="px-3 py-1 text-sm transition-colors strong">Cancel</button>
+                <button onclick="shareWithTurboComment('main-{{ loop.index0 }}', {{ article.title | dump }}, {{ article.source_url | dump }}, {{ article.note | dump }})"
+                        class="px-4 py-1 bg-blue-500 text-white text-xs rounded hover:bg-blue-600 transition-colors strong">
+                  Share to Bluesky
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    {% endif %}
+  {% endif %}
+
+{% endfor %}

@@ -18,12 +18,12 @@
      <section>
       <h2 class="text-4xl py-8 pt-4 pb-0">StoryStream</h2>
       <p class="thin pb-4">Findings on the web, interesting stuff, or beautiful things to share</p>
-      {% set postList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
-      {# {% set forward = true %} #}
-      {% include "components/storystream.njk" %}
+      {% set amplifyItems = collections.contentTypes | findBySlug('amplify') | values('items') %}
+      {% set mainFeedItems = raindrop.articles | limit(13) | editorialFeed(amplifyItems) %}
+      {% include "components/main-feed.njk" %}
 
       <p>
-        Subscribe to the <a href="/amplify/feed.xml">Storystream RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.
+        Subscribe to the <a href="/main-feed/feed.xml">Main Feed RSS</a>, the <a href="/amplify/feed.xml">StoryStream RSS</a>, or view the entire <a href="/amplify">archive</a> for more.
       </p>
     </section>
     {% set thoughts = articlesList | onlyTypes(['thought']) %}
@@ -47,20 +47,6 @@
       <p>
         Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
       </p>
-      <section>
-      {% set turboLinks = raindrop.articles | limit(10) %}
-
-      {% if turboLinks.length > 0 %}
-      <h2 class="text-4xl py-8 pt-4 pb-0">Turbocharged hyperlinks</h2>
-      <p class="thin pb-4">Chaos desires order -- links to bring clarity</p>
-        <ul class="post-list">
-          {% include "components/turbo-links.njk" %}
-        </ul>
-         <p>
-        Subscribe to the <a href="/turbo-links/feed.xml">turbocharged hyperlinks RSS feed</a> or view the entire <a href="/turbo-links/">archive</a> for more.
-      </p>
-      {% endif %}
-      </section>
     </section>
 
   </section>
