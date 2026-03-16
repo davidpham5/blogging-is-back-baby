@@ -62,4 +62,4 @@ todos:
 
 ## Next Up
 
-Get the first real post written. This section only works if I actually use it.
+Collect and read links as recommend by Aram, and share as a post.
