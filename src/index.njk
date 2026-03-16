@@ -4,28 +4,31 @@
 {% set mainClass = 'content-grid' %}
 
 {% block content %}
-  <header><h1 class="special header"><span class="strong">David Chico Pham </span>writes on technology, culture, democracy and power.</h1><div class="text-4xl py-6 leading-normal" style="opacity: 1; transform: none; max-width: 780px;">Fantastic home cook, not bad student of history, and slightly above average engineer.</div></b></h2></header>
+  <header>
+      <h1 class="special header">
+        <span class="strong">David Chico Pham </span>writes on technology, culture, democracy and power.
+      </h1>
+  </header>
   <section class="paragraph">
-    <p>
-		    I am a Senior Privacy Engineer. My path into web development is somewhat unusual -- I'm a self-taught web dev with a background in history and sociology. I didn't realize it back then, but my studies actually gave me all the right tools I needed for writing and storytelling. As an engineer, I've been fortunate to work with some of the most talented and creative folks in media and technology.
-	  </p>
+      <p>
+          I'm a Senior Software Engineer (Privacy) who studied history and sociology, not computer science. I taught myself to code and programming. History trained me to ask why systems are built the way they are and who they serve. Sociology showed me how people actually behave inside those systems. Those turned out to be exactly the right questions for building digital systems. I've been fortunate to work alongside some of the most talented and creative folks in media and technology.
+    </p>
     <p>
         As a first-generation Mexican-Vietnamese American, Buddhist from the Midwest, and working-class person, I often felt like an outsider. The concept of "community" seemed abstract and elusive to me. It was something I didn't quite get. I had a hard time grasping its true meaning. However, over time, I've come to understand that "community" is fundamentally about our relationships with one another. This personal site is an entry to the community of indie web creators and thinkers.
     {# <p>In my spare time I work on <a href="/sourdoughs/">making sourdoughs bread</a>, I <a href="/tinker/">tinker</a> with old ipods, and I play a lot <a href='https://steamcommunity.com/profiles/76561198116240122/'>Destiny 2</a> -- Warlock main. You can find me on <a href="/elsewhere/">various online platforms &amp; communities</a>.</p> #}
   </section>
 
-  <section>
+  <section class="paragraph">
     <p>
-    This is my next is a new section on this site where I share what I'm learning about a technology, concept, and ideas that shape our world and my own thinking. With Agentic AI like Claude Code, what once a side projects collecting dust can now be a fully built personal app. Currently, I exploring
-    {% set thisIsMyNext = collections.contentTypes | findBySlug('this-is-my-next') | values('items') %}
+    <strong><a href="/this-is-my-next/">This is my next</a></strong> is a new section on this site where I share what I'm learning about technology, concepts, and ideas that shape our world and my own thinking. With Agentic AI like Claude Code, what were once side projects collecting dust can now be fully built personal apps. Currently, I'm exploring
+    {% set thisIsMyNext = collections.timnPosts %}
     {% if thisIsMyNext and thisIsMyNext.length > 0 %}
-      <a href="{{ thisIsMyNext | reverse | first | url }}">
-      {{ thisIsMyNext | reverse | first | title }}
-      </a>
+      {% set latestTimn = thisIsMyNext | first %}
+      <a href="{{ latestTimn.url }}">{{ latestTimn.data.title }}</a>
     {% endif %}
     </p>
     <p>
-    I'm simultaneously terrified and elated by Agentic AI. Its ability to scaffold and build out apps that fit a person's needs and execute ideas is incredible. We stand at a crossroad to make it to our advantage.
+    I'm simultaneously terrified and elated by Agentic Engineering. Its ability to scaffold and build out apps that fit a person's needs and execute ideas is incredible. I think it's a chance to build a worker-led software revolution.
     </p>
     </section>
   <h4>Chico was my nickname in school.</h4>

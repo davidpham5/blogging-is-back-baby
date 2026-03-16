@@ -39,7 +39,11 @@
       <div class="pb-4">
 
         {% if article.note %}
-          <p class="post-content text-sm-2x md:text-md mb-3">{{ article.note }}</p>
+          {% if article.note.startsWith('>') %}
+            <blockquote class="post-content text-sm-2x md:text-md mb-3">{{ article.note | replace('> ', '') | replace('>', '') | trim }}</blockquote>
+          {% else %}
+            <p class="post-content text-sm-2x md:text-md mb-3">{{ article.note }}</p>
+          {% endif %}
         {% endif %}
 
         <div class="flex flex-wrap items-center text-xs uppercase tracking-wide">
