@@ -1,0 +1,362 @@
+/* =============================================================
+   This Is My Next (TIMN) — Component & Code Highlighting Styles
+   All Prism rules are scoped to #page-timn-post to avoid
+   affecting other layouts.
+   ============================================================= */
+
+/* ----- TODO checklist ----- */
+
+.timn-todo {
+  border-left: 4px solid var(--accent);
+  background: var(--background-muted, rgba(0, 0, 0, 0.04));
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.timn-todo__heading {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.timn-todo__list,
+.timn-todo__subtasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timn-todo__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.timn-todo__item > span:first-child,
+.timn-todo__item > .timn-todo__check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.timn-todo__check {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  opacity: 0.7;
+}
+
+.timn-todo__text {
+  display: inline;
+}
+
+.timn-todo__item.is-done .timn-todo__text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.timn-todo__subtasks {
+  padding-left: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.timn-todo__subtasks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.2rem;
+  opacity: 0.9;
+}
+
+.timn-todo__subtasks li.is-done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* ----- Bluesky share button ----- */
+
+.timn-share-section {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--foreground-muted, currentColor);
+  opacity: 0.7;
+}
+
+.timn-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.timn-share-btn:hover {
+  opacity: 1;
+}
+
+/* =============================================================
+   VS Code Dark+ Prism syntax theme — scoped to #page-timn-post
+   Source: prism-themes/themes/prism-vsc-dark-plus.css
+   ============================================================= */
+
+#page-timn-post pre[class*="language-"],
+#page-timn-post code[class*="language-"] {
+  color: #d4d4d4;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+#page-timn-post pre[class*="language-"]::selection,
+#page-timn-post code[class*="language-"]::selection,
+#page-timn-post pre[class*="language-"] *::selection,
+#page-timn-post code[class*="language-"] *::selection {
+  text-shadow: none;
+  background: #264f78;
+}
+
+#page-timn-post pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+#page-timn-post :not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  background: #1e1e1e;
+}
+
+/* Tokens */
+#page-timn-post .namespace {
+  opacity: 0.7;
+}
+
+#page-timn-post .token.doctype .token.doctype-tag {
+  color: #569cd6;
+}
+
+#page-timn-post .token.doctype .token.name {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.comment,
+#page-timn-post .token.prolog {
+  color: #6a9955;
+}
+
+#page-timn-post .token.punctuation,
+#page-timn-post .language-html .language-css .token.punctuation,
+#page-timn-post .language-html .language-javascript .token.punctuation {
+  color: #d4d4d4;
+}
+
+#page-timn-post .token.property,
+#page-timn-post .token.tag,
+#page-timn-post .token.boolean,
+#page-timn-post .token.number,
+#page-timn-post .token.constant,
+#page-timn-post .token.symbol,
+#page-timn-post .token.inserted,
+#page-timn-post .token.unit {
+  color: #b5cea8;
+}
+
+#page-timn-post .token.selector,
+#page-timn-post .token.attr-name,
+#page-timn-post .token.string,
+#page-timn-post .token.char,
+#page-timn-post .token.builtin,
+#page-timn-post .token.deleted {
+  color: #ce9178;
+}
+
+#page-timn-post .language-css .token.string.url {
+  text-decoration: underline;
+}
+
+#page-timn-post .token.operator,
+#page-timn-post .token.entity {
+  color: #d4d4d4;
+}
+
+#page-timn-post .token.operator.arrow {
+  color: #569cd6;
+}
+
+#page-timn-post .token.atrule {
+  color: #ce9178;
+}
+
+#page-timn-post .token.atrule .token.rule {
+  color: #c586c0;
+}
+
+#page-timn-post .token.atrule .token.url {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.atrule .token.url .token.function {
+  color: #dcdcaa;
+}
+
+#page-timn-post .token.atrule .token.url .token.punctuation {
+  color: #d4d4d4;
+}
+
+#page-timn-post .token.keyword {
+  color: #569cd6;
+}
+
+#page-timn-post .token.keyword.module,
+#page-timn-post .token.keyword.control-flow {
+  color: #c586c0;
+}
+
+#page-timn-post .token.function,
+#page-timn-post .token.function .token.maybe-class-name {
+  color: #dcdcaa;
+}
+
+#page-timn-post .token.regex {
+  color: #d16969;
+}
+
+#page-timn-post .token.important {
+  color: #569cd6;
+}
+
+#page-timn-post .token.italic {
+  font-style: italic;
+}
+
+#page-timn-post .token.constant {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.class-name,
+#page-timn-post .token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+#page-timn-post .token.console {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.parameter {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.interpolation {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+}
+
+#page-timn-post .token.boolean {
+  color: #569cd6;
+}
+
+#page-timn-post .token.property,
+#page-timn-post .token.variable,
+#page-timn-post .token.imports .token.maybe-class-name,
+#page-timn-post .token.exports .token.maybe-class-name {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.selector {
+  color: #d7ba7d;
+}
+
+#page-timn-post .token.escape {
+  color: #d7ba7d;
+}
+
+#page-timn-post .token.tag {
+  color: #569cd6;
+}
+
+#page-timn-post .token.tag .token.punctuation {
+  color: #808080;
+}
+
+#page-timn-post .token.cdata {
+  color: #808080;
+}
+
+#page-timn-post .token.attr-name {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.attr-value,
+#page-timn-post .token.attr-value .token.punctuation {
+  color: #ce9178;
+}
+
+#page-timn-post .token.attr-value .token.punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+#page-timn-post .token.entity {
+  color: #569cd6;
+}
+
+#page-timn-post .token.namespace {
+  color: #4ec9b0;
+}
+
+/* Language-specific overrides */
+#page-timn-post pre[class*="language-javascript"],
+#page-timn-post code[class*="language-javascript"],
+#page-timn-post pre[class*="language-jsx"],
+#page-timn-post code[class*="language-jsx"],
+#page-timn-post pre[class*="language-typescript"],
+#page-timn-post code[class*="language-typescript"],
+#page-timn-post pre[class*="language-tsx"],
+#page-timn-post code[class*="language-tsx"] {
+  color: #9cdcfe;
+}
+
+#page-timn-post pre[class*="language-css"],
+#page-timn-post code[class*="language-css"] {
+  color: #ce9178;
+}
+
+#page-timn-post pre[class*="language-html"],
+#page-timn-post code[class*="language-html"] {
+  color: #d4d4d4;
+}
+
+#page-timn-post .language-regex .token.anchor {
+  color: #dcdcaa;
+}
+
+#page-timn-post .language-html .token.punctuation {
+  color: #808080;
+}
