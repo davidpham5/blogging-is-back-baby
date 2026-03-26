@@ -1,0 +1,94 @@
+<h2>Proposed Homepage Layout</h2>
+<p class="subtitle">StoryStream left · TurboLinks right · 20 items · Essays below</p>
+
+<div class="mockup" style="max-width: 900px;">
+  <div class="mockup-header">Homepage — Desktop (≥864px)</div>
+  <div class="mockup-body" style="padding: 12px; font-size: 12px; background: #fafafa;">
+
+    <!-- Bio header -->
+    <div style="border: 1px solid #ccc; border-radius: 4px; padding: 10px; margin-bottom: 10px; background: white;">
+      <div style="font-weight: bold; font-size: 13px; margin-bottom: 4px;">David Chico Pham writes on technology, culture, democracy and power.</div>
+      <div style="color: #666; font-size: 11px; line-height: 1.5;">Bio paragraph · TIMN section · Chico nickname</div>
+    </div>
+
+    <!-- TWO COLUMN FEED SECTION -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 10px;">
+
+      <!-- LEFT: StoryStream -->
+      <div style="border: 2px solid #6b46c1; border-radius: 6px; background: white;">
+        <div style="background: #6b46c1; color: white; padding: 8px 10px; font-weight: bold; font-size: 12px; border-radius: 4px 4px 0 0;">
+          StoryStream <span style="font-weight: normal; font-size: 11px; opacity: 0.85;">— findings &amp; beautiful things</span>
+        </div>
+        <div style="padding: 8px;">
+          {% for i in range(0, 4) %}
+          <div style="display: flex; gap: 8px; padding: 8px 0; border-bottom: 1px solid #eee;">
+            <div style="background: linear-gradient(180deg, #FF3D00 40%, #3CFFD0 100%); width: 16px; height: 36px; border-radius: 2px; flex-shrink: 0;"></div>
+            <div>
+              <div style="font-weight: bold; font-size: 11px; margin-bottom: 2px;">StoryStream entry title with editorial commentary</div>
+              <div style="color: #777; font-size: 10px; line-height: 1.4;">Short commentary about why this matters...</div>
+              <div style="color: #999; font-size: 10px; margin-top: 3px;">SOURCE · DATE</div>
+            </div>
+          </div>
+          {% endfor %}
+          <div style="padding: 6px 0; text-align: center; color: #6b46c1; font-size: 11px;">→ RSS · Archive</div>
+        </div>
+      </div>
+
+      <!-- RIGHT: TurboLinks -->
+      <div style="border: 2px solid #2b6cb0; border-radius: 6px; background: white;">
+        <div style="background: #2b6cb0; color: white; padding: 8px 10px; font-weight: bold; font-size: 12px; border-radius: 4px 4px 0 0;">
+          TurboLinks <span style="font-weight: normal; font-size: 11px; opacity: 0.85;">— 20 items · amplified</span>
+        </div>
+        <div style="padding: 8px;">
+          {% for i in range(0, 5) %}
+          <div style="margin-bottom: 8px;">
+            <div style="background: #888; height: 50px; border-radius: 3px; position: relative; overflow: hidden; margin-bottom: 3px;">
+              <div style="position:absolute; bottom:0; left:0; right:0; padding: 4px 6px; background: rgba(0,0,0,0.5); color:white; font-size:10px; font-weight:bold; line-height: 1.3;">Article headline over image</div>
+            </div>
+            <div style="color: #777; font-size: 10px;">SITE NAME · DATE · Share</div>
+          </div>
+          {% endfor %}
+          <div style="color: #999; font-size: 10px; text-align:center; padding: 4px;">+ 15 more cards...</div>
+          <div style="padding: 6px 0; text-align: center; color: #2b6cb0; font-size: 11px;">→ RSS · Archive</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ESSAYS BELOW (assumption) -->
+    <div style="border: 1px solid #ccc; border-radius: 4px; padding: 10px; background: white;">
+      <div style="font-weight: bold; font-size: 13px; margin-bottom: 6px;">Essays</div>
+      <div style="color: #666; font-size: 11px; line-height: 1.6;">
+        • Essay title one — loose, vague feelings on things...<br>
+        • Essay title two<br>
+        • Essay title three<br>
+      </div>
+      <div style="color: #999; font-size: 10px; margin-top: 6px;">→ RSS · Full archive</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mockup" style="max-width: 360px; margin-top: 20px;">
+  <div class="mockup-header">Mobile (&lt;864px) — Stacks to single column</div>
+  <div class="mockup-body" style="padding: 10px; font-size: 12px;">
+    <div style="border: 2px solid #6b46c1; border-radius: 4px; padding: 8px; margin-bottom: 8px;">
+      <div style="font-weight: bold; font-size: 11px; color: #6b46c1; margin-bottom: 4px;">StoryStream</div>
+      <div style="color: #777; font-size: 10px;">Entries flow here first...</div>
+    </div>
+    <div style="border: 2px solid #2b6cb0; border-radius: 4px; padding: 8px; margin-bottom: 8px;">
+      <div style="font-weight: bold; font-size: 11px; color: #2b6cb0; margin-bottom: 4px;">TurboLinks</div>
+      <div style="color: #777; font-size: 10px;">Image cards flow below...</div>
+    </div>
+    <div style="border: 1px solid #ccc; border-radius: 4px; padding: 8px;">
+      <div style="font-weight: bold; font-size: 11px; margin-bottom: 4px;">Essays</div>
+      <div style="color: #777; font-size: 10px;">Then essays...</div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 20px; padding: 14px; background: #fffbeb; border: 1px solid #f6e05e; border-radius: 8px;">
+  <strong style="font-size: 13px;">One assumption to confirm:</strong>
+  <p style="font-size: 12px; margin-top: 6px;">I'm putting <strong>Essays below the two-column section</strong>, full-width. If you wanted Essays in one of the columns (e.g., stacked under StoryStream on the left), let me know and I'll adjust. The current mockup treats Essays as a separate full-width section below the feeds.</p>
+  <p style="font-size: 12px; margin-top: 8px;">Also: <strong>Recent Thoughts</strong> section — keep it, or drop it from the homepage entirely now that we have a cleaner two-column structure?</p>
+</div>

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/davidpham/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.5/skills/brainstorming/scripts/start-server.sh --project-dir /Users/davidpham/Developer/blogging-is-back-baby)",
+      "Bash(curl -s http://localhost:60639)",
+      "Bash(curl -v http://localhost:60639)",
+      "Bash(curl -s --max-time 5 \"http://localhost:60639/\")",
+      "Bash(curl -s --max-time 5 \"http://localhost:60639/screen\")",
+      "Bash(curl -s --max-time 5 http://localhost:57001/)"
+    ]
+  }
+}
