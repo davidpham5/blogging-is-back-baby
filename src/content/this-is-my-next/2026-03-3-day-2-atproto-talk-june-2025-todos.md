@@ -1,0 +1,7 @@
+- [x] Design the section concept
+- [x] Wire up the timn content type
+  - [x] Create 11tydata.js
+  - [x] Add to collections.js
+- [x] Build the post layout with TODO section
+- [x] Set up VS Code Dark+ code highlighting
+- [ ] Write the first real post
