@@ -2,7 +2,16 @@
 title: Edmund Edgar - Bluesky, atproto, how to hack on it and why it matters
 date: 2026-03-31
 link: https://www.youtube.com/watch?v=2YtvMImH_SE
-tags: atproto, bluesky, decentralization, social media, identity, pds, relay, firehose, lexicon
+tags:
+  - atproto
+  - bluesky
+  - decentralization
+  - social media
+  - identity
+  - pds
+  - relay
+  - firehose
+  - lexicon
 ---
 
 <div class="embed-container">
