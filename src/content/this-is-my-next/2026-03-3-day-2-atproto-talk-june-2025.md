@@ -18,7 +18,7 @@ tags:
 <iframe src="https://www.youtube.com/embed/2YtvMImH_SE?si=U0zrYmTrFyo2CkNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-![[project - atproto-20260331235629984.jpg]]
+![project - atproto-20260331235629984](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/projects/project-atproto-20260331235629984.jpg)
 
 [Protocol Berg v2: Edmund Edgar - Bluesky, atproto, how to hack on it and why it matters - YouTube](https://www.youtube.com/watch?v=2YtvMImH_SE)
 
@@ -35,14 +35,14 @@ tags:
 
 ## The Job of the Relay
 
-![[project - atproto-20260331235700488.jpg]]
+![project - atproto-20260331235700488](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/projects/project-atproto-20260331235700488.jpg)
 to get the latest changes from the various PDSs and put them in a massive stream known as the Firehose.
 Run you run a bunch of a `appview` which are backend servers.
 Bluesky is running them but also other people are running their own.
 
 ## what happens when you post on bluesky
 
-![[project - atproto-20260331235730436.jpg]]
+![project - atproto-20260331235730436](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/projects/project-atproto-20260331235730436.jpg)
 
 Assign an id, `cid` hashed to make a CID.
 
