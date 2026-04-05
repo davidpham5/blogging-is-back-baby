@@ -1,1 +1,25 @@
-# placeholder — will be replaced by image upload hook
+#!/usr/bin/env sh
+
+# Warn (don't block) if staged .md files contain un-uploaded wikilink image embeds
+staged_md=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' || true)
+
+if [ -z "$staged_md" ]; then
+  exit 0
+fi
+
+found=""
+for file in $staged_md; do
+  matches=$(grep -nE '!\[\[[^\]]+\.(jpg|jpeg|png|webp)\]\]' "$file" 2>/dev/null || true)
+  if [ -n "$matches" ]; then
+    found="$found\n  $file:\n$(echo "$matches" | sed 's/^/    /')\n"
+  fi
+done
+
+if [ -n "$found" ]; then
+  echo ""
+  echo "Warning: Found un-uploaded image embeds:"
+  printf "$found"
+  echo ""
+  echo "Run 'node bin/upload-images.js --write' to upload before committing."
+  echo ""
+fi
