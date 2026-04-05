@@ -6,7 +6,18 @@
       "Bash(curl -v http://localhost:60639)",
       "Bash(curl -s --max-time 5 \"http://localhost:60639/\")",
       "Bash(curl -s --max-time 5 \"http://localhost:60639/screen\")",
-      "Bash(curl -s --max-time 5 http://localhost:57001/)"
+      "Bash(curl -s --max-time 5 http://localhost:57001/)",
+      "Bash(git check-ignore:*)",
+      "Bash(ls:*)",
+      "Bash(npm install:*)",
+      "Bash(npx husky:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(node -e \"const p = require\\(''./package.json''\\); console.log\\(''scripts:'', JSON.stringify\\({ui: p.scripts[''upload-images''], uiw: p.scripts[''upload-images:write''], prep: p.scripts.prepare}\\)\\); console.log\\(''cloudinary:'', !!p.dependencies.cloudinary\\); console.log\\(''husky:'', !!p.devDependencies.husky\\); \")",
+      "Bash(node -e 'const p = require\\(\"\"./package.json\"\"\\); console.log\\(\"\"upload-images:\"\", p.scripts[\"\"upload-images\"\"]\\); console.log\\(\"\"upload-images:write:\"\", p.scripts[\"\"upload-images:write\"\"]\\); console.log\\(\"\"prepare:\"\", p.scripts.prepare\\); console.log\\(\"\"cloudinary:\"\", p.dependencies.cloudinary\\); console.log\\(\"\"husky:\"\", p.devDependencies.husky\\);')",
+      "Bash(chmod:*)",
+      "Bash(node:*)",
+      "Bash(curl:*)"
     ]
   }
 }
