@@ -32,55 +32,70 @@
     </p>
     </section>
   <h4>Chico was my nickname in school.</h4>
-  <section id="front-content-display">
-     <section>
-      <h2 class="text-4xl py-8 pt-4 pb-0">StoryStream</h2>
-      <p class="thin pb-4">Findings on the web, interesting stuff, or beautiful things to share</p>
-      {% set postList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
-      {% include "components/storystream.njk" %}
 
-      <p>
-        Subscribe to the <a href="/amplify/feed.xml">Storystream RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.
-      </p>
-    </section>
-    {% set thoughts = articlesList | onlyTypes(['thought']) %}
-
-    {% if thoughts.length > 0 %}
+    <section id="front-content-display">
       <section>
-        <h2 class="text-4xl py-8">Recent Thoughts</h2>
-        {% set postsList = thoughts | reverse | limit(10) %}
-        {% include "components/post-list.njk" %}
+        <h2 class="text-4xl py-8 pt-4 pb-0">StoryStream</h2>
+        <p class="thin pb-4">Findings on the web, interesting stuff, or beautiful things to share</p>
+        {% set postList = collections.contentTypes | findBySlug('amplify') | values('items') | limit(10) %}
+        {% include "components/storystream.njk" %}
+
         <p>
-          View <a href="/thoughts/">more thoughts...</a>
+          Subscribe to the <a href="/amplify/feed.xml">Storystream RSS Feed</a> or view the entire <a href="/amplify">archive</a> for more.
         </p>
       </section>
-    {% endif %}
+      {% set thoughts = articlesList | onlyTypes(['thought']) %}
 
-    <section>
-      <h2 class="text-4xl pt-4 pb-0 mt-0 content-grid-header">Essays</h2>
-      <h3 class="thin pb-4 my-0 content-grid-header">Loose, vague feelings on things I don't entirely understand yet.</h3>
-      {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify']) | reverse | limit(12) %}
-      {% include "components/post-list.njk" %}
-      <p>
-        Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
-      </p>
+      {# {% if thoughts.length > 0 %}
+        <section>
+          <h2 class="text-4xl py-8">Recent Thoughts</h2>
+          {% set postsList = thoughts | reverse | limit(10) %}
+          {% include "components/post-list.njk" %}
+          <p>
+            View <a href="/thoughts/">more thoughts...</a>
+          </p>
+        </section>
+      {% endif %} #}
+
+
+
       <section>
-      {% set turboLinks = raindrop.articles | limit(30) %}
+        {% set timnEntries = collections.timnPosts %}
+        {% if timnEntries and timnEntries.length > 0 %}
+          <section>
+            <h2 class="text-4xl pt-4 pb-0 mt-0 content-grid-header">This Is My Next</h2>
+            <h3 class="thin pb-4 my-0 content-grid-header">A developer's notebook — to learn is to disrupt the inertia in one's own mind.</h3>
+            {% set postsList = timnEntries | limit(5) %}
+            {% include "components/post-list.njk" %}
+            <p>
+              View <a href="/this-is-my-next/">more entries...</a>
+            </p>
+          </section>
+        {% endif %}
+        <h2 class="text-4xl pt-4 pb-0 mt-0 content-grid-header">Essays</h2>
+        <h3 class="thin pb-4 my-0 content-grid-header">Loose, vague feelings on things I don't entirely understand yet.</h3>
+        {% set postsList = articlesList | excludeTypes(['thought', 'project', 'mirror', 'resource', 'amplify', 'timn']) | reverse | limit(12) %}
+        {% include "components/post-list.njk" %}
+        <p>
+          Subscribe to the <a href="/writing/feed.xml">RSS Feed</a> or view the entire <a href="/writing">archive</a> for more.
+        </p>
+        <section>
+        {% set turboLinks = raindrop.articles | limit(30) %}
 
-      {% if turboLinks.length > 0 %}
-      <h2 class="text-4xl py-8 pt-4 pb-0">Turbocharged hyperlinks</h2>
-      <p class="thin pb-4">Chaos desires order -- links to bring clarity</p>
-        <ul class="post-list">
-          {% include "components/turbo-links.njk" %}
-        </ul>
-         <p>
-        Subscribe to the <a href="/turbo-links/feed.xml">turbocharged hyperlinks RSS feed</a> or view the entire <a href="/turbo-links/">archive</a> for more.
-      </p>
-      {% endif %}
+        {% if turboLinks.length > 0 %}
+        <h2 class="text-4xl py-8 pt-4 pb-0">Turbocharged hyperlinks</h2>
+        <p class="thin pb-4">Chaos desires order -- links to bring clarity</p>
+          <ul class="post-list">
+            {% include "components/turbo-links.njk" %}
+          </ul>
+          <p>
+          Subscribe to the <a href="/turbo-links/feed.xml">turbocharged hyperlinks RSS feed</a> or view the entire <a href="/turbo-links/">archive</a> for more.
+        </p>
+        {% endif %}
+        </section>
       </section>
-    </section>
 
-  </section>
+    </section>
 
   <p>You can find out more <a href="/about/">about me</a>, what I <a href="/uses/">use</a>, the books that I <a href="/books/">have been reading</a> and what I am up to <a href="/now/">now</a>.</p>
 {% endblock %}
