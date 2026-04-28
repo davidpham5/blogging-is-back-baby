@@ -11,7 +11,7 @@ tags:
   - bulk
 ---
 
-Google is set to use your photos to train it's AI. As ravenous information thieves, they are counting on you to leave your photos in place. In turn they will take their long straw and [drink your milkshake](https://youtu.be/s_hFTR6qyEo?si=_LsoUNud1_GebURN). Can you stop them from using your photos of your children and prevent them from having them forever. 
+[Google is set to use your photos to train it's AI](https://www.forbes.com/sites/zakdoffman/2026/04/20/google-starts-scanning-all-your-photos-as-new-update-goes-live/). As ravenous information thieves, they are counting on you to leave your photos in place. In turn they will take their long straw and [drink your milkshake](https://youtu.be/s_hFTR6qyEo?si=_LsoUNud1_GebURN). You can stop them from using your photos of your children and prevent them from having them forever. 
 
 Except bulk deletion is really time consuming. Below is a script you can copy and paste into the developer's console ( cmd + option + i). What it does, as you scroll through your photos, it will select all of them that are visible on the screen. 
 
@@ -64,3 +64,5 @@ Be sure to click on the trash button. It will take a few seconds before you see 
   console.log(`✅ Done. Total selected: ${total}`);
     })();
 ```
+
+Its important to take the view that Google and the rest of the rotten lot are in the business of extracting as much data out of you as possible. They are strip miners. When you use any of their "free" products, you are performing free labor. Take your power back. 
