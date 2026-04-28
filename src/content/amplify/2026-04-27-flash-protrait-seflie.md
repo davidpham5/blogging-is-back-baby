@@ -7,7 +7,7 @@ link:
 tags:
   - seflie
 ---
-![](/content/amplify/2026-04-27-flash-protrait-seflie-20260427230001208.jpg)
+![](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/amplify/2026-04-27-flash-protrait-seflie-20260427230001208.jpg)
 
 Fujifilm xt-3 with 27mm 
 
@@ -17,6 +17,6 @@ While scrolling on Instagram, a few accounts posted photos that look straight ou
 
 Here's one of my favs of my azaleas 
 
-![](/content/amplify/2026-04-27-flash-protrait-seflie-20260427232651505.jpg)
+![](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/amplify/2026-04-27-flash-protrait-seflie-20260427232651505.jpg)
 
 Photography brings me so much joy. I don't know why, but I really like reviewing the shots I took and finding real excellent shots.

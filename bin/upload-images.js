@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
 /**
- * Uploads local images referenced via Obsidian wikilink syntax (![[image.jpg]])
- * to Cloudinary, rewrites the markdown to standard syntax, and deletes local files.
+ * Uploads local images referenced from markdown to Cloudinary, rewrites the
+ * markdown, and deletes local files. Handles two forms:
+ *   - Obsidian wikilink:        ![[image.jpg]]
+ *   - Local-path markdown:      ![alt](/content/<subfolder>/image.jpg)
  *
  * Usage:
  *   node bin/upload-images.js          # dry-run — prints what it would do
@@ -19,6 +21,7 @@ const simpleGit = require("simple-git");
 const CONTENT_DIR = path.join(__dirname, "..", "src", "content");
 const IMAGE_EXTENSIONS = ["jpg", "jpeg", "png", "webp"];
 const WIKILINK_IMAGE_RE = /!\[\[([^\]]+\.(?:jpg|jpeg|png|webp))\]\]/gi;
+const LOCAL_MD_IMAGE_RE = /!\[([^\]]*)\]\((\/content\/[^)\s]+\.(?:jpg|jpeg|png|webp))\)/gi;
 
 const CLOUDINARY_CLOUD_NAME = process.env.CLOUNDINARY_CLOUD_NAME;
 const CLOUDINARY_API_KEY = process.env.CLOUNDINARY_CLOUD_API_KEY;
@@ -61,27 +64,52 @@ async function scanFiles() {
 
   for (const mdFile of mdFiles) {
     const content = fs.readFileSync(mdFile, "utf-8");
-    const matches = [...content.matchAll(WIKILINK_IMAGE_RE)];
-    if (matches.length === 0) continue;
+    const wikilinkMatches = [...content.matchAll(WIKILINK_IMAGE_RE)];
+    const mdMatches = [...content.matchAll(LOCAL_MD_IMAGE_RE)];
+    if (wikilinkMatches.length === 0 && mdMatches.length === 0) continue;
 
     const mdDir = path.dirname(mdFile);
-    const subfolder = getSubfolder(mdFile);
+    const mdSubfolder = getSubfolder(mdFile);
 
-    for (const match of matches) {
-      const wikilink = match[0];
+    for (const match of wikilinkMatches) {
+      const original = match[0];
       const imageName = match[1];
       const imagePath = findImageFile(imageName, mdDir);
       const sanitizedName = sanitizeFilename(imageName);
       const altText = altTextFromFilename(imageName);
-      const cloudinaryUrl = buildCloudinaryUrl(subfolder, sanitizedName);
+      const cloudinaryUrl = buildCloudinaryUrl(mdSubfolder, sanitizedName);
+      const rewritten = `![${altText}](${cloudinaryUrl})`;
 
       results.push({
         mdFile,
-        wikilink,
-        imageName,
+        original,
+        rewritten,
         imagePath,
         sanitizedName,
-        altText,
+        cloudinaryUrl,
+        subfolder: mdSubfolder,
+      });
+    }
+
+    for (const match of mdMatches) {
+      const original = match[0];
+      const altText = match[1];
+      const contentPath = match[2]; // e.g. /content/amplify/foo.jpg
+      const relFromContent = contentPath.replace(/^\/content\//, "");
+      const imagePath = path.join(CONTENT_DIR, relFromContent);
+      const exists = fs.existsSync(imagePath);
+      const subfolder = relFromContent.split("/")[0];
+      const imageName = path.basename(relFromContent);
+      const sanitizedName = sanitizeFilename(imageName);
+      const cloudinaryUrl = buildCloudinaryUrl(subfolder, sanitizedName);
+      const rewritten = `![${altText}](${cloudinaryUrl})`;
+
+      results.push({
+        mdFile,
+        original,
+        rewritten,
+        imagePath: exists ? imagePath : null,
+        sanitizedName,
         cloudinaryUrl,
         subfolder,
       });
@@ -100,12 +128,12 @@ async function dryRun(results) {
   for (const r of results) {
     const rel = path.relative(process.cwd(), r.mdFile);
     if (!r.imagePath) {
-      console.log(`WARN: ${rel}: ${r.wikilink} — image file not found, would skip`);
+      console.log(`WARN: ${rel}: ${r.original} — image file not found, would skip`);
     } else {
-      console.log(`${rel}: ${r.wikilink}`);
+      console.log(`${rel}: ${r.original}`);
       console.log(`  → upload: ${path.relative(process.cwd(), r.imagePath)}`);
       console.log(`  → to:     blog/${r.subfolder}/${r.sanitizedName}`);
-      console.log(`  → rewrite: ![${r.altText}](${r.cloudinaryUrl})`);
+      console.log(`  → rewrite: ${r.rewritten}`);
     }
   }
 
@@ -145,33 +173,30 @@ async function writeMode(results) {
 
     for (const r of entries) {
       if (!r.imagePath) {
-        console.log(`WARN: ${rel}: ${r.wikilink} — image file not found, skipping`);
+        console.log(`WARN: ${rel}: ${r.original} — image file not found, skipping`);
         continue;
       }
 
       // Upload (or reuse URL if already uploaded from another file)
-      let cloudinaryUrl = uploadedImages.get(r.imagePath);
-      if (!cloudinaryUrl) {
+      if (!uploadedImages.has(r.imagePath)) {
         const publicId = `blog/${r.subfolder}/${path.basename(r.sanitizedName, path.extname(r.sanitizedName))}`;
         try {
           console.log(`Uploading: ${path.relative(process.cwd(), r.imagePath)} → ${publicId}`);
-          const result = await cloudinary.uploader.upload(r.imagePath, {
+          await cloudinary.uploader.upload(r.imagePath, {
             public_id: publicId,
             overwrite: false,
             resource_type: "image",
           });
-          cloudinaryUrl = r.cloudinaryUrl;
-          uploadedImages.set(r.imagePath, cloudinaryUrl);
+          uploadedImages.set(r.imagePath, r.cloudinaryUrl);
           uploaded++;
         } catch (err) {
-          console.error(`FAIL: ${rel}: ${r.wikilink} — upload failed: ${err.message}`);
+          console.error(`FAIL: ${rel}: ${r.original} — upload failed: ${err.message}`);
           failed++;
           continue;
         }
       }
 
-      // Rewrite wikilink to standard markdown
-      content = content.replace(r.wikilink, `![${r.altText}](${cloudinaryUrl})`);
+      content = content.replace(r.original, r.rewritten);
       fileModified = true;
     }
 

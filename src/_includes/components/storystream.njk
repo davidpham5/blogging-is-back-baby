@@ -75,6 +75,7 @@
               {% set storyStreamUrl = post.url %}
             {% endif %} #}
 
+            {% if storyStreamUrl %}
             <a class="text-md leading-120 text-gray-100 underline"
                 aria-label="{{ post.title or post.data.title }}"
                 href="{{ storyStreamUrl }}"
@@ -84,10 +85,15 @@
             >
               {{ post.data.isBasedOn or post.data.title }}
             </a>
+            {% elseif post.data.isBasedOn %}
+            <span class="text-md leading-120 text-gray-100">{{ post.data.isBasedOn }}</span>
+            {% endif %}
 
+            {% if post.data.source %}
             <span class="flex my-2 tracking-wide text-sm strong uppercase tracking-15">
               [<!-- -->{{post.data.source}}<!-- -->]
             </span>
+            {% endif %}
 
             {% if displayContentType %}
                 <small class="content-type">{{ post.data.contentType }}</small>

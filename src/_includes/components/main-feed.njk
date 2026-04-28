@@ -26,12 +26,14 @@
           </div>
           {% set externalUrl = post.data.link %}
           <div class="z-10 h-4 w-4 max-[430px]:mt-8 max-[430px]:ml-1 md:mt-[30px] md:ml-1">
+            {% if externalUrl %}
             <a href="{{ externalUrl }}" target="_blank" class="flex w-full justify-center no-ext">
               <svg width="14" height="14" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <title>External Link</title>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.8999 0.400024H10.8999V4.40002H9.8999V2.10713L4.8999 7.10713L4.1928 6.40002L9.1928 1.40002H6.8999V0.400024ZM2.3999 2.90002C2.12604 2.90002 1.8999 3.12617 1.8999 3.40002V8.90002C1.8999 9.03263 1.95258 9.15981 2.04635 9.25358C2.14012 9.34735 2.26729 9.40002 2.3999 9.40002H7.8999C8.03251 9.40002 8.15969 9.34735 8.25346 9.25358C8.34722 9.15981 8.3999 9.03263 8.3999 8.90002V5.90002H9.3999V8.90002C9.3999 9.29785 9.24187 9.67938 8.96056 9.96068C8.67926 10.242 8.29773 10.4 7.8999 10.4H2.3999C2.00208 10.4 1.62055 10.242 1.33924 9.96068C1.05794 9.67938 0.899902 9.29785 0.899902 8.90002V3.40002C0.899902 2.57388 1.57376 1.90002 2.3999 1.90002H5.3999V2.90002H2.3999Z" fill="#000" style="--darkreader-inline-fill: #ffffff;"></path>
               </svg>
             </a>
+            {% endif %}
             <div class="mt-4">
               <a href="https://bsky.app/intent/compose?text={{ (post.data.title | urlencode) }}%0A%0A{{ (metadata.url + postUrl) | urlencode }}"
                   target="_blank" rel="noopener noreferrer" aria-label="Share on Bluesky" class="flex w-full justify-center no-ext">
@@ -59,9 +61,11 @@
             </section>
             <br>
           </div>
+          {% if post.data.link or post.data.isBasedOn or post.data.source %}
           <section>
             <div class="relative z-10 text-md leading-120">
               {% set storyStreamUrl = post.data.link or post.data.isBasedOn %}
+              {% if storyStreamUrl %}
               <a class="text-md leading-120 text-gray-100 underline"
                   aria-label="{{ post.title or post.data.title }}"
                   href="{{ storyStreamUrl }}"
@@ -69,11 +73,17 @@
                   rel="nofollow noopener noreferrer" target="_blank">
                 {{ post.data.isBasedOn or post.data.title }}
               </a>
+              {% elseif post.data.isBasedOn %}
+              <span class="text-md leading-120 text-gray-100">{{ post.data.isBasedOn }}</span>
+              {% endif %}
+              {% if post.data.source %}
               <span class="flex my-2 tracking-wide text-sm strong uppercase tracking-15">
                 [<!-- -->{{ post.data.source }}<!-- -->]
               </span>
+              {% endif %}
             </div>
           </section>
+          {% endif %}
         </div>
       </div>
     </div>
