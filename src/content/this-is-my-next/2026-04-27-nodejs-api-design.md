@@ -52,6 +52,7 @@ allows for functions to  fire when api hits it. They don't have to be always on 
 
 ## CDN
 You can write pure JS now on CDN. 10 years ago you could do some logic but nothing like scripting 
+
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.4295249690302 152.25994272304698" width="334.4295249690302" height="152.25994272304698">
   <!-- svg-source:excalidraw -->
   
@@ -220,7 +221,7 @@ Migrations are versioned scripts that modify your database schema over time:
 
 ### Prisma Approach
 
-```none
+```
 // schema.prisma
 model User {
   id    String @id @default(cuid())
@@ -246,7 +247,7 @@ model Habit {
 ### Drizzle Approach
 
 
-```none
+```typescript
 // Pure TypeScript schema
 export const users = pgTable('users', {
   id: uuid('id').primaryKey(),
