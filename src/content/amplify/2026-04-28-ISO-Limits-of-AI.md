@@ -11,7 +11,7 @@ tags:
   - learning
   - AGI
 ---
-[AI has limits, even if many AI people can't see them](https://www.programmablemutter.com/p/ai-has-limits-even-if-many-ai-people) [Henry Farrell](https://substack.com/@henryfarrell) in going beyond the good and bad of AI, shares his notes on the book, *Irrational Decision: How We Gave Computers the Power to Choose for us* by Benjamin Recht. One is how do we think about machine learning:
+[AI has limits, even if many AI people can't see them](https://www.programmablemutter.com/p/ai-has-limits-even-if-many-ai-people). [Henry Farrell](https://substack.com/@henryfarrell) in going beyond the good and bad of AI, shares his notes on the book, *Irrational Decision: How We Gave Computers the Power to Choose for us* by Benjamin Recht. One is how do we think about machine learning:
 
 "And machine learning itself is no more and no less than a powerful statistical tool. I found this passage maybe the most clarifying explanation of what it does that I’ve ever read."
 
