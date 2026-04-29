@@ -25,3 +25,5 @@ src/content/posts/Short Bio for Election 2025.md
 
 /.claude/
 src/content/.claude/
+src/content/Chats/
+.vscode/settings.json
