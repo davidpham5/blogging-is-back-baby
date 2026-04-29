@@ -1,5 +1,5 @@
 ---
-title: In search of the Limits of AI
+title: In search of the limits of AI
 date: 2026-04-28
 source: Programmable Mutter
 isBasedOn: AI has limits, even if many AI people can't see them
