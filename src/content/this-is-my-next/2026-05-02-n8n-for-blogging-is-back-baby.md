@@ -5,6 +5,101 @@ tags:
 ---
 I want to set up a n8n self hosting instance on my server and run a marketing funnel for this site. I want to present a pop up like substack to subscribe to a newsletter and build an audience. And at the end, turn some readers to paid members.
 
+## Part 1: Self-Host n8n on DigitalOcean
+
+### 1.1 Create a Droplet
+
+- Log into DigitalOcean → Create → Droplets
+- **Image:** Ubuntu 24.04 LTS
+- **Plan:** Basic, $6/mo (1 GB RAM, 25 GB SSD) — sufficient for n8n
+- **Region:** NYC1 or closest to you (East Coast)
+- **Authentication:** SSH key (recommended) or password
+- **Hostname:** `n8n-server`
+
+### 1.2 Install Docker + n8n
+
+SSH into your droplet:
+
+```bash
+ssh root@YOUR_DROPLET_IP
+```
+
+Install Docker:
+
+```bash
+apt update && apt upgrade -y
+apt install -y docker.io docker-compose
+systemctl enable docker
+```
+
+Create n8n directory and docker-compose file:
+
+```bash
+mkdir -p /opt/n8n && cd /opt/n8n
+```
+
+Create `docker-compose.yml`:
+
+```yaml
+version: '3.8'
+services:
+  n8n:
+    image: n8nio/n8n
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=n8n.davidchicopham.com
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://n8n.davidchicopham.com/
+      - GENERIC_TIMEZONE=America/New_York
+      - TZ=America/New_York
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  n8n_data:
+```
+
+Start n8n:
+
+```bash
+docker-compose up -d
+```
+
+### 1.3 Set Up Domain + SSL
+
+Point a DNS A record for `n8n.davidchicopham.com` → your droplet IP.
+
+Install Caddy as a reverse proxy (handles SSL automatically):
+
+```bash
+apt install -y caddy
+```
+
+Edit `/etc/caddy/Caddyfile`:
+
+```
+n8n.davidchicopham.com {
+    reverse_proxy localhost:5678
+}
+```
+
+Restart Caddy:
+
+```bash
+systemctl restart caddy
+```
+
+Wait a few minutes for SSL provisioning. Visit `https://n8n.davidchicopham.com` — you should see the n8n login screen.
+
+### 1.4 Verify
+
+- Log in with the basic auth credentials you set
+- Create a test workflow with a Webhook trigger node
+- Copy the webhook URL — you'll need it in Part 3
+
 What is n8n? It's like Zapier or Make, a canvas drag and drop flow chart that can build triggers, actions, and output stuff. It's source can be self hosted or through paid cloud account.
 
 [Master 80% of n8n in 36 Minutes - YouTube](https://www.youtube.com/watch?v=e3OV3LnrS7o)
