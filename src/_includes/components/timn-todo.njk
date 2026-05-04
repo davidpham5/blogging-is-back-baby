@@ -1,0 +1,23 @@
+{% if todos %}
+<aside class="timn-todo">
+  <h2 class="timn-todo__heading">TODO</h2>
+  <ul class="timn-todo__list">
+    {% for item in todos %}
+      <li class="timn-todo__item{% if item.done %} is-done{% endif %}">
+        <span class="timn-todo__check" aria-hidden="true">{% if item.done %}✓{% else %}○{% endif %}</span>
+        <span class="timn-todo__text">{{ item.text }}</span>
+        {% if item.subtasks %}
+          <ul class="timn-todo__subtasks">
+            {% for sub in item.subtasks %}
+              <li class="{% if sub.done %}is-done{% endif %}">
+                <span aria-hidden="true">{% if sub.done %}✓{% else %}○{% endif %}</span>
+                <span>{{ sub.text }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}

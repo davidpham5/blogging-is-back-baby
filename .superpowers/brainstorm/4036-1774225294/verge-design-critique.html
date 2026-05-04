@@ -1,0 +1,118 @@
+<h2>The Verge's Design Contract — and Why Your Feed Breaks It</h2>
+<p class="subtitle">A design critique before we build anything</p>
+
+<div class="section">
+  <h3>The Core Principle: Visual Language as a Contract</h3>
+  <p>The Verge succeeds because each visual treatment makes an <strong>implicit promise</strong> to the reader. Image card with overlay text = "this is a news article, click to read." Dense text row = "this is a quick link, skim and move on." The reader never has to <em>decide how to read</em> something — the visual form tells them before they process the words.</p>
+</div>
+
+<div class="split" style="gap: 24px; margin: 24px 0;">
+
+  <div class="mockup" style="flex: 1;">
+    <div class="mockup-header" style="background: #e53e3e; color: white;">❌ Current: Mixed Feed (The Problem)</div>
+    <div class="mockup-body" style="padding: 0; font-size: 13px;">
+
+      <div style="border: 2px solid #e53e3e; border-radius: 6px; padding: 10px; margin: 8px; background: #fff8f8;">
+        <div style="background: #555; height: 60px; border-radius: 4px; margin-bottom: 6px; display:flex;align-items:center;justify-content:center;color:white;font-size:11px;">IMAGE CARD — Turbolink</div>
+        <div style="font-size: 11px; color: #333;">Article Title Over Image<br><span style="color:#888; font-size:10px;">Site Name • Date • Share</span></div>
+      </div>
+
+      <div style="margin: 4px 8px; text-align:center; font-size:10px; color: #e53e3e; font-weight: bold;">⚡ VISUAL GEAR SHIFT ⚡</div>
+
+      <div style="border: 2px solid #3182ce; border-radius: 6px; padding: 10px; margin: 8px; background: #f0f7ff;">
+        <div style="display:flex; gap:8px;">
+          <div style="background: linear-gradient(#FF3D00, #3CFFD0); width:20px; height:40px; border-radius:3px; flex-shrink:0;"></div>
+          <div style="font-size:11px; color:#333;">
+            <div style="font-weight:bold; margin-bottom:4px;">StoryStream Entry</div>
+            <div style="color:#555; line-height:1.4;">Editorial commentary with source link and context beneath...</div>
+            <div style="color:#888; font-size:10px; margin-top:4px;">SOURCE • DATE</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin: 4px 8px; text-align:center; font-size:10px; color: #e53e3e; font-weight: bold;">⚡ VISUAL GEAR SHIFT ⚡</div>
+
+      <div style="border: 2px solid #e53e3e; border-radius: 6px; padding: 10px; margin: 8px; background: #fff8f8;">
+        <div style="background: #555; height: 60px; border-radius: 4px; margin-bottom: 6px; display:flex;align-items:center;justify-content:center;color:white;font-size:11px;">IMAGE CARD — Turbolink</div>
+        <div style="font-size: 11px; color: #333;">Article Title Over Image<br><span style="color:#888; font-size:10px;">Site Name • Date • Share</span></div>
+      </div>
+
+      <div style="padding: 8px; text-align: center;">
+        <span style="font-size: 11px; color: #e53e3e; font-style:italic;">Reader re-calibrates visual mode every item.<br>Neither rhythm can establish itself.</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mockup" style="flex: 1;">
+    <div class="mockup-header" style="background: #276749; color: white;">✓ The Verge Model: Spatial Separation</div>
+    <div class="mockup-body" style="padding: 0; font-size: 13px;">
+
+      <div style="display: flex; gap: 0;">
+        <div style="flex: 2; border-right: 1px solid #e2e8f0; padding: 8px;">
+          <div style="font-size: 10px; font-weight: bold; text-transform: uppercase; color: #276749; margin-bottom: 6px; letter-spacing: 1px;">Main Column</div>
+          <div style="background: #555; height: 80px; border-radius: 4px; margin-bottom: 6px; display:flex;align-items:center;justify-content:center;color:white;font-size:10px;">HERO IMAGE CARD</div>
+          <div style="background: #555; height: 50px; border-radius: 4px; margin-bottom: 6px; display:flex;align-items:center;justify-content:center;color:white;font-size:10px;">IMAGE CARD</div>
+          <div style="background: #555; height: 50px; border-radius: 4px; display:flex;align-items:center;justify-content:center;color:white;font-size:10px;">IMAGE CARD</div>
+          <div style="font-size:10px; color:#276749; margin-top:6px; text-align:center; font-style:italic;">Consistent. Image-forward. Same grammar throughout.</div>
+        </div>
+        <div style="flex: 1; padding: 8px;">
+          <div style="font-size: 10px; font-weight: bold; text-transform: uppercase; color: #2b6cb0; margin-bottom: 6px; letter-spacing: 1px;">Sidebar</div>
+          <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-bottom: 5px;">
+            <div style="font-size: 11px; font-weight: bold; line-height:1.3;">Quick link title one</div>
+            <div style="font-size: 10px; color: #888;">SOURCE</div>
+          </div>
+          <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-bottom: 5px;">
+            <div style="font-size: 11px; font-weight: bold; line-height:1.3;">Quick link title two</div>
+            <div style="font-size: 10px; color: #888;">SOURCE</div>
+          </div>
+          <div>
+            <div style="font-size: 11px; font-weight: bold; line-height:1.3;">Quick link title three</div>
+            <div style="font-size: 10px; color: #888;">SOURCE</div>
+          </div>
+          <div style="font-size:10px; color:#2b6cb0; margin-top:6px; text-align:center; font-style:italic;">Dense. Compact. Same grammar throughout.</div>
+        </div>
+      </div>
+
+      <div style="padding: 8px; text-align: center; border-top: 1px solid #e2e8f0; margin-top: 4px;">
+        <span style="font-size: 11px; color: #276749; font-style:italic;">Each column has ONE visual language.<br>The reader knows what to expect before they read.</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="section" style="margin-top: 24px;">
+  <h3>The 5 Design Principles The Verge Applies</h3>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+    <div style="border-left: 3px solid #6b46c1; padding-left: 12px;">
+      <strong style="font-size: 13px;">1. Gestalt Similarity</strong>
+      <p style="font-size: 12px; color: #555; margin-top: 4px;">Items that look alike are grouped. Within each zone, every item uses the same visual template. The reader's eye finds a rhythm.</p>
+    </div>
+    <div style="border-left: 3px solid #6b46c1; padding-left: 12px;">
+      <strong style="font-size: 13px;">2. Information Scent</strong>
+      <p style="font-size: 12px; color: #555; margin-top: 4px;">Each visual treatment promises a specific interaction. Image card = article. Text row = quick link. Breaking this forces the reader to stop and re-orient.</p>
+    </div>
+    <div style="border-left: 3px solid #6b46c1; padding-left: 12px;">
+      <strong style="font-size: 13px;">3. Column as Contract</strong>
+      <p style="font-size: 12px; color: #555; margin-top: 4px;">Left/main = primary editorial weight. Right/sidebar = secondary, discovery. Width communicates importance before any content is read.</p>
+    </div>
+    <div style="border-left: 3px solid #6b46c1; padding-left: 12px;">
+      <strong style="font-size: 13px;">4. Cognitive Load</strong>
+      <p style="font-size: 12px; color: #555; margin-top: 4px;">Consistent visual treatments within a zone mean the reader only processes <em>what is said</em>, not <em>how to read it</em>. Inconsistency adds invisible overhead.</p>
+    </div>
+    <div style="border-left: 3px solid #6b46c1; padding-left: 12px; grid-column: span 2;">
+      <strong style="font-size: 13px;">5. Temporal vs. Curatorial Weight</strong>
+      <p style="font-size: 12px; color: #555; margin-top: 4px;">StoryStream is <em>temporal</em> — it flows down as a thread, ordered by time. Turbolinks are <em>curatorial</em> — visually weighted, each one is a statement. These have incompatible reading rhythms. When interleaved, neither can establish momentum.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px; padding: 16px; background: #fffbeb; border: 1px solid #f6e05e; border-radius: 8px;">
+  <h3 style="margin-top: 0;">⚠️ One Critical Question Before We Split</h3>
+  <p style="font-size: 13px;">You proposed: <strong>Turbolinks in left column, StoryStream in right column (under essays).</strong></p>
+  <p style="font-size: 13px; margin-top: 8px;">The Verge would raise a flag here: if StoryStream goes <em>under essays</em> in the same column, you're mixing your editorial voice (essays) with your curation voice (storystream) in the same zone. A reader might not know where essays end and storystream begins — are storystream entries short essays? Is this the same kind of writing?</p>
+  <p style="font-size: 13px; margin-top: 8px;"><strong>The question to answer:</strong> Should StoryStream be in the right column <em>at the same level</em> as turbolinks (a true two-column homepage), or does it belong under essays because they share a writing/voice identity?</p>
+</div>

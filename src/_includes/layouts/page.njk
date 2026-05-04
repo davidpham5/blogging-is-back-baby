@@ -9,7 +9,7 @@
         {% endif %}
     </nav>
     <div class="action-buttons">
-        <button class="jumbo-nav__trigger" style="padding-left: 21px;"><a href="/membership">Membership</a></button>
+        <button class="jumbo-nav__trigger" style="padding-left: 21px;"><a class="no-ext" href="https://ko-fi.com/dpham5">Buy me lunch?</a></button>
         <button class="jumbo-nav__trigger" onclick="toggleJumboMenu()">Menu</button>
         <button class="icon" aria-label="Change Theme" onclick="toggleThemePicker()">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
@@ -42,7 +42,7 @@
         {% endblock %}
           {% if pageMetaType == 'resource' %}
 
-          {% elseif cite and cite.href or referringUri or isBasedOn or canonical %}
+          {% elseif cite and cite.href or referringUri or isBasedOn or canonical or (contentType == 'amplify' and (link or source)) %}
             {% set citeAnchorText = "link" %}
             <small>&mdash;
             {% if cite and cite.author %}
@@ -53,19 +53,24 @@
             {% endif %}
 
             {% if contentType == 'amplify' %}
-              {% set postUrl = link %}
-              <a class="text-md leading-120 text-gray-100 underline"
-                  aria-label="{{ title }}"
-                  href="{{ postUrl }}"
-                  title="Read {{ title}}"
-                  {{ postAttrs }}
-                  rel="nofollow noopener noreferrer" target="_blank"
-                >
-                  {{ isBasedOn or title }}
-                </a>
-              <span class="flex my-2 tracking-wide text-sm strong uppercase tracking-15">
-                [<!-- -->{{source}}<!-- -->]
-              </span>
+              {% if link %}
+                <a class="text-md leading-120 text-gray-100 underline"
+                    aria-label="{{ title }}"
+                    href="{{ link }}"
+                    title="Read {{ title}}"
+                    {{ postAttrs }}
+                    rel="nofollow noopener noreferrer" target="_blank"
+                  >
+                    {{ isBasedOn or title }}
+                  </a>
+              {% elseif isBasedOn %}
+                <span class="text-md leading-120 text-gray-100">{{ isBasedOn }}</span>
+              {% endif %}
+              {% if source %}
+                <span class="flex my-2 tracking-wide text-sm strong uppercase tracking-15">
+                  [<!-- -->{{source}}<!-- -->]
+                </span>
+              {% endif %}
             {% else %}
               <a href="{{referringUri or isBasedOn or canonical or cite.href }}" target="_blank" title="{{citeAnchorText | stripAllQuotes}}"></a></small>
             {% endif %}

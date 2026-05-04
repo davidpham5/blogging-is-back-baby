@@ -1,7 +1,7 @@
 ---
 title: Learning Astro
 date: 2025-01-06
-featured: false
+featured: true
 tags:
   - TIL
   - astro

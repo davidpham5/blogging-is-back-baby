@@ -1,0 +1,15 @@
+- [x] Set up atproto project section
+    - [x] Create the markdown file
+    - [x] Add the video embed and screenshots
+- [x] Update workflow in adding images to posts with cloundinary and pre-commit hook
+    - [x] Write the upload script
+    - [x] Add the pre-commit hook with husky
+- [ ] Php fundementals
+    - [ ] Developer Notebook set up
+- [ ] Third Newsroom
+    - [x] buy domain
+    - [ ] set up codebase
+        - [x] sanity backend
+        - [x] AstroJS frontend
+        - [x] Postgres DB
+        - [x] deploy to netlify and render

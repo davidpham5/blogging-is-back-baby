@@ -289,6 +289,8 @@ module.exports = function (eleventyConfig) {
 		".nojekyll": ".nojekyll",
 	});
 
+	eleventyConfig.addPassthroughCopy("src/content/**/*.{jpg,jpeg,png,gif,webp}");
+
 	//
 	// Markdown-It && Plugins
 	//

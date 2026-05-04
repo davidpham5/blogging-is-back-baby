@@ -634,6 +634,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -688,6 +692,10 @@ video {
 
 .mt-0 {
   margin-top: 0px;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-2 {
@@ -893,6 +901,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -1081,11 +1093,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1187,10 +1194,6 @@ video {
   line-height: 1;
 }
 
-.leading-normal {
-  line-height: 1.5;
-}
-
 .leading-tight {
   line-height: 1.25;
 }
@@ -1288,13 +1291,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.outline {
-  outline-style: solid;
-}
-
-.invert {
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .filter {
@@ -1356,27 +1356,27 @@ video {
   --space-96: 6rem;
   --space-128: 8rem;
   --space-160: 10rem;
-  --color-light-cream: #FCFBF7;
-  --color-cream: #F6F5F1;
-  --color-tinted-cream: #E6E3E1;
+  --color-light-cream: #fcfbf7;
+  --color-cream: #f6f5f1;
+  --color-tinted-cream: #e6e3e1;
   --color-black: #353534;
-  --color-gray-800: #4A4A46;
-  --color-gray-600: #73706D;
-  --color-gray-500: #8E8F94;
-  --color-gray-400: #AFB0B6;
-  --color-gray-300: #D3D3D1;
-  --color-gray-100: #E9E9E7;
+  --color-gray-800: #4a4a46;
+  --color-gray-600: #73706d;
+  --color-gray-500: #8e8f94;
+  --color-gray-400: #afb0b6;
+  --color-gray-300: #d3d3d1;
+  --color-gray-100: #e9e9e7;
   --color-bright-crimson: #960462;
-  --color-crimson: #5F023E;
-  --color-sea-blue: #04A5BB;
-  --color-medium-sea-blue: #008BA3;
-  --color-dark-sea-blue: #00758F;
-  --color-purple: #7558B2;
-  --color-salmon: #FD8370;
-  --color-light-salmon: #FFD09C;
-  --font-serif: 'Canela Deck', serif;
-  --font-body: 'Canela Text', serif;
-  --font-sans: 'Lato', sans-serif;
+  --color-crimson: #5f023e;
+  --color-sea-blue: #04a5bb;
+  --color-medium-sea-blue: #008ba3;
+  --color-dark-sea-blue: #00758f;
+  --color-purple: #7558b2;
+  --color-salmon: #fd8370;
+  --color-light-salmon: #ffd09c;
+  --font-serif: "Canela Deck", serif;
+  --font-body: "Canela Text", serif;
+  --font-sans: "Lato", sans-serif;
   --leading-tighter: 110%;
   --leading-tight: 120%;
   --leading-snug: 130%;
@@ -1386,62 +1386,140 @@ video {
   --border-radius-sm: 0.2rem;
   --border-radius-base: 0.4rem;
   --border-radius-lg: 0.6rem;
-  --box-shadow-sm: 0.2px 0.2px 0.8px -10px rgba(40, 10, 0, 0.014), 0.4px 0.4px 2px -10px rgba(40, 10, 0, 0.02), 0.8px 0.8px 3.8px -10px rgba(40, 10, 0, 0.025), 1.3px 1.3px 6.7px -10px rgba(40, 10, 0, 0.03), 2.5px 2.5px 12.5px -10px rgba(40, 10, 0, 0.036), 6px 6px 30px -10px rgba(40, 10, 0, 0.05);
-  --box-shadow-md: 1px 0.9px 2.3px -3px rgba(30, 10, 10, 0.04), 2.4px 2.2px 5.5px -3px rgba(30, 10, 10, 0.05), 4.5px 4.1px 10.4px -3px rgba(30, 10, 10, 0.06), 8px 7.4px 18.5px -3px rgba(30, 10, 10, 0.07), 15px 13.8px 34.7px -3px rgba(30, 10, 10, 0.08), 36px 33px 83px -3px rgba(30, 10, 10, 0.2);
-  --box-shadow-lg: 0.2px 0.4px 0.8px -10px rgba(0, 0, 0, 0.03), 0.4px 0.9px 2px -10px rgba(0, 0, 0, 0.030), 0.8px 1.8px 3.8px -10px rgba(0, 0, 0, 0.038), 1.3px 3.1px 6.7px -10px rgba(0, 0, 0, 0.045), 2.5px 5.8px 12.5px -10px rgba(0, 0, 0, 0.06), 6px 14px 30px -10px rgba(0, 0, 0, 0.08);
-  --fc-3xs-min: (var(--fc-s-min)* 0.25);
-  --fc-3xs-max: (var(--fc-s-max)* 0.25);
-  --fc-2xs-min: (var(--fc-s-min)* 0.5);
-  --fc-2xs-max: (var(--fc-s-max)* 0.5);
-  --fc-xs-min: (var(--fc-s-min)* 0.75);
-  --fc-xs-max: (var(--fc-s-max)* 0.75);
+  --box-shadow-sm:
+        0.2px 0.2px 0.8px -10px rgba(40, 10, 0, 0.014),
+        0.4px 0.4px 2px -10px rgba(40, 10, 0, 0.02),
+        0.8px 0.8px 3.8px -10px rgba(40, 10, 0, 0.025),
+        1.3px 1.3px 6.7px -10px rgba(40, 10, 0, 0.03),
+        2.5px 2.5px 12.5px -10px rgba(40, 10, 0, 0.036),
+        6px 6px 30px -10px rgba(40, 10, 0, 0.05);
+  --box-shadow-md:
+        1px 0.9px 2.3px -3px rgba(30, 10, 10, 0.04),
+        2.4px 2.2px 5.5px -3px rgba(30, 10, 10, 0.05),
+        4.5px 4.1px 10.4px -3px rgba(30, 10, 10, 0.06),
+        8px 7.4px 18.5px -3px rgba(30, 10, 10, 0.07),
+        15px 13.8px 34.7px -3px rgba(30, 10, 10, 0.08),
+        36px 33px 83px -3px rgba(30, 10, 10, 0.2);
+  --box-shadow-lg:
+        0.2px 0.4px 0.8px -10px rgba(0, 0, 0, 0.03),
+        0.4px 0.9px 2px -10px rgba(0, 0, 0, 0.03),
+        0.8px 1.8px 3.8px -10px rgba(0, 0, 0, 0.038),
+        1.3px 3.1px 6.7px -10px rgba(0, 0, 0, 0.045),
+        2.5px 5.8px 12.5px -10px rgba(0, 0, 0, 0.06),
+        6px 14px 30px -10px rgba(0, 0, 0, 0.08);
+  --fc-3xs-min: (var(--fc-s-min) * 0.25);
+  --fc-3xs-max: (var(--fc-s-max) * 0.25);
+  --fc-2xs-min: (var(--fc-s-min) * 0.5);
+  --fc-2xs-max: (var(--fc-s-max) * 0.5);
+  --fc-xs-min: (var(--fc-s-min) * 0.75);
+  --fc-xs-max: (var(--fc-s-max) * 0.75);
   --fc-s-min: (var(--f-0-min, 20));
   --fc-s-max: (var(--f-0-max, 22));
-  --fc-m-min: (var(--fc-s-min)* 1.5);
-  --fc-m-max: (var(--fc-s-max)* 1.5);
-  --fc-l-min: (var(--fc-s-min)* 2);
-  --fc-l-max: (var(--fc-s-max)* 2);
-  --fc-xl-min: (var(--fc-s-min)* 3);
-  --fc-xl-max: (var(--fc-s-max)* 3);
-  --fc-2xl-min: (var(--fc-s-min)* 4);
-  --fc-2xl-max: (var(--fc-s-max)* 4);
-  --fc-3xl-min: (var(--fc-s-min)* 6);
-  --fc-3xl-max: (var(--fc-s-max)* 6);
-  --fc-4xl-min: (var(--fc-s-min)* 8);
-  --fc-4xl-max: (var(--fc-s-max)* 8);
-  --space-3xs: calc(((var(--fc-3xs-min) / 16)* 1rem) +(var(--fc-3xs-max) - var(--fc-3xs-min))* var(--fluid-bp));
-  --space-2xs: calc(((var(--fc-2xs-min) / 16)* 1rem) +(var(--fc-2xs-max) - var(--fc-2xs-min))* var(--fluid-bp));
-  --space-xs: calc(((var(--fc-xs-min) / 16)* 1rem) +(var(--fc-xs-max) - var(--fc-xs-min))* var(--fluid-bp));
-  --space-s: calc(((var(--fc-s-min) / 16)* 1rem) +(var(--fc-s-max) - var(--fc-s-min))* var(--fluid-bp));
-  --space-m: calc(((var(--fc-m-min) / 16)* 1rem) +(var(--fc-m-max) - var(--fc-m-min))* var(--fluid-bp));
-  --space-l: calc(((var(--fc-l-min) / 16)* 1rem) +(var(--fc-l-max) - var(--fc-l-min))* var(--fluid-bp));
-  --space-xl: calc(((var(--fc-xl-min) / 16)* 1rem) +(var(--fc-xl-max) - var(--fc-xl-min))* var(--fluid-bp));
-  --space-2xl: calc(((var(--fc-2xl-min) / 16)* 1rem) +(var(--fc-2xl-max) - var(--fc-2xl-min))* var(--fluid-bp));
-  --space-3xl: calc(((var(--fc-3xl-min) / 16)* 1rem) +(var(--fc-3xl-max) - var(--fc-3xl-min))* var(--fluid-bp));
-  --space-4xl: calc(((var(--fc-4xl-min) / 16)* 1rem) +(var(--fc-4xl-max) - var(--fc-4xl-min))* var(--fluid-bp));
-  --space-3xs-2xs: calc(((var(--fc-3xs-min) / 16)* 1rem) +(var(--fc-2xs-max) - var(--fc-3xs-min))* var(--fluid-bp));
-  --space-2xs-xs: calc(((var(--fc-2xs-min) / 16)* 1rem) +(var(--fc-xs-max) - var(--fc-2xs-min))* var(--fluid-bp));
-  --space-xs-s: calc(((var(--fc-xs-min) / 16)* 1rem) +(var(--fc-s-max) - var(--fc-xs-min))* var(--fluid-bp));
-  --space-s-m: calc(((var(--fc-s-min) / 16)* 1rem) +(var(--fc-m-max) - var(--fc-s-min))* var(--fluid-bp));
-  --space-m-l: calc(((var(--fc-m-min) / 16)* 1rem) +(var(--fc-l-max) - var(--fc-m-min))* var(--fluid-bp));
-  --space-l-xl: calc(((var(--fc-l-min) / 16)* 1rem) +(var(--fc-xl-max) - var(--fc-l-min))* var(--fluid-bp));
-  --space-xl-2xl: calc(((var(--fc-xl-min) / 16)* 1rem) +(var(--fc-2xl-max) - var(--fc-xl-min))* var(--fluid-bp));
-  --space-2xl-3xl: calc(((var(--fc-2xl-min) / 16)* 1rem) +(var(--fc-3xl-max) - var(--fc-2xl-min))* var(--fluid-bp));
-  --space-3xl-4xl: calc(((var(--fc-3xl-min) / 16)* 1rem) +(var(--fc-4xl-max) - var(--fc-3xl-min))* var(--fluid-bp));
+  --fc-m-min: (var(--fc-s-min) * 1.5);
+  --fc-m-max: (var(--fc-s-max) * 1.5);
+  --fc-l-min: (var(--fc-s-min) * 2);
+  --fc-l-max: (var(--fc-s-max) * 2);
+  --fc-xl-min: (var(--fc-s-min) * 3);
+  --fc-xl-max: (var(--fc-s-max) * 3);
+  --fc-2xl-min: (var(--fc-s-min) * 4);
+  --fc-2xl-max: (var(--fc-s-max) * 4);
+  --fc-3xl-min: (var(--fc-s-min) * 6);
+  --fc-3xl-max: (var(--fc-s-max) * 6);
+  --fc-4xl-min: (var(--fc-s-min) * 8);
+  --fc-4xl-max: (var(--fc-s-max) * 8);
+  --space-3xs: calc(
+        ((var(--fc-3xs-min) / 16) * 1rem) +
+            (var(--fc-3xs-max) - var(--fc-3xs-min)) * var(--fluid-bp)
+    );
+  --space-2xs: calc(
+        ((var(--fc-2xs-min) / 16) * 1rem) +
+            (var(--fc-2xs-max) - var(--fc-2xs-min)) * var(--fluid-bp)
+    );
+  --space-xs: calc(
+        ((var(--fc-xs-min) / 16) * 1rem) +
+            (var(--fc-xs-max) - var(--fc-xs-min)) * var(--fluid-bp)
+    );
+  --space-s: calc(
+        ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) *
+            var(--fluid-bp)
+    );
+  --space-m: calc(
+        ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-m-min)) *
+            var(--fluid-bp)
+    );
+  --space-l: calc(
+        ((var(--fc-l-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-l-min)) *
+            var(--fluid-bp)
+    );
+  --space-xl: calc(
+        ((var(--fc-xl-min) / 16) * 1rem) +
+            (var(--fc-xl-max) - var(--fc-xl-min)) * var(--fluid-bp)
+    );
+  --space-2xl: calc(
+        ((var(--fc-2xl-min) / 16) * 1rem) +
+            (var(--fc-2xl-max) - var(--fc-2xl-min)) * var(--fluid-bp)
+    );
+  --space-3xl: calc(
+        ((var(--fc-3xl-min) / 16) * 1rem) +
+            (var(--fc-3xl-max) - var(--fc-3xl-min)) * var(--fluid-bp)
+    );
+  --space-4xl: calc(
+        ((var(--fc-4xl-min) / 16) * 1rem) +
+            (var(--fc-4xl-max) - var(--fc-4xl-min)) * var(--fluid-bp)
+    );
+  --space-3xs-2xs: calc(
+        ((var(--fc-3xs-min) / 16) * 1rem) +
+            (var(--fc-2xs-max) - var(--fc-3xs-min)) * var(--fluid-bp)
+    );
+  --space-2xs-xs: calc(
+        ((var(--fc-2xs-min) / 16) * 1rem) +
+            (var(--fc-xs-max) - var(--fc-2xs-min)) * var(--fluid-bp)
+    );
+  --space-xs-s: calc(
+        ((var(--fc-xs-min) / 16) * 1rem) +
+            (var(--fc-s-max) - var(--fc-xs-min)) * var(--fluid-bp)
+    );
+  --space-s-m: calc(
+        ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-s-min)) *
+            var(--fluid-bp)
+    );
+  --space-m-l: calc(
+        ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) *
+            var(--fluid-bp)
+    );
+  --space-l-xl: calc(
+        ((var(--fc-l-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-l-min)) *
+            var(--fluid-bp)
+    );
+  --space-xl-2xl: calc(
+        ((var(--fc-xl-min) / 16) * 1rem) +
+            (var(--fc-2xl-max) - var(--fc-xl-min)) * var(--fluid-bp)
+    );
+  --space-2xl-3xl: calc(
+        ((var(--fc-2xl-min) / 16) * 1rem) +
+            (var(--fc-3xl-max) - var(--fc-2xl-min)) * var(--fluid-bp)
+    );
+  --space-3xl-4xl: calc(
+        ((var(--fc-3xl-min) / 16) * 1rem) +
+            (var(--fc-4xl-max) - var(--fc-3xl-min)) * var(--fluid-bp)
+    );
   --fluid-min-width: 320;
   --fluid-max-width: 1200;
   --fluid-screen: 100vw;
-  --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16* 1rem) /(var(--fluid-max-width) - var(--fluid-min-width)));
+  --fluid-bp: calc(
+        (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+            (var(--fluid-max-width) - var(--fluid-min-width))
+    );
 }
 
 * {
   box-sizing: border-box;
 }
 
-.container   {
-  max-width: 1440  px;
-  width:   75%;
-  margin-left:   12.5%;
+.container {
+  max-width: 1440 px;
+  width: 75%;
+  margin-left: 12.5%;
   margin-right: 12.5%;
 }
 
@@ -1454,25 +1532,30 @@ body {
   line-height: 1.54;
   letter-spacing: -0.02em;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01",
-        "locl";
+  font-feature-settings:
+        "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   font-variant-ligatures: contextual;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  transition: background-color 300ms, color 200ms;
+  transition:
+        background-color 300ms,
+        color 200ms;
 }
 
-strong, .strong, .stronger {
-  font-family: 'canela_deck_trialbold', sans-serif;
+strong,
+.strong,
+.stronger {
+  font-family: "canela_deck_trialbold", sans-serif;
 }
 
-em, i {
-  font-family: 'canela_deck_trialbold_italic', sans-serif;
+em,
+i {
+  font-family: "canela_deck_trialbold_italic", sans-serif;
 }
 
 .thin {
-  font-family: 'canela_deck_trialthin', sans-serif;
+  font-family: "canela_deck_trialthin", sans-serif;
 }
 
 details summary {
@@ -1642,7 +1725,8 @@ article.note img:not(.btn-88x31) {
   height: auto;
 }
 
-article.note > header h1, .special {
+article.note > header h1,
+.special {
   font-size: 5.5rem;
 }
 
@@ -2014,7 +2098,7 @@ aside.notes ul li {
 }
 
 #front-content-display section:nth-child(2) {
-  grid-column: 1;
+  grid-column: 2;
 }
 
 #front-content-display section:nth-child(3) {
@@ -2052,7 +2136,7 @@ article#page-post h3 {
   color: var(--color-gray-400);
   font-weight: 100;
   line-height: 1.1;
-  margin: .0875em 0 .0875em;
+  margin: 0.0875em 0 0.0875em;
   transition: 0.3s ease-in-out;
 }
 
@@ -3532,6 +3616,374 @@ body > header > div a:first-child {
   .card {
     padding-right: 0;
   }
+}
+
+/* =============================================================
+   This Is My Next (TIMN) — Component & Code Highlighting Styles
+   All Prism rules are scoped to #page-timn-post to avoid
+   affecting other layouts.
+   ============================================================= */
+
+/* ----- TODO checklist ----- */
+
+.timn-todo {
+  border-left: 4px solid var(--accent);
+  background: var(--background-muted, rgba(0, 0, 0, 0.04));
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.timn-todo__heading {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.timn-todo__list,
+.timn-todo__subtasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timn-todo__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.timn-todo__item > span:first-child,
+.timn-todo__item > .timn-todo__check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.timn-todo__check {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  opacity: 0.7;
+}
+
+.timn-todo__text {
+  display: inline;
+}
+
+.timn-todo__item.is-done .timn-todo__text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.timn-todo__subtasks {
+  padding-left: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.timn-todo__subtasks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.2rem;
+  opacity: 0.9;
+}
+
+.timn-todo__subtasks li.is-done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* ----- Bluesky share button ----- */
+
+.timn-share-section {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--foreground-muted, currentColor);
+  opacity: 0.7;
+}
+
+.timn-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.timn-share-btn:hover {
+  opacity: 1;
+}
+
+/* =============================================================
+   VS Code Dark+ Prism syntax theme — scoped to #page-timn-post
+   Source: prism-themes/themes/prism-vsc-dark-plus.css
+   ============================================================= */
+
+#page-timn-post pre[class*="language-"],
+#page-timn-post code[class*="language-"] {
+  color: #d4d4d4;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+#page-timn-post pre[class*="language-"]::-moz-selection, #page-timn-post code[class*="language-"]::-moz-selection, #page-timn-post pre[class*="language-"] *::-moz-selection, #page-timn-post code[class*="language-"] *::-moz-selection {
+  text-shadow: none;
+  background: #264f78;
+}
+
+#page-timn-post pre[class*="language-"]::selection,
+#page-timn-post code[class*="language-"]::selection,
+#page-timn-post pre[class*="language-"] *::selection,
+#page-timn-post code[class*="language-"] *::selection {
+  text-shadow: none;
+  background: #264f78;
+}
+
+#page-timn-post pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+#page-timn-post :not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  background: #1e1e1e;
+}
+
+/* Tokens */
+
+#page-timn-post .namespace {
+  opacity: 0.7;
+}
+
+#page-timn-post .token.doctype .token.doctype-tag {
+  color: #569cd6;
+}
+
+#page-timn-post .token.doctype .token.name {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.comment,
+#page-timn-post .token.prolog {
+  color: #6a9955;
+}
+
+#page-timn-post .token.punctuation,
+#page-timn-post .language-html .language-css .token.punctuation,
+#page-timn-post .language-html .language-javascript .token.punctuation {
+  color: #d4d4d4;
+}
+
+#page-timn-post .token.property,
+#page-timn-post .token.tag,
+#page-timn-post .token.boolean,
+#page-timn-post .token.number,
+#page-timn-post .token.constant,
+#page-timn-post .token.symbol,
+#page-timn-post .token.inserted,
+#page-timn-post .token.unit {
+  color: #b5cea8;
+}
+
+#page-timn-post .token.selector,
+#page-timn-post .token.attr-name,
+#page-timn-post .token.string,
+#page-timn-post .token.char,
+#page-timn-post .token.builtin,
+#page-timn-post .token.deleted {
+  color: #ce9178;
+}
+
+#page-timn-post .language-css .token.string.url {
+  text-decoration: underline;
+}
+
+#page-timn-post .token.operator,
+#page-timn-post .token.entity {
+  color: #d4d4d4;
+}
+
+#page-timn-post .token.operator.arrow {
+  color: #569cd6;
+}
+
+#page-timn-post .token.atrule {
+  color: #ce9178;
+}
+
+#page-timn-post .token.atrule .token.rule {
+  color: #c586c0;
+}
+
+#page-timn-post .token.atrule .token.url {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.atrule .token.url .token.function {
+  color: #dcdcaa;
+}
+
+#page-timn-post .token.atrule .token.url .token.punctuation {
+  color: #d4d4d4;
+}
+
+#page-timn-post .token.keyword {
+  color: #569cd6;
+}
+
+#page-timn-post .token.keyword.module,
+#page-timn-post .token.keyword.control-flow {
+  color: #c586c0;
+}
+
+#page-timn-post .token.function,
+#page-timn-post .token.function .token.maybe-class-name {
+  color: #dcdcaa;
+}
+
+#page-timn-post .token.regex {
+  color: #d16969;
+}
+
+#page-timn-post .token.important {
+  color: #569cd6;
+}
+
+#page-timn-post .token.italic {
+  font-style: italic;
+}
+
+#page-timn-post .token.constant {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.class-name,
+#page-timn-post .token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+#page-timn-post .token.console {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.parameter {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.interpolation {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+}
+
+#page-timn-post .token.boolean {
+  color: #569cd6;
+}
+
+#page-timn-post .token.property,
+#page-timn-post .token.variable,
+#page-timn-post .token.imports .token.maybe-class-name,
+#page-timn-post .token.exports .token.maybe-class-name {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.selector {
+  color: #d7ba7d;
+}
+
+#page-timn-post .token.escape {
+  color: #d7ba7d;
+}
+
+#page-timn-post .token.tag {
+  color: #569cd6;
+}
+
+#page-timn-post .token.tag .token.punctuation {
+  color: #808080;
+}
+
+#page-timn-post .token.cdata {
+  color: #808080;
+}
+
+#page-timn-post .token.attr-name {
+  color: #9cdcfe;
+}
+
+#page-timn-post .token.attr-value,
+#page-timn-post .token.attr-value .token.punctuation {
+  color: #ce9178;
+}
+
+#page-timn-post .token.attr-value .token.punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+#page-timn-post .token.entity {
+  color: #569cd6;
+}
+
+#page-timn-post .token.namespace {
+  color: #4ec9b0;
+}
+
+/* Language-specific overrides */
+
+#page-timn-post pre[class*="language-javascript"],
+#page-timn-post code[class*="language-javascript"],
+#page-timn-post pre[class*="language-jsx"],
+#page-timn-post code[class*="language-jsx"],
+#page-timn-post pre[class*="language-typescript"],
+#page-timn-post code[class*="language-typescript"],
+#page-timn-post pre[class*="language-tsx"],
+#page-timn-post code[class*="language-tsx"] {
+  color: #9cdcfe;
+}
+
+#page-timn-post pre[class*="language-css"],
+#page-timn-post code[class*="language-css"] {
+  color: #ce9178;
+}
+
+#page-timn-post pre[class*="language-html"],
+#page-timn-post code[class*="language-html"] {
+  color: #d4d4d4;
+}
+
+#page-timn-post .language-regex .token.anchor {
+  color: #dcdcaa;
+}
+
+#page-timn-post .language-html .token.punctuation {
+  color: #808080;
 }
 
 .hover\:scale-105:hover {

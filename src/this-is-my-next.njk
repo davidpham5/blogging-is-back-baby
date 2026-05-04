@@ -1,0 +1,28 @@
+---
+layout: layouts/page.njk
+title: This Is My Next
+description: A running log of what I'm building, learning, and figuring out next.
+permalink: /this-is-my-next/
+headingClass: writing-index
+---
+
+{% set allPosts = collections.timnPosts %}
+{% set postsByYear = allPosts | groupByYear %}
+
+{% block pageContent %}
+  <p>{{ description }}</p>
+
+  {% if allPosts and allPosts.length > 0 %}
+    {% for year, items in postsByYear %}
+      <section>
+        <header>
+          <h3>{{ year }}</h3>
+        </header>
+        {% set postsList = items %}
+        {% include "components/post-list.njk" %}
+      </section>
+    {% endfor %}
+  {% else %}
+    <p>Nothing here yet — check back soon.</p>
+  {% endif %}
+{% endblock %}

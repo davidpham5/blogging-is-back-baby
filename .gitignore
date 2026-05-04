@@ -22,3 +22,8 @@ src/content/.obsidian/
 
 # posts i wish not to be published
 src/content/posts/Short Bio for Election 2025.md
+
+/.claude/
+src/content/.claude/
+src/content/Chats/
+.vscode/settings.json

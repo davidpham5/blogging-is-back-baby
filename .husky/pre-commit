@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+
+# Block commit if staged .md files contain un-uploaded local image refs.
+# Detects both Obsidian wikilinks (![[image.jpg]]) and standard markdown
+# pointing at /content/ paths (![alt](/content/.../image.jpg)).
+staged_md=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' || true)
+
+if [ -z "$staged_md" ]; then
+  exit 0
+fi
+
+pattern='!\[\[[^]]+\.(jpg|jpeg|png|webp)\]\]|!\[[^]]*\]\(/content/[^)]+\.(jpg|jpeg|png|webp)\)'
+found=""
+for file in $staged_md; do
+  matches=$(grep -nE "$pattern" "$file" 2>/dev/null || true)
+  if [ -n "$matches" ]; then
+    found="$found\n  $file:\n$(echo "$matches" | sed 's/^/    /')\n"
+  fi
+done
+
+if [ -n "$found" ]; then
+  echo ""
+  echo "Error: Found un-uploaded image embeds:"
+  printf "$found"
+  echo ""
+  echo "Run 'node bin/upload-images.js --write' to upload to Cloudinary before committing."
+  echo ""
+  exit 1
+fi
