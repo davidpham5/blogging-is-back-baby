@@ -1,6 +1,7 @@
 ---
 title: Is it the right time to unionize
 date: 2026-04-02
+draft: true
 source: Adam Conover
 isBasedOne: The Revenge of the White Collar Workers with Noam Scheiber
 link: https://youtu.be/bnCtYkj0lgY?si=5llUZBdb77Ik5ICY

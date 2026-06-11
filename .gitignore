@@ -1,6 +1,7 @@
 _site/
 dist/
 _tmp/
+.netlify/
 .DS_Store
 node_modules/
 .idea
