@@ -11,6 +11,7 @@
     "build": "cross-env ELEVENTY_ENV=production eleventy",
     "build:dev": "rm -rf _site && cross-env ELEVENTY_ENV=development DEBUG=Eleventy* eleventy > ./buildlog.txt",
     "og-images": "node ./bin/create-og-images.js",
+    "swap:images": "node bin/upload-images.js --write",
     "make:bookmark": "node ./bin/add-bookmark.js",
     "make:quotes": "node -e 'var w = require(\"./bin/enrichers/quotes.js\"); w.writeQuotes().then(() => console.log(\"complete quotes\"))' > ./buildlog.txt",
     "make:films": "node -e 'var w = require(\"./bin/enrichers/films.js\"); w.writeFilms().then(() => console.log(\"complete films\"))' > ./buildlog.txt",
