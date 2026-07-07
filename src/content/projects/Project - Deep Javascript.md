@@ -4,6 +4,7 @@ tags:
   - deep
 title: Deep Javascript
 date: 2026-06-24
+featured: true
 ---
 Years ago, I picked up Kyle Simpson's You Don't Know JS series and went through his course. That alone supercharged my fundamental understanding of Javascript and how it works. It's 2026 and there is a big sense that AI can just put aside thinking and learning for generative code and apps. 
 
