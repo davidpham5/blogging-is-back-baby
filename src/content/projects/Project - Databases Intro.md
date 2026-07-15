@@ -217,3 +217,13 @@ There is no ON clause. Don't ship NATURAL JOINS because without ON clause it bec
 
 **What SQL function can be used to display only the first 20 characters of a comment field as a preview?**
 > The LEFT function can be used with the syntax `LEFT(comment, 20)` to retrieve the first 20 characters of a comment. This can be projected using an alias like `AS preview` to make it easier to reference in the result set.
+
+Why is it necessary to prefix columns when joining tables? Clarity matters a lot:
+> It's necessary to prefix column names with the table name when the column name exists in multiple tables being joined and would be ambiguous. For example, if both the comments and users tables have a user_id column, you need to specify `comments.user_id` or `users.user_id`. If a column name is unique across all tables in the query, the prefix is optional but often included for clarity.
+
+What is the difference between `INNER JOIN` and a `LEFT JOIN` in SQL?
+> *An INNER JOIN returns only rows that exist in both tables where the join condition is met. A LEFT JOIN returns all rows from the left table (the one in the FROM clause) and matching rows from the right table. If there's no match in the right table, the LEFT JOIN still includes the row from the left table with NULL values for the right table's columns.* 
+
+Really important to double down on this difference. 
+- [ ] Create a flash card for Inner Join
+- [ ] Create a flash card for Left Join
