@@ -24,7 +24,7 @@ Microsoft announced a mass layoff in late June and there is real dread to what w
 
 ![2026-07-15-save-game-devs-rally-20260715161858883](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/amplify/2026-07-15-save-game-devs-rally-20260715161858883.webp)
 
-3![DSCF4641](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/amplify/amplify-DSCF4641.jpeg)
+![DSCF4641](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/amplify/amplify-DSCF4641.jpeg)
 
 ![DSCF4617](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/amplify/amplify-DSCF4617.jpeg)
 
