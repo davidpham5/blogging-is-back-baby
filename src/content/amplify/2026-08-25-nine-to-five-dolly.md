@@ -16,4 +16,4 @@ One could say she lived the good life. She used her fame and wealth to help ordi
 Let her life be a reminder that there are millions of people like Dolly who fight for the everyday common folk of this country. With my little corner of the Internet, I anoint, first of her name, Dolly Parton, a Holy Patron Saint of the Web. Rest in Power, Dolly.
 
 <div class="embed-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UbxUSsFXYo4?si=9Xqz1u70ghSfMDb6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<iframe src="https://www.youtube.com/embed/UbxUSsFXYo4?si=9Xqz1u70ghSfMDb6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
