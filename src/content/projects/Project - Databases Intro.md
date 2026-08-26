@@ -50,6 +50,13 @@ ACID stands for atomic operations, consistent, isolated, and durable
 Certain technologies trade safety for speed, performance, or cost.
 ↪ memcache is not durable by design as it focuses on speed
 
+## normalization
+> Say your business is "Dave's Piano Service" and you have 312 clients. In one giant table, that business name is typed out **312 times**. Now you rebrand. You update 312 rows, and if 3 of them fail halfway through, you now have a database that disagrees with itself about your own company's name. That's not a hypothetical — that's Tuesday.
+> 
+> So instead: **store each fact exactly once, and point at it.** Your business lives in `accounts` — one row, one name. Every client just carries a **reference** to it. Rebrand? Change one row. Done.
+> 
+> That's the heart of relational databases. It's why "relational" is in the name, and the idea of _store it once, reference it everywhere_ is called **normalization**.
+
 **SQL**
 A NoSQL database is more like a folder full of documents, such as markdown files or JSON files. This is different from a relational database which is structured like spreadsheets with defined rows and columns. MongoDB is an example that models its files in this document-based way.
 
@@ -164,6 +171,10 @@ In SQL, string literals should always use single quotes. For example: `UPDATE u
 
 > A foreign key is a reference in one table that corresponds to a primary key in another table. It establishes a relationship between tables. For example, a user_id in a comments table that references the user_id in a users table creates a foreign key relationship, indicating that the comment belongs to that user.
 
+> A **foreign key** is a column that holds another table's primary key. But — and this is the part that makes it powerful — **it's also a promise the database enforces.**
+> 
+> Think of a coat check. Your ticket has a number that points to a coat. A foreign key is that ticket, except the coat room is run by someone militant: they will _not_ let you create a ticket for a coat that doesn't exist, and they won't let anyone destroy a coat while tickets for it are still out there. That guarantee is called **referential integrity**, and you get it for free.
+
 It's true. Using foreign keys has a 10% overhead. However foreign keys provide an affordance in safety at the cost of performance. Its worth it to pay more in server time and such than to have a human go debug something in sql.
 
 > Foreign keys maintain data integrity by enforcing that relationships between tables remain valid. They prevent invalid data from being inserted, such as a comment with a user_id that doesn't exist in the users table. This automatic enforcement helps keep data in sync, which is valuable because things that need to stay in sync tend to fall out of sync without enforcement mechanisms.
@@ -227,3 +238,248 @@ What is the difference between `INNER JOIN` and a `LEFT JOIN` in SQL?
 Really important to double down on this difference. 
 - [ ] Create a flash card for Inner Join
 - [ ] Create a flash card for Left Join
+
+## Subqueries
+
+```sql
+SELECT
+ comment_id, user_id, LEFT(comment, 20)
+FROM
+ comments
+WHEREE TABLE users (
+ user_id = (SELECT user_id FROM users WHERE full_name = TY,
+'Maynord Simonich');
+
+
+ comment_id | user_id |         left
+------------+---------+----------------------
+         58 |      40 | Has anyone successfu
+        156 |      40 | HTTP 204 No Content
+        201 |      40 | We moved our job que
+        257 |      40 | You don't need React
+(4 rows)
+```
+
+example of subquery: 
+```sql
+ user_id = (SELECT user_id FROM users WHERE full_name = TY,
+'Maynord Simonich')
+```
+
+you definitely can write this subquery as a join, but can be wildly complex joins. `( ... )` means launching into subqueries
+
+While you can get away with probing a database an be inefficient, or for a one time report, if you are putting together authentication, and the DB is hit a lot, its important to set up efficient queries.
+
+But what if you want to count the number of a comments per board ( just like NSS sql report for most views by author in a given time frame)
+
+```sql
+SELECT
+  boards.board_name, COUNT(*) AS comment_count
+FROM
+  comments
+JOIN
+  boards
+ON
+  boards.board_id = comments.board_id
+GROUP BY
+  boards.board_name
+ORDER BY
+ comment_count DESC
+LIMIT
+  10;
+```
+
+Think of `GROUP BY` as collapsing a large data set into a smaller data set.
+
+To see the least popular leader boards, you can do `ASC` instead of `DESC`, but what about you getting a 0's for the boards? No comments means it won't show up in the result. So how about we put a condition, like greater than or equal to 1? How do we fix this?
+
+We had left join from comments with boards joining in. We are looking for boards with no comments. So this means we are going to do a RIGHT JOIN
+
+*The `ON` clause is the **join condition** — it tells the database how to match rows between the two tables.
+
+In your query:
+`RIGHT JOIN boards ON boards.board_id = comments.board_id`
+
+This means: _"For each row in `comments`, find the matching row in `boards` where the `board_id` values are equal."_
+
+Think of it like a key-lock pairing:
+
+- `comments.board_id` is a **foreign key** — it stores which board a comment belongs to
+- `boards.board_id` is the **primary key** — the unique identifier of each board
+
+So `ON boards.board_id = comments.board_id` links the two tables together by that shared ID, so you can pull `board_name` from `boards` alongside the comments that belong to it.
+
+Since you're using `RIGHT JOIN`, all boards are included even if they have **zero comments** — which is why `comment_count` might be `0` for some rows rather than those boards being excluded entirely.*
+
+When we run this query, we get a null row returned, 
+```sql
+ Runtime Roundup               |             1
+```
+and it's because our query `COUNT(*)` and counts the null row as 1. How do we fix that? Count unique comment_id, e.g. `COUNT(comment_id)`
+
+Being skeptical of data results is important. A LLM can do the heavy lifting and your ignorance to the nature of the database and the data it holds will lead you to believe that the results are accurate.
+
+Can do multiple aggregations too.
+
+## subqueries 
+
+Often subqueries can be written as joins but will introduce complexity at the cost of efficiency
+
+- optimize subqueries when slow down is expensive and it something like a report on user behavior. If it's probing a db or a one-off, who cares. let it run for a long time.
+- as a reminder, this is an aggregation: you want to condense a large amount of things into something smaller.
+
+Example,
+`intro-to-db-with-bholt/subqueries.sql`
+
+```sql
+-- To see the least popular leader boards, you can do `ASC` instead of `DESC`, but what about you getting a 0's for the boards? No comments means it won't show up in the result. So how about we put a condition, like greater than or equal to 1? How do we fix this?
+
+-- We had left join from comments with boards joining in. We are looking for boards with no comments. So this means we are going to do a RIGHT JOIN
+
+SELECT
+  boards.board_name, COUNT(*) AS comment_count
+FROM
+  comments
+RIGHT JOIN
+  boards
+ON
+  boards.board_id = comments.board_id
+GROUP BY
+  boards.board_name
+ORDER BY
+ comment_count ASC
+LIMIT
+  10;
+```
+
+Think about `GROUP BY` collapsing a bigger set to a smaller set.
+
+A subquery is a query inside of another query. The subquery runs first, and its result is then used by the outer query. It's useful when you need to reference data from your database but don't have a direct way to get it in a single query.
+
+*When using the `=` operator with a subquery in SQL, what requirement must the subquery result satisfy?*
+
+When using the `=` operator, the subquery must return exactly one value. If it returns zero rows or multiple rows, the query will error. To handle multiple results, you need to treat it as a set using operators like `IN` instead.
+
+*What is the difference between using `INNER JOIN` and `RIGHT JOIN` when finding boards with no comments?*
+
+An `INNER JOIN` only returns results where matches exist in both tables, so boards with no comments would be excluded. A `RIGHT JOIN` includes all records from the right table (boards) even if there are no matching records in the left table (comments), allowing boards with zero comments to appear in the results.
+
+*Why does a board with no comments show a comment count of 1 when using `COUNT(*)` with a `RIGHT JOIN`?*
+
+Because `COUNT(*)` counts all rows in the result set, including rows with NULL values. When a board has no comments, the `RIGHT JOIN` still creates a row with NULL comment values. To get an accurate count of zero, you should use `COUNT(comment_id)` instead, which only counts non-NULL values.
+
+*What is the purpose of the `GROUP BY` clause in SQL aggregations?*
+`GROUP BY` collapses a larger set of data into a smaller set by grouping rows that share common values. It's used when performing aggregations like `COUNT`, allowing you to condense multiple rows into summary statistics for each group.
+
+## MongoDB
+
+Schemaless DB
+JSONB
+Planes, Cars, and Trucks types in a table wont make sense. A message board can be media rich objects like videos, text, image and audio. 
+
+JSONB query is pretty good now. They did a lot work on it to be efficient how its stored.
+
+Almost want to use JSONB
+anything you can do with JSON you can do here, with JSONB.
+You can next as much as you want. 
+
+`postgres=# SELECT content['type'] FROM rich_content;`
+
+```sql
+ content
+---------
+ "poll"
+ "video"
+ "poll"
+ "image"
+ "image"
+(5 rows)
+```
+
+this may look like a string but it's a JSONB data thing. You can't do string methods until you cast it.
+
+why does this matter. It's still JSON, if you want dimensions all of it. 
+```sql
+SELECT DISTINCT content['type'] FROM rich_content;
+ content
+---------
+--  "image"
+--  "poll"
+--  "video"
+-- (3 rows)
+
+SELECT DISTINCT content ->> 'type' FROM rich_content;
+ ?column?
+----------
+--  video
+--  poll
+--  image
+-- (3 rows)
+
+SELECT content ->> 'type' AS content_type, comment_id
+FROM rich_content
+WHERE content ->> 'type' = 'poll';
+
+-- content_type | comment_id
+-- --------------+------------
+--  poll         |         63
+--  poll         |        104
+-- (2 rows)
+
+-- if i use different notation and mix them together, it will get mad at me:
+SELECT content ->> 'type' AS content_type, comment_id
+FROM rich_content
+WHERE content['type'] = 'poll';
+
+-- LINE 3: WHERE content['type'] = 'poll';
+--                                 ^
+-- DETAIL:  Token "poll" is invalid.
+-- CONTEXT:  JSON data, line 1: poll
+
+
+SELECT
+  content -> 'dimensions' ->> 'height' AS height,
+  content['dimensions'] ->> 'width' AS width,
+  comment_id
+FROM
+  rich_content;
+
+--    height | width | comment_id
+-- --------+-------+------------
+--         |       |         63
+--  1080   | 1920  |         71
+--         |       |        104
+--  400    | 1084  |        201
+--  237    | 3301  |        274
+-- (5 rows)
+
+```
+
+what if query for polls?
+what about dimensions? Images have dimensions
+
+to pull out of the width, it useful to use the notation: 
+`content['dimensions'] ->> 'width' AS width,`
+
+JSONB (where B stands for binary) is more efficient in how it stores data, while JSON stores data as a straight-up string. In most cases, JSONB should be used rather than JSON for better performance and functionality.
+
+*What is the difference between using a single arrow (->) and double arrow (->>) when querying JSONB columns in Postgres?*
+
+A single arrow (->) returns data as a JSON type, maintaining the JSON format. A double arrow (->>) returns the actual string value. The double arrow should be used when you need to get the final string value out of the JSONB column, especially for comparisons or filtering.
+
+*What would happen if you try to compare a JSONB field value using a single arrow operator to a string literal in a WHERE clause?*
+
+```
+SELECT * FROM rich_content 
+WHERE content->'type' = 'poll'
+```
+
+This query will fail because the single arrow (->) returns a JSON type, not a string. You cannot compare a JSON type directly to a string literal. You need to use the double arrow (->>) to get the string value: `content->>'type' = 'poll'`
+
+*Why might you need to cast JSONB values when filtering numeric data in a WHERE clause?*
+
+Everything returned from JSON is treated as a string because JSON does not have inherent types. To filter by numeric comparisons (like finding images with height greater than 1000), you must cast the JSONB value to an integer type before comparison.
+
+*Why might you need to cast JSONB values when filtering numeric data in a WHERE clause?*
+
+Everything returned from JSON is treated as a string because JSON does not have inherent types. To filter by numeric comparisons (like finding images with height greater than 1000), you must cast the JSONB value to an integer type before comparison.
