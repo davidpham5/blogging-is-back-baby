@@ -52,7 +52,7 @@ put into the genAI chat, explain a code block. It's superpower to scruntize the 
 
 🤖 **Ask your AI Assistant.** Paste in the entire `handleSymbol` function and ask a _why_ question, not a _what_ question: "Why does the backspace branch check whether buffer.length is 1, instead of just chopping the last character every time?" You can verify the answer yourself — delete that check (after committing!) and backspace your way past the last digit to see what an empty screen feels like. What-questions get you explanations; why-questions get you design decisions, and design decisions are what you actually need to understand before letting an agent change code. Get in the habit of asking code _why_ it is the way it is.
 
-master.dev has an api they maintain: ![[image.png]]
+master.dev has an api they maintain: ![image](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/projects/image.png)
 
 HTTP RESTful is just intentions to tell the server about the nature of the request.
 
