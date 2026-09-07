@@ -10,7 +10,7 @@ tags:
   - fujifilm
   - 27mm
 ---
-I am learning more about exposure in a few photography books. One thing that has alluded me until recently was the ability to capture clouds. Today I exposed correctly and made splendid photos out of today's clouds:
+I am learning more about exposure in a few photography books. One thing that has alluded me until recently was the ability to capture clouds. Today I exposed correctly and made splendid photos out of them:
 
 ![DSCF8237](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/amplify/DSCF8237.jpeg)
 
