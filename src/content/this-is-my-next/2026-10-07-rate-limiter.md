@@ -8,7 +8,7 @@ tags:
   - system
   - interview
 ---
-![image](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/this-is-my-next/image.png)
+![image|700x655](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/this-is-my-next/image.png)
 
 Token Bucket algo takes two parameters
 1) Bucket size: max number of tokens allowed in the bucket.
