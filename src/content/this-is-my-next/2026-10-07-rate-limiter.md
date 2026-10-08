@@ -20,7 +20,7 @@ How many buckets do we need? It depends!
 ## Leaky Bucket Algorithm
 
 
-![leaky bucket algorithm](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/this-is-my-next/leaky-bucket-algorithm.png)
+![leaky bucket algorithm|700x300](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/this-is-my-next/leaky-bucket-algorithm.png)
 
 Leaky bucket takes 2 parameters
 1) bucket size: it is equal to the queue size. The queue holds the requests to be processed at a fixed rate
