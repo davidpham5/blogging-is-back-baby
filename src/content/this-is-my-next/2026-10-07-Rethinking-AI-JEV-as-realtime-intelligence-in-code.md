@@ -1,6 +1,6 @@
 ---
 title: Rethinking AI - JEV as realtime intellience in code
-date: "2026"
+date: 2026-10-08
 source: mega.dev
 isBasedOn: "Rethinking AI with Jev: Instant, Nearly Free, and Unlocking What's Next"
 link: https://www.youtube.com/watch?v=3MwcIgBRras
@@ -12,6 +12,8 @@ tags:
   - linquist
   - demo
 ---
+# Notes on Mega.dev workshop on JEV:
+
 The user input does not go into LLM, but into JEV
 ![image-1|700x480](https://res.cloudinary.com/dpham5/image/upload/f_auto,q_auto,w_800/blog/this-is-my-next/image-1.png)
 
